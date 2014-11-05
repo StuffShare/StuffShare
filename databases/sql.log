@@ -1449,3 +1449,37 @@ CREATE TABLE posessions(
     PRIMARY KEY (id)
 ) ENGINE=InnoDB CHARACTER SET utf8;
 success!
+timestamp: 2014-11-05T10:21:15.453979
+ALTER TABLE posessions ADD item_name__tmp LONGTEXT;
+success!
+UPDATE posessions SET item_name__tmp=item_name;
+success!
+ALTER TABLE posessions DROP COLUMN item_name;
+success!
+ALTER TABLE posessions ADD item_name LONGTEXT;
+success!
+UPDATE posessions SET item_name=item_name__tmp;
+success!
+ALTER TABLE posessions DROP COLUMN item_name__tmp;
+success!
+timestamp: 2014-11-05T10:21:16.218391
+ALTER TABLE posessions ADD quality__tmp LONGTEXT;
+success!
+UPDATE posessions SET quality__tmp=quality;
+success!
+ALTER TABLE posessions DROP COLUMN quality;
+success!
+ALTER TABLE posessions ADD quality LONGTEXT;
+success!
+UPDATE posessions SET quality=quality__tmp;
+success!
+ALTER TABLE posessions DROP COLUMN quality__tmp;
+success!
+success!
+timestamp: 2014-11-05T10:25:05.955426
+ALTER TABLE posessions ADD notes LONGTEXT;
+success!
+success!
+timestamp: 2014-11-05T10:25:34.500252
+ALTER TABLE posessions ADD return_date DATE;
+success!

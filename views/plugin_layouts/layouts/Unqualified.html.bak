@@ -35,10 +35,10 @@ div.error { background-color: red; color: white; padding: 3px; }
   <div id="header">
    <div id="logo">
     <h1>
-     {{=response.title or request.application}}
+     <a href="https://clan10.pythonanywhere.com/StuffShare/default/index">{{=response.title or request.application}}</a>
     </h1>
     <p>
-     Share your stuff!
+     <a href="https://clan10.pythonanywhere.com/StuffShare/default/index">Share your stuff =D</a>
      </a>
     </p>
    </div>
@@ -67,7 +67,7 @@ div.error { background-color: red; color: white; padding: 3px; }
       </h2>
       <ul>
        <li>
-        <a href="https://clan10.pythonanywhere.com/AuthenticationTest/default/item_manager">
+        <a href="https://clan10.pythonanywhere.com/StuffShare/default/item_manager">
             Item Manager
         </a>
        </li>

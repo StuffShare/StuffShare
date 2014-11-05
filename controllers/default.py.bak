@@ -2,7 +2,9 @@ def user():
     return dict(form=auth())
 
 def index():
-    return "Hello!"
+    response.flash=T('Welcome to StuffShare')
+    return dict(message=T('Welcome to StuffShare'))
+
 
 @auth.requires_login()
 def item_manager():

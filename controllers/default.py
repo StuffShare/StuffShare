@@ -2,7 +2,11 @@ def user():
     return dict(form=auth())
 
 def index():
-    return "Hello!"
+    if not session.flashed:
+        response.flash=T('Welcome to StuffShare')
+        session.flashed=True
+    return dict(message=T('Welcome to StuffShare'))
+
 
 @auth.requires_login()
 def item_manager():
