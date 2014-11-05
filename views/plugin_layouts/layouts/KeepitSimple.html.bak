@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   {{=response.title or request.application}}
+  </title>
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/KeepitSimple/css/style.css'))}}
+  {{response.files.append(URL(request.application,'static','css/bootstrap.min.css'))}}
+
+  {{response.files.append(URL('static','plugin_layouts/superfish.js'))}}
+  {{include 'web2py_ajax.html'}}
+ </head>
+ <body>
+  <!-- start header -->
+ 
+
+  <div id="container">
+   <div id="header">
+    <a href="#">
+     <center>
+         Contact Manager
+     </center>
+    </a>
+   </div>
+   <div id="menu">
+    
+    <script>
+      jQuery(document).ready(function(){jQuery('ul.web2py-menu').superfish({delay:400});});
+    </script>
+   </div>
+   <div id="sidebar">
+   </div>
+   <div id="main">
+    <div class="flash">{{=response.flash or ''}}</div>
+    {{include}}
+   </div>
+   
+  </div>
+ </body>
+</html>
