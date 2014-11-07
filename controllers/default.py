@@ -7,12 +7,12 @@ def index():
         session.flashed=True
     return dict(message=T('Welcome to StuffShare'))
 
-
 @auth.requires_login()
 def item_manager():
     grid = SQLFORM.grid(
         db.posessions,
         user_signature = False,
+        formname='web2py_grid',
         exportclasses = dict(
             csv_with_hidden_cols = False,
             xml = False,

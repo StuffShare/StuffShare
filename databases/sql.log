@@ -1483,3 +1483,9 @@ success!
 timestamp: 2014-11-05T10:25:34.500252
 ALTER TABLE posessions ADD return_date DATE;
 success!
+timestamp: 2014-11-06T07:33:29.221581
+ALTER TABLE items ADD picture VARCHAR(512);
+timestamp: 2014-11-06T07:33:43.881555
+ALTER TABLE posessions ADD picture VARCHAR(512);
+success!
+success!
