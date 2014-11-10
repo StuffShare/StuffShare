@@ -2,235 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d213766-f322-4a13-97d0-5024c046e768" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ABOUT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/default.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/default.py.1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/default.py.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cron/crontab" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cron/crontab.example" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/340546fb87d4602745316db74389a9e9_people.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/340546fb87d4602745316db74389a9e9_register.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/422cf73c80bfb2f59fc663caa1cfa3bf_auth_cas.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/422cf73c80bfb2f59fc663caa1cfa3bf_auth_event.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/422cf73c80bfb2f59fc663caa1cfa3bf_auth_group.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/422cf73c80bfb2f59fc663caa1cfa3bf_auth_membership.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/422cf73c80bfb2f59fc663caa1cfa3bf_auth_permission.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/422cf73c80bfb2f59fc663caa1cfa3bf_auth_user.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/422cf73c80bfb2f59fc663caa1cfa3bf_item.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/422cf73c80bfb2f59fc663caa1cfa3bf_items.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/422cf73c80bfb2f59fc663caa1cfa3bf_people.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/422cf73c80bfb2f59fc663caa1cfa3bf_posessions.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/50ff9190a3568f6e4ada57e6fc655a12_people.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/b13ad8466dec309b75ab894c53520fe2_asdf.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/b13ad8466dec309b75ab894c53520fe2_auth_cas.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/b13ad8466dec309b75ab894c53520fe2_auth_event.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/b13ad8466dec309b75ab894c53520fe2_auth_group.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/b13ad8466dec309b75ab894c53520fe2_auth_membership.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/b13ad8466dec309b75ab894c53520fe2_auth_permission.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/b13ad8466dec309b75ab894c53520fe2_auth_user.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/b13ad8466dec309b75ab894c53520fe2_friends.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/b13ad8466dec309b75ab894c53520fe2_posessions.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/c8b669d15150d7109e5f7ab36744a5b7_auth_cas.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/c8b669d15150d7109e5f7ab36744a5b7_auth_event.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/c8b669d15150d7109e5f7ab36744a5b7_auth_group.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/c8b669d15150d7109e5f7ab36744a5b7_auth_membership.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/c8b669d15150d7109e5f7ab36744a5b7_auth_permission.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/c8b669d15150d7109e5f7ab36744a5b7_auth_user.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/d4d96c40f720e79a3cef04689bf482cd_asdf.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/d4d96c40f720e79a3cef04689bf482cd_auth_cas.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/d4d96c40f720e79a3cef04689bf482cd_auth_event.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/d4d96c40f720e79a3cef04689bf482cd_auth_group.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/d4d96c40f720e79a3cef04689bf482cd_auth_membership.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/d4d96c40f720e79a3cef04689bf482cd_auth_permission.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/d4d96c40f720e79a3cef04689bf482cd_auth_user.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/d4d96c40f720e79a3cef04689bf482cd_buddies.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/d4d96c40f720e79a3cef04689bf482cd_friends.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/d4d96c40f720e79a3cef04689bf482cd_posessions.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/fa6bd00657dda4f18e6155cff38f8cfe_auth_cas.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/fa6bd00657dda4f18e6155cff38f8cfe_auth_event.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/fa6bd00657dda4f18e6155cff38f8cfe_auth_group.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/fa6bd00657dda4f18e6155cff38f8cfe_auth_membership.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/fa6bd00657dda4f18e6155cff38f8cfe_auth_permission.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/fa6bd00657dda4f18e6155cff38f8cfe_auth_user.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/fa6bd00657dda4f18e6155cff38f8cfe_buddies.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/fa6bd00657dda4f18e6155cff38f8cfe_companions.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/fa6bd00657dda4f18e6155cff38f8cfe_derps.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/fa6bd00657dda4f18e6155cff38f8cfe_friend_table.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/fa6bd00657dda4f18e6155cff38f8cfe_friends.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/fa6bd00657dda4f18e6155cff38f8cfe_item_table.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/fa6bd00657dda4f18e6155cff38f8cfe_items.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/fa6bd00657dda4f18e6155cff38f8cfe_posessions.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/fa6bd00657dda4f18e6155cff38f8cfe_wtf.table" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/sql.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/storage.sqlite" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/databases/webform.sqlite" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/default.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/plural-en.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/plural-ru.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/plural-uk.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/ru.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/uk.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/db.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/db.py.1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/db.py.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/menu.py.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/progress.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/routes.example.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/bootstrap-responsive.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/calendar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/web2py.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/web2py_bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/web2py_bootstrap_nojs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/facebook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/favicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/gplus-32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/twitter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/calendar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/dd_belatedpng.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/modernizr.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/share.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/web2py.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/web2py_bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Blend/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Blend/images/img01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Blend/images/img02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Blend/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Blend/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Blend/preview.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Boorish/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Boorish/images/img01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Boorish/images/img03.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Boorish/images/img04.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Boorish/images/img06.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Boorish/images/img07.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Boorish/images/img08.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Boorish/images/spacer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Boorish/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Boorish/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Boorish/preview.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Colorus/images/body_all_bckg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Colorus/images/body_top_bckg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Colorus/images/footer_bckg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Colorus/images/h1_bckg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Colorus/images/sidebar_bottom.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Colorus/images/sidebar_top.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Colorus/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Colorus/preview.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Colorus/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Compromise/images/img01.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Compromise/images/img02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Compromise/images/img03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Compromise/images/img04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Compromise/images/img05.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Compromise/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Compromise/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Compromise/preview.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Compromise/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/KeepitSimple/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/KeepitSimple/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/KeepitSimple/preview.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Replenish/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Replenish/images/img01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Replenish/images/img02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Replenish/images/img03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Replenish/images/spacer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Replenish/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Replenish/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Replenish/preview.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Thingreenline/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Thingreenline/page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Thingreenline/preview.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Thingreenline/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Thingreenline/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Unqualified/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Unqualified/images/bg01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Unqualified/images/bg02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Unqualified/images/bg03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Unqualified/images/bg04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Unqualified/images/img01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Unqualified/images/img02.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Unqualified/images/img03.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Unqualified/images/img04.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Unqualified/images/img05.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Unqualified/images/img06.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Unqualified/images/spacer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Unqualified/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Unqualified/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Unqualified/preview.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/global.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/img/bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/img/bg_bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/img/bg_top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/img/comment.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/img/cross.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/img/excl_mark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/img/fade.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/img/header.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/img/more.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/img/printer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/img/quote.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/img/read.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/img/tick.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/img/zebra.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/preview.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/layouts/Whitelight/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/superfish.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/superfish.css.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/plugin_layouts/superfish.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/posessions.picture.83eb29b9c4d21f6b.313431323837323730343734392e6a7067.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/posessions.picture.95df41f2e9058c32.494d475f32303134303432345f3135333133322e6a7067.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/posessions.picture.b80535b9dbf79f5c.494d475f32303134303432345f3135333133322e6a7067.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/posessions.picture.bed854c0fd92845f.494d475f32303134303432345f3135333133322e6a7067.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/add_friend.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/add_friend.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/add_item.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/add_item.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/all_records.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/contact_manager.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/display_your_form.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/friend_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/friend_list.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/friends.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/index.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/item_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/item_list.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/item_manager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/item_manager.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/main.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/user.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/user.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/user_item_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/default/user_item_list.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/generic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/generic.ics" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/generic.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/generic.jsonp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/generic.load" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/generic.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/generic.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/generic.rss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/generic.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/layout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/layout.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/plugin_layouts/layouts/KeepitSimple.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/plugin_layouts/layouts/Unqualified.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/plugin_layouts/layouts/Unqualified.html.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/web2py_ajax.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py.app.StuffShare.w2p" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/databases/bbec0ac55037a8ba0636fea1ad43539d_possessions.table" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/httpserver.log" afterPath="$PROJECT_DIR$/web2py/httpserver.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/parameters_8000.py" afterPath="$PROJECT_DIR$/web2py/parameters_8000.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StuffShare.iws" />
@@ -243,7 +19,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/StuffShare$Web2py.coverage" NAME="Web2py Coverage Results" MODIFIED="1415598710410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web2py" />
+    <SUITE FILE_PATH="coverage/StuffShare$Web2py.coverage" NAME="Web2py Coverage Results" MODIFIED="1415601096818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web2py" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -260,8 +36,8 @@
       <file leaf-file-name="db.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="593">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="178" />
+            <state vertical-scroll-proportion="0.67466265" vertical-offset="0" max-vertical-offset="667">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -281,13 +57,16 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
+        <option value="$PROJECT_DIR$/web2py/applications/welcome/routes.example.py" />
+        <option value="$PROJECT_DIR$/web2py/applications/welcome/routes.py" />
+        <option value="$PROJECT_DIR$/web2py/routes.py" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1014" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -315,6 +94,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -343,13 +123,66 @@
               <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web2py" />
+              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyLibDirNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StuffShare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StuffShare" />
+              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="applications" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StuffShare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StuffShare" />
+              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="applications" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StuffShare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StuffShare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StuffShare" />
+              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="applications" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StuffShare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,6 +190,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web2py/web2py.py" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="true" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings />
+    </option>
   </component>
   <component name="RunManager" selected="Python.Web2py">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -443,9 +282,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -467,6 +303,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -533,32 +372,57 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0d213766-f322-4a13-97d0-5024c046e768" name="Default" comment="" />
       <created>1415592016549</created>
       <updated>1415592016549</updated>
     </task>
+    <task id="LOCAL-00001" summary="Changed database init statement back to pythonanywhere database">
+      <created>1415599793054</created>
+      <updated>1415599793054</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changed database init statement back to pythonanywhere database">
+      <created>1415599838881</created>
+      <updated>1415599838881</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added routes.py: made StuffShare default application and removed welcome application">
+      <created>1415600674619</created>
+      <updated>1415600674619</updated>
+    </task>
+    <task id="LOCAL-00004" summary="renamed possessions">
+      <created>1415601020738</created>
+      <updated>1415601020738</updated>
+    </task>
+    <task id="LOCAL-00005" summary="renamed possessions">
+      <created>1415601038658</created>
+      <updated>1415601038658</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1014" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32910052" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3146176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -580,6 +444,10 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Changed database init statement back to pythonanywhere database" />
+    <MESSAGE value="Added routes.py: made StuffShare default application and removed welcome application" />
+    <MESSAGE value="renamed possessions" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed possessions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -598,15 +466,55 @@
     <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="178" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="947">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="178" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/routes.example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="635">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/routes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.047244094" vertical-offset="0" max-vertical-offset="635">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/admin/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="635">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67466265" vertical-offset="0" max-vertical-offset="667">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>

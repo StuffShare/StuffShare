@@ -1,4 +1,4 @@
-db = DAL('mysql://clan10:clan10@mysql.server/clan10$stuffshare') #this connects to the mysql server running on python anywhere; will not work unless the app is running on pythonanywhere
+db = DAL('mysql://clan10:clan10@clan10.pythonanywhere/mysql.server/clan10$stuffshare') #this connects to the mysql server running on python anywhere; will not work unless the app is running on pythonanywhere
 # db = DAL('mysql://clan10:clan10@localhost:3306/stuffshare') #connects to local mysql server with database: "stuffshare" on port: 3306 with username: clan10 and password: clan10
 from gluon.tools import Auth
 auth = Auth(db)

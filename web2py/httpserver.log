@@ -462,3 +462,8 @@
 127.0.0.1, 2014-11-09 22:28:46, GET, /StuffShare/static/plugin_layouts/layouts/Unqualified/images/bg02.jpg, HTTP/1.1, 200, 0.000495
 127.0.0.1, 2014-11-09 22:28:46, GET, /StuffShare/static/plugin_layouts/layouts/Unqualified/images/bg01.jpg, HTTP/1.1, 304, 0.000410
 127.0.0.1, 2014-11-09 22:29:35, GET, /, HTTP/1.1, 200, 0.060627
+127.0.0.1, 2014-11-09 22:31:56, GET, /, HTTP/1.1, 500, 5.117023
+127.0.0.1, 2014-11-09 22:31:56, GET, /favicon.ico, HTTP/1.1, 404, 0.000662
+127.0.0.1, 2014-11-09 22:31:56, GET, /favicon.ico, HTTP/1.1, 404, 0.000570
+127.0.0.1, 2014-11-09 22:31:58, GET, /admin/default/ticket/StuffShare/127.0.0.1.2014-11-09.22-31-51.ff52d296-d4e6-4409-8a32-9bbc345a4b40, HTTP/1.1, 200, 0.059959
+127.0.0.1, 2014-11-09 22:32:09, GET, /, HTTP/1.1, 500, 5.030930
