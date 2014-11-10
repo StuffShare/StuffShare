@@ -1,0 +1,13 @@
+{{extend 'plugin_layouts/layouts/KeepitSimple.html'}}
+<p>
+    Please enter your first name, last name, and email address and notes!
+</p>
+<h2>
+    <a href="all_records">
+        View all contacts
+    </a>    
+</h2>
+<h2>
+    Inputs:
+</h2>
+{{=form}}

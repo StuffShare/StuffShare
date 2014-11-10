@@ -1,0 +1,562 @@
+(dp1
+S'output'
+p2
+S"<class 'cPickle.UnpicklingError'> pickle data was truncated"
+p3
+sS'layer'
+p4
+S'/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/applications/StuffShare/models/db.py'
+p5
+sS'code'
+p6
+S"# db = DAL('mysql://clan10:clan10@clan10.pythonanywhere.com/mysql.server/clan10$stuffshare')\ndb = DAL('mysql://root:5693ib@localhost:3306/stuffshare')\nfrom gluon.tools import Auth\nauth = Auth(db)\nauth.define_tables(username=False,signature=False)\n\nauth.settings.actions_disabled.append('request_reset_password')\nauth.settings.actions_disabled.append('retrieve_username')\n\n\ndb.define_table('posessions',\n    Field('id', 'integer', unique=True, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC()]),\n    Field('user_id', 'integer', requires=[IS_NOT_EMPTY(), IS_IN_DB(db, db.auth_user.id)]),\n    Field('item_name', 'text', requires=[IS_NOT_EMPTY()]),\n    Field('notes', 'text', requires=[IS_NOT_EMPTY()]),\n    Field('quality', 'text', requires=[IS_NOT_EMPTY()]),\n    Field('return_date', 'date', requires=[IS_NOT_EMPTY()]),\n    Field('picture', 'upload'))\n\ndb.posessions.quality.requires=IS_IN_SET(('Poor','Mediocre','Average', 'Good', 'Excellent', 'Like New'))\ndb.posessions.id.readable = False\ndb.posessions.user_id.readable = False\n\n\ndb.define_table('friends',\n    Field('id', 'integer', unique=True, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC()]),\n    Field('user_id', 'integer', db.auth_user, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC(), IS_IN_DB(db, db.auth_user.id)]),\n    Field('friend_id', 'integer', db.auth_user, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC(), IS_IN_DB(db, db.auth_user.id)]))\n\ndb.friends.id.readable = False\n"
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__module__'
+p12
+S"'cPickle'"
+p13
+sS'__getslice__'
+p14
+S"<method-wrapper '__getslice__' of UnpicklingError object>"
+p15
+sS'__str__'
+p16
+S"<bound method UnpicklingError.__str__ of UnpicklingError('pickle data was truncated',)>"
+p17
+sS'__reduce__'
+p18
+S'<built-in method __reduce__ of UnpicklingError object>'
+p19
+sS'__dict__'
+p20
+S'{}'
+p21
+sS'__sizeof__'
+p22
+S'<built-in method __sizeof__ of UnpicklingError object>'
+p23
+sS'__weakref__'
+p24
+S'None'
+p25
+sS'__init__'
+p26
+S"<method-wrapper '__init__' of UnpicklingError object>"
+p27
+sS'__setattr__'
+p28
+S"<method-wrapper '__setattr__' of UnpicklingError object>"
+p29
+sS'__reduce_ex__'
+p30
+S'<built-in method __reduce_ex__ of UnpicklingError object>'
+p31
+sS'__new__'
+p32
+S'<built-in method __new__ of type object>'
+p33
+sS'__format__'
+p34
+S'<built-in method __format__ of UnpicklingError object>'
+p35
+sS'__class__'
+p36
+S"<class 'cPickle.UnpicklingError'>"
+p37
+sS'__doc__'
+p38
+S'None'
+p39
+sS'__getitem__'
+p40
+S"<method-wrapper '__getitem__' of UnpicklingError object>"
+p41
+sS'__setstate__'
+p42
+S'<built-in method __setstate__ of UnpicklingError object>'
+p43
+sS'__getattribute__'
+p44
+S"<method-wrapper '__getattribute__' of UnpicklingError object>"
+p45
+sS'args'
+p46
+S"('pickle data was truncated',)"
+p47
+sS'__subclasshook__'
+p48
+S'<built-in method __subclasshook__ of type object>'
+p49
+sS'__unicode__'
+p50
+S'<built-in method __unicode__ of UnpicklingError object>'
+p51
+sS'__delattr__'
+p52
+S"<method-wrapper '__delattr__' of UnpicklingError object>"
+p53
+sS'__repr__'
+p54
+S"<method-wrapper '__repr__' of UnpicklingError object>"
+p55
+sS'__hash__'
+p56
+S"<method-wrapper '__hash__' of UnpicklingError object>"
+p57
+ssS'evalue'
+p58
+S'pickle data was truncated'
+p59
+sS'request'
+p60
+cgluon.html
+XML_unpickle
+p61
+(S'sJ\\\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>StuffShare</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>default</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_admin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-dd97730d-b73e-40dc-8ded-71dbf6c662d7<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_stuffshare</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-d7091d27-c604-4f1f-b810-5f5e49fa314f<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_welcome</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-ad1536f1-daaa-4ee6-ac50-2167b2007bb1<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.5</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>session_id_welcome=127.0.0.1-ad1536f1-daaa-4ee6-ac50-2167b2007bb1; session_id_admin=127.0.0.1-dd97730d-b73e-40dc-8ded-71dbf6c662d7; session_id_stuffshare=127.0.0.1-d7091d27-c604-4f1f-b810-5f5e49fa314f</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_REFERER</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/admin/default/site</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:33.0) Gecko/20100101 Firefox/33.0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/StuffShare/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>52716</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>ishan</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_SOFTWARE</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/applications/welcome/&#x27;, &#x27;/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/applications/StuffShare/&#x27;, &#x27;/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/applications/admin/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x104d373b0: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;scheduler_groups&#x27;: None, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;ishan&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.5</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>session_id_welcome=127.0.0.1-ad1536f1-daaa-4ee6-ac50-2167b2007bb1; session_id_admin=127.0.0.1-dd97730d-b73e-40dc-8ded-71dbf6c662d7; session_id_stuffshare=127.0.0.1-d7091d27-c604-4f1f-b810-5f5e49fa314f</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_referer</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/admin/default/site</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:33.0) Gecko/20100101 Firefox/33.0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>ishan</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/StuffShare/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>52716</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/StuffShare/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>ishan</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_software</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.9.11-stable+timestamp.2014.09.15.23.35.11</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x103e4a1e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x104ccbdb8&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x105775ed0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x103e4a1e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x104ccbdb8&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x105775ed0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/applications/StuffShare/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/applications/welcome/&#x27;, &#x27;/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/applications/StuffShare/&#x27;, &#x27;/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/applications/admin/&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x104d373b0: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;scheduler_groups&#x27;: None, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;ishan&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>ishan</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.9.11-stable+timestamp.2014.09.15.23.35.11</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_sheduler</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_shell</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2014, 11, 9, 21, 12, 37, 811557)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/StuffShare/default/index</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2014, 11, 10, 5, 12, 37, 811571)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">uuid</td><td style="vertical-align:top;">:</td><td><div>StuffShare/127.0.0.1.2014-11-09.21-12-37.ea29ef90-fbb4-4fad-b8ff-5c20323b6eca</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x10b59e5d0&gt;</div></td></tr></table></div>'
+tRp62
+sS'frames'
+p63
+(lp64
+(dp65
+S'file'
+p66
+S'/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/gluon/restricted.py'
+p67
+sS'dump'
+p68
+(dp69
+S'environment'
+p70
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, 'CAT': <class 'gluon.html.CAT'>, ...}"
+p71
+sS'ccode'
+p72
+S'<code object <module> at 0x1057799b0, file "/Use...py/applications/StuffShare/models/db.py", line 2>'
+p73
+ssS'lnum'
+p74
+I224
+sS'lines'
+p75
+(dp76
+I224
+S'        exec ccode in environment'
+p77
+sI225
+S'    except HTTP:'
+p78
+sI226
+S'        raise'
+p79
+sI227
+S'    except RestrictedError:'
+p80
+sI228
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p81
+sI219
+S'    try:'
+p82
+sI220
+S'        if isinstance(code, types.CodeType):'
+p83
+sI221
+S'            ccode = code'
+p84
+sI222
+S'        else:'
+p85
+sI223
+S'            ccode = compile2(code, layer)'
+p86
+ssS'call'
+p87
+S'(code="# db = DAL(\'mysql://clan10:clan10@clan10.pythona...auth_user.id)]))\\n\\ndb.friends.id.readable = False\\n", environment={\'A\': <class \'gluon.html.A\'>, \'ANY_OF\': <class \'gluon.validators.ANY_OF\'>, \'ASSIGNJS\': <function ASSIGNJS>, \'Auth\': <class \'gluon.tools.Auth\'>, \'B\': <class \'gluon.html.B\'>, \'BEAUTIFY\': <class \'gluon.html.BEAUTIFY\'>, \'BODY\': <class \'gluon.html.BODY\'>, \'BR\': <class \'gluon.html.BR\'>, \'BUTTON\': <class \'gluon.html.BUTTON\'>, \'CAT\': <class \'gluon.html.CAT\'>, ...}, layer=\'/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/applications/StuffShare/models/db.py\')'
+p88
+sS'func'
+p89
+S'restricted'
+p90
+sa(dp91
+g66
+S'/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/applications/StuffShare/models/db.py'
+p92
+sg68
+(dp93
+S'IS_NOT_EMPTY'
+p94
+S"<class 'gluon.validators.IS_NOT_EMPTY'>"
+p95
+sS'db'
+p96
+S'<DAL uri="mysql:******@localhost:3306/stuffshare">'
+p97
+sS'IS_ALPHANUMERIC'
+p98
+S"<class 'gluon.validators.IS_ALPHANUMERIC'>"
+p99
+sS'IS_IN_DB'
+p100
+S"<class 'gluon.validators.IS_IN_DB'>"
+p101
+sS'Field'
+p102
+S"<class 'gluon.dal.Field'>"
+p103
+sS'db.auth_user.id'
+p104
+S'<gluon.dal.Field object>'
+p105
+sS'db.auth_user'
+p106
+S'<Table auth_user (id,first_name,last_name,email,...stration_key,reset_password_key,registration_id)>'
+p107
+sS'requires'
+p108
+S'undefined'
+p109
+ssg74
+I28
+sg75
+(dp110
+I21
+S'db.posessions.id.readable = False'
+p111
+sI22
+S'db.posessions.user_id.readable = False'
+p112
+sI23
+S''
+sI24
+S''
+sI25
+S"db.define_table('friends',"
+p113
+sI26
+S"    Field('id', 'integer', unique=True, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC()]),"
+p114
+sI27
+S"    Field('user_id', 'integer', db.auth_user, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC(), IS_IN_DB(db, db.auth_user.id)]),"
+p115
+sI28
+S"    Field('friend_id', 'integer', db.auth_user, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC(), IS_IN_DB(db, db.auth_user.id)]))"
+p116
+sI29
+S''
+sI30
+S'db.friends.id.readable = False'
+p117
+ssg87
+S'()'
+p118
+sg89
+S'<module>'
+p119
+sa(dp120
+g66
+S'/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/gluon/dal.py'
+p121
+sg68
+(dp122
+S'fields'
+p123
+S'(<gluon.dal.Field object>, <gluon.dal.Field object>, <gluon.dal.Field object>)'
+p124
+sS'self'
+p125
+S'<DAL uri="mysql:******@localhost:3306/stuffshare">'
+p126
+sS'args'
+p127
+g21
+sS'tablename'
+p128
+S"'friends'"
+p129
+sS'table'
+p130
+g109
+sS'self.lazy_define_table'
+p131
+S'<bound method DAL.lazy_define_table of <DAL uri="mysql:******@localhost:3306/stuffshare">>'
+p132
+ssg74
+I8414
+sg75
+(dp133
+I8416
+S'            self.tables.append(tablename)'
+p134
+sI8417
+S'        return table'
+p135
+sI8418
+S''
+sI8409
+S'                    % (tablename, invalid_args))'
+p136
+sI8410
+S'        if self._lazy_tables and not tablename in self._LAZY_TABLES:'
+p137
+sI8411
+S'            self._LAZY_TABLES[tablename] = (tablename, fields, args)'
+p138
+sI8412
+S'            table = None'
+p139
+sI8413
+S'        else:'
+p140
+sI8414
+S'            table = self.lazy_define_table(tablename, *fields, **args)'
+p141
+sI8415
+S'        if not tablename in self.tables:'
+p142
+ssg87
+S'(self=<DAL uri="mysql:******@localhost:3306/stuffshare">, tablename=\'friends\', *fields=(<gluon.dal.Field object>, <gluon.dal.Field object>, <gluon.dal.Field object>), **args={})'
+p143
+sg89
+S'define_table'
+p144
+sa(dp145
+g66
+S'/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/gluon/dal.py'
+p146
+sg68
+(dp147
+S'polymodel'
+p148
+S'None'
+p149
+ssg74
+I8450
+sg75
+(dp150
+I8448
+S'                    table, migrate=migrate,'
+p151
+sI8449
+S'                    fake_migrate=fake_migrate,'
+p152
+sI8450
+S'                    polymodel=polymodel)'
+p153
+sI8451
+S'            finally:'
+p154
+sI8452
+S'                GLOBAL_LOCKER.release()'
+p155
+sI8453
+S'        else:'
+p156
+sI8454
+S'            table._dbt = None'
+p157
+sI8445
+S'            try:'
+p158
+sI8446
+S'                GLOBAL_LOCKER.acquire()'
+p159
+sI8447
+S'                self._lastsql = self._adapter.create_table('
+p160
+ssg87
+S'(self=<DAL uri="mysql:******@localhost:3306/stuffshare">, tablename=\'friends\', *fields=(<gluon.dal.Field object>, <gluon.dal.Field object>, <gluon.dal.Field object>), **args={})'
+p161
+sg89
+S'lazy_define_table'
+p162
+sa(dp163
+g66
+S'/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/gluon/dal.py'
+p164
+sg68
+(dp165
+S'global pickle'
+p166
+S"<module 'cPickle' from '/System/Library/Framewor...rsions/2.7/lib/python2.7/lib-dynload/cPickle.so'>"
+p167
+sS'tfile'
+p168
+S'<gluon.portalocker.LockedFile object>'
+p169
+sS'sql_fields_old'
+p170
+g109
+sS'pickle.load'
+p171
+S'<built-in function load>'
+p172
+ssg74
+I1125
+sg75
+(dp173
+I1120
+S'                else:'
+p174
+sI1121
+S"                    self.log('success!\\n', table)"
+p175
+sI1122
+S'        else:'
+p176
+sI1123
+S"            tfile = self.file_open(table._dbt, 'r')"
+p177
+sI1124
+S'            try:'
+p178
+sI1125
+S'                sql_fields_old = pickle.load(tfile)'
+p179
+sI1126
+S'            except EOFError:'
+p180
+sI1127
+S'                self.file_close(tfile)'
+p181
+sI1128
+S"                raise RuntimeError('File %s appears corrupted' % table._dbt)"
+p182
+sI1129
+S'            self.file_close(tfile)'
+p183
+ssg87
+S'(self=<gluon.dal.MySQLAdapter object>, table=<Table friends (id,user_id,friend_id)>, migrate=True, fake_migrate=False, polymodel=None)'
+p184
+sg89
+S'create_table'
+p185
+sasS'pyver'
+p186
+S'Python 2.7.6: /usr/bin/python (prefix: /System/Library/Frameworks/Python.framework/Versions/2.7)'
+p187
+sS'session'
+p188
+g61
+(S's\xe3\x08\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">auth</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">expiration</td><td style="vertical-align:top;">:</td><td><div>3600</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">hmac_key</td><td style="vertical-align:top;">:</td><td><div>237538e9-bde2-403b-add2-d9d735081d92</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_visit</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2014, 11, 9, 21, 12, 37, 811557)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">user</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">email</td><td style="vertical-align:top;">:</td><td><div>ishan.b@live.ca</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">first_name</td><td style="vertical-align:top;">:</td><td><div>Ishan</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">id</td><td style="vertical-align:top;">:</td><td><div>1L</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_name</td><td style="vertical-align:top;">:</td><td><div>Bhutani</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">registration_id</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">registration_key</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">reset_password_key</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">user_groups</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">1</td><td style="vertical-align:top;">:</td><td><div>user_1</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flashed</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr></table></div>'
+tRp189
+sS'etype'
+p190
+S"<class 'cPickle.UnpicklingError'>"
+p191
+sS'date'
+p192
+S'Sun Nov  9 21:12:37 2014'
+p193
+sS'response'
+p194
+g61
+(S'sJ\x18\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x10b00e5e0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_stuffshare</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-d7091d27-c604-4f1f-b810-5f5e49fa314f<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">form_label_separator</td><td style="vertical-align:top;">:</td><td><div>: </div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">formstyle</td><td style="vertical-align:top;">:</td><td><div>table3cols</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^default/\\w+\\.py$</div></td></tr><tr><td><div>^default/index/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_key</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_stuffshare</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/applications/StuffShare/sessions/0a8/08a/127.0.0.1-d7091d27-c604-4f1f-b810-5f5e49fa314f&#x27;, mode &#x27;rb+&#x27; at 0x10b4df6f0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/applications/StuffShare/sessions/127.0.0.1-d7091d27-c604-4f1f-b810-5f5e49fa314f</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>0adc297956736a0cc91fbcede3f85a3e</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-d7091d27-c604-4f1f-b810-5f5e49fa314f</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_stuffshare</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_locked</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>StuffShare</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>default/index.html</div></td></tr></table></div>'
+tRp195
+sS'locals'
+p196
+(dp197
+S'engine'
+p198
+S"'InnoDB'"
+p199
+sS'dbpath'
+p200
+S"'/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/applications/StuffShare/databases'"
+p201
+sS'migrate'
+p202
+S'True'
+p203
+sS'query'
+p204
+S"'CREATE TABLE friends(\\n    id INT AUTO_INCREMENT ...MARY KEY (id)\\n) ENGINE=InnoDB CHARACTER SET utf8;'"
+p205
+sS'table'
+p206
+S'<Table friends (id,user_id,friend_id)>'
+p207
+sS'postcreation_fields'
+p208
+S'[]'
+p209
+sS'field_type'
+p210
+S"'integer'"
+p211
+sS'self'
+p212
+S'<gluon.dal.MySQLAdapter object>'
+p213
+sS'tablename'
+p214
+S"'friends'"
+p215
+sS'field'
+p216
+S'<gluon.dal.Field object>'
+p217
+sS'ftype'
+p218
+S"'INT'"
+p219
+sS'polymodel'
+p220
+S'None'
+p221
+sS'tfile'
+p222
+S'<gluon.portalocker.LockedFile object>'
+p223
+sS'db'
+p224
+S'<DAL uri="mysql:******@localhost:3306/stuffshare">'
+p225
+sS'fake_migrate'
+p226
+S'False'
+p227
+sS'sql_fields'
+p228
+S"{'friend_id': {'length': <Table auth_user (id,first_name,last_name,email,...stration_key,reset_password_key,registration_id)>, 'notnull': False, 'sortable': 3, 'sql': 'INT', 'type': 'integer', 'unique': False}, 'id': {'length': 512, 'notnull': False, 'sortable': 1, 'sql': 'INT AUTO_INCREMENT NOT NULL', 'type': 'id', 'unique': False}, 'user_id': {'length': <Table auth_user (id,first_name,last_name,email,...stration_key,reset_password_key,registration_id)>, 'notnull': False, 'sortable': 2, 'sql': 'INT', 'type': 'integer', 'unique': False}}"
+p229
+sS'field_name'
+p230
+S"'friend_id'"
+p231
+sS'types'
+p232
+S"{'big-id': 'BIGINT AUTO_INCREMENT NOT NULL', 'big-reference': 'BIGINT, INDEX %(index_name)s (%(field_name)s), F...ES %(foreign_key)s ON DELETE %(on_delete_action)s', 'bigint': 'BIGINT', 'blob': 'LONGBLOB', 'boolean': 'CHAR(1)', 'date': 'DATE', 'datetime': 'DATETIME', 'decimal': 'NUMERIC(%(precision)s,%(scale)s)', 'double': 'DOUBLE', 'float': 'FLOAT', ...}"
+p233
+sS'sortable'
+p234
+S'3'
+sS'sql_fields_aux'
+p235
+S"{'friend_id': {'sql': 'INT'}, 'id': {'sql': 'INT AUTO_INCREMENT NOT NULL'}, 'user_id': {'sql': 'INT'}}"
+p236
+sS'TFK'
+p237
+g21
+sS'fields'
+p238
+S"'id INT AUTO_INCREMENT NOT NULL,\\n    user_id INT,\\n    friend_id INT,\\n    PRIMARY KEY (id)'"
+p239
+sS'table_rname'
+p240
+S"'friends'"
+p241
+sS'other'
+p242
+S"' ENGINE=InnoDB CHARACTER SET utf8;'"
+p243
+sssS'traceback'
+p244
+S'Traceback (most recent call last):\n  File "/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/gluon/restricted.py", line 224, in restricted\n    exec ccode in environment\n  File "/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/applications/StuffShare/models/db.py", line 28, in <module>\n    Field(\'friend_id\', \'integer\', db.auth_user, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC(), IS_IN_DB(db, db.auth_user.id)]))\n  File "/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/gluon/dal.py", line 8414, in define_table\n    table = self.lazy_define_table(tablename, *fields, **args)\n  File "/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/gluon/dal.py", line 8450, in lazy_define_table\n    polymodel=polymodel)\n  File "/Users/IshanB/Documents/Developer/pyCharm/StuffShare/web2py/gluon/dal.py", line 1125, in create_table\n    sql_fields_old = pickle.load(tfile)\nUnpicklingError: pickle data was truncated\n'
+p245
+s.

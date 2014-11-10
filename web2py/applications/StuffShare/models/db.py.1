@@ -1,0 +1,20 @@
+db = DAL('mysql://clan10:clan10@mysql.server/clan10$stuffshare')
+from gluon.tools import Auth
+auth = Auth(db)
+auth.define_tables(username=False,signature=False)
+
+"""TODO: auth_users must contain a foreign key to friends.id"""
+
+db.define_table('posessions',
+    Field('id', 'integer', unique=True, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC()]),
+    Field('item_name', 'text', requires=[IS_NOT_EMPTY()]),
+    Field('notes', 'text', requires=[IS_NOT_EMPTY()]),
+    Field('quality', 'text', requires=[IS_NOT_EMPTY()]),
+    Field('return_date', 'date', requires=[IS_NOT_EMPTY()]),
+    Field('picture', 'upload'))
+
+db.posessions.quality.requires=IS_IN_SET(('Poor','Mediocre','Average', 'Good', 'Excellent', 'Like New'))
+db.posessions.id.readable = False
+
+db.define_table('asdf',
+    Field('friend_id', 'integer', 'reference auth_user'))

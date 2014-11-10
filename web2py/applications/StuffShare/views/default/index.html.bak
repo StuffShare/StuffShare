@@ -1,0 +1,6 @@
+{{extend 'plugin_layouts/layouts/Unqualified.html'}}
+<p>
+    Share and borrow stuff with others!
+    <br>
+    ShareStuff is a social network that allows friends, neighbours and strangers to connect and exchange items with one another.
+</p>
