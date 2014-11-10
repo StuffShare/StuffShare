@@ -12,8 +12,8 @@ def index():
 @auth.requires_login()
 def item_list():
     grid = SQLFORM.grid(
-        db.posessions,
-        fields = [db.posessions.item_name, db.posessions.notes, db.posessions.quality, db.posessions.return_date, db.posessions.picture],
+        db.possessions,
+        fields = [db.possessions.item_name, db.possessions.notes, db.possessions.quality, db.possessions.return_date, db.possessions.picture],
         user_signature = False,
         deletable = False,
         editable = False,
@@ -34,7 +34,7 @@ def item_list():
 
 @auth.requires_login()
 def add_item():
-    form = SQLFORM(db.posessions,
+    form = SQLFORM(db.possessions,
         fields = ['item_name', 'notes', 'quality', 'return_date', 'picture'],
     )
     form.vars.user_id = auth.user.id
@@ -47,10 +47,10 @@ def add_item():
 
 @auth.requires_login()
 def user_item_list():
-    query = (db.posessions.user_id == auth.user.id)
+    query = (db.possessions.user_id == auth.user.id)
     grid = SQLFORM.grid(
         query,
-        fields = [db.posessions.user_id, db.posessions.item_name, db.posessions.notes, db.posessions.quality, db.posessions.return_date, db.posessions.picture],
+        fields = [db.possessions.user_id, db.possessions.item_name, db.possessions.notes, db.possessions.quality, db.possessions.return_date, db.possessions.picture],
         user_signature = False,
         create = False,
         formname = 'web2py_grid',
@@ -69,10 +69,10 @@ def user_item_list():
 
 @auth.requires_login()
 def friend_list():
-    query = (db.auth_user.id == db.friends.user_id)&(db.auth_user.id != auth.user.id)
+    #WTF HOW DO YOU DO A SELECT STATEMENT WITH DAL?
+    #query = (db.auth_user.id == db.friends.user_id)&(db.auth_user.id != auth.user.id)
     grid = SQLFORM.grid(
-        query,
-        fields = [db.auth_user.first_name, db.auth_user.last_name, db.auth_user.email],
+        db.friends,
         editable = False,
         create = False,
         user_signature = False,
@@ -88,6 +88,7 @@ def friend_list():
         )
     )
     return dict(grid=grid)
+
 
 @auth.requires_login()
 def add_friend():

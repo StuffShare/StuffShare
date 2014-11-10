@@ -1,5 +1,5 @@
-db = DAL('mysql://clan10:clan10@mysql.server/clan10$stuffshare') #this connects to the mysql server running on python anywhere; will not work unless the app is running on pythonanywhere
-# db = DAL('mysql://clan10:clan10@localhost:3306/stuffshare') #connects to local mysql server with database: "stuffshare" on port: 3306 with username: clan10 and password: clan10
+#db = DAL('mysql://clan10:clan10@mysql.server/clan10$stuffshare') #this connects to the mysql server running on python anywhere; will not work unless the app is running on pythonanywhere
+db = DAL('mysql://root:root@localhost:3306/stuffshare') #connects to local mysql server with database: "stuffshare" on port: 3306 with username: clan10 and password: clan10
 from gluon.tools import Auth
 auth = Auth(db)
 auth.define_tables(username=False,signature=False)
@@ -8,23 +8,37 @@ auth.settings.actions_disabled.append('request_reset_password')
 auth.settings.actions_disabled.append('retrieve_username')
 
 
-db.define_table('posessions',
+db.define_table('possessions',
     Field('id', 'integer', unique=True, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC()]),
-    Field('user_id', 'integer', requires=[IS_NOT_EMPTY(), IS_IN_DB(db, db.auth_user.id)]),
-    Field('item_name', 'text', requires=[IS_NOT_EMPTY()]),
-    Field('notes', 'text', requires=[IS_NOT_EMPTY()]),
-    Field('quality', 'text', requires=[IS_NOT_EMPTY()]),
-    Field('return_date', 'date', requires=[IS_NOT_EMPTY()]),
+    Field('user_id', 'integer'),
+    Field('item_name', 'text'),
+    Field('notes', 'text'),
+    Field('quality', 'text'),
+    Field('return_date', 'date'),
     Field('picture', 'upload'))
 
-db.posessions.quality.requires=IS_IN_SET(('Poor','Mediocre','Average', 'Good', 'Excellent', 'Like New'))
-db.posessions.id.readable = False
-db.posessions.user_id.readable = False
+db.possessions.user_id.requires=IS_NOT_EMPTY
+db.possessions.user_id.requires=IS_IN_DB(db, db.auth_user.id)
+db.possessions.item_name.requires=IS_NOT_EMPTY
+db.possessions.notes.requires=IS_NOT_EMPTY
+db.possessions.quality.requires=IS_NOT_EMPTY
+db.possessions.return_date.requires=IS_NOT_EMPTY
 
-#this didn't work on my local mysql database, not sure why
+db.possessions.quality.requires=IS_IN_SET(('Poor','Mediocre','Average', 'Good', 'Excellent', 'Like New'))
+db.possessions.id.readable = False
+db.possessions.user_id.readable = False
+
+
 db.define_table('friends',
     Field('id', 'integer', unique=True, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC()]),
-    Field('user_id', 'integer', db.auth_user, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC(), IS_IN_DB(db, db.auth_user.id)]),
-    Field('friend_id', 'integer', db.auth_user, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC(), IS_IN_DB(db, db.auth_user.id)]))
+    Field('user_id', 'integer'),
+    Field('friend_id', 'integer'))
+
+db.friends.user_id.requires=IS_NOT_EMPTY()
+db.friends.user_id.requires=IS_ALPHANUMERIC()
+db.friends.user_id.requires=IS_IN_DB(db, db.auth_user.id)
+db.friends.friend_id.requires=IS_NOT_EMPTY()
+db.friends.friend_id.requires=IS_ALPHANUMERIC()
+db.friends.friend_id.requires=IS_IN_DB(db, db.auth_user.id)
 
 db.friends.id.readable = False
