@@ -13,7 +13,7 @@
 # To enable this route file you must do the steps:
 #
 # 1. rename <web2py-root-dir>/router.example.py to routes.py
-# 2. rename this APP/routes.example.py to APP/routes.py
+# 2. rename this APP/routes.py to APP/routes.py
 #    (where APP - is your application directory)
 # 3. restart web2py (or reload routes in web2py admin interfase)
 #

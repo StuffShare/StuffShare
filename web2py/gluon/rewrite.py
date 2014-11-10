@@ -12,7 +12,7 @@ In addition, it rewrites both incoming and outgoing URLs based on the (optional)
 which also allows for rewriting of certain error messages.
 
 routes.py supports two styles of URL rewriting, depending on whether 'routers' is defined.
-Refer to router.example.py and routes.example.py for additional documentation.
+Refer to router.example.py and routes.py for additional documentation.
 
 """
 
