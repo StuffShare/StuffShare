@@ -2,11 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d213766-f322-4a13-97d0-5024c046e768" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/databases/bbec0ac55037a8ba0636fea1ad43539d_possessions.table" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/httpserver.log" afterPath="$PROJECT_DIR$/web2py/httpserver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/parameters_8000.py" afterPath="$PROJECT_DIR$/web2py/parameters_8000.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-16-13.1b9c595a-84a4-46d6-a380-61d3be10d366" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-18-23.3b40ca04-93dd-4787-8c70-42b5fe489402" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-19-38.b8e23d24-de35-440d-86ef-822b0e5f418b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-19-53.8b8a3d60-0044-45f5-9444-fd054beb0b8c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-24-52.1984baf6-83ff-480f-bfd5-10a91a137c02" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-25-12.4ffc7dd6-b955-4346-9e77-aa8bc97c8259" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-26-32.5c0d3e93-f4c4-4eaf-8be1-22125a589fc2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-30-25.4098e046-5013-463e-b08f-54a39782e9cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-37-15.01e9cdb7-0c7c-4d30-9bd0-2a65dcc7ccfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-46-42.627903ef-1bf2-42d4-814d-b656d5ebbd9a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-47-08.af84ef90-38a8-4d98-9ea8-47d72b3744cf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-12-37.ea29ef90-fbb4-4fad-b8ff-5c20323b6eca" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-12-41.1298618d-29ac-4b28-a4b8-d467d36dcef8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-12-58.14dcb3e4-ae92-4a6f-a125-b27dbf3695e6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-17-11.860403b2-12e3-4ea1-be0e-984d7f07b701" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-18-38.f1ffee7f-f9d1-4248-96d7-68cc5b2f04b6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-19-15.71e5dce8-df35-4305-bb44-c4712a8fc3b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-20-47.7dd28f80-db9a-451c-a94a-8ddfaf2f8880" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-20-53.2db040a6-6ae1-423f-8119-d4007efec3f2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-22-47.d120621b-197c-46e2-9a7d-f424a10a76c2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-26-28.f8571454-f4f5-4b93-b473-bef84efa2b6d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-27-30.f250986b-b2e7-4ab7-90c3-dd1bacc64bc1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-27-43.5117f57b-753c-40b6-8ffa-59cace79140d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-28-19.b2e91a00-e044-42f5-a555-ea6e55e58250" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-28-34.58c6600d-680e-4a8f-8b5b-724261d5cf1d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-28-55.7324670f-0a43-4bf6-b9f1-a9b51287d65d" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StuffShare.iws" />
@@ -401,7 +422,11 @@
       <created>1415601038658</created>
       <updated>1415601038658</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added .gitignore">
+      <created>1415601483490</created>
+      <updated>1415601483490</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -419,7 +444,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3146176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -447,7 +472,8 @@
     <MESSAGE value="Changed database init statement back to pythonanywhere database" />
     <MESSAGE value="Added routes.py: made StuffShare default application and removed welcome application" />
     <MESSAGE value="renamed possessions" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed possessions" />
+    <MESSAGE value="Added .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added .gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
