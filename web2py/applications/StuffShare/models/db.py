@@ -22,9 +22,9 @@ db.posessions.id.readable = False
 db.posessions.user_id.readable = False
 
 #this didn't work on my local mysql database, not sure why
-# db.define_table('friends',
-#     Field('id', 'integer', unique=True, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC()]),
-#     Field('user_id', 'integer', db.auth_user, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC(), IS_IN_DB(db, db.auth_user.id)]),
-#     Field('friend_id', 'integer', db.auth_user, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC(), IS_IN_DB(db, db.auth_user.id)]))
-#
-# db.friends.id.readable = False
+db.define_table('friends',
+    Field('id', 'integer', unique=True, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC()]),
+    Field('user_id', 'integer', db.auth_user, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC(), IS_IN_DB(db, db.auth_user.id)]),
+    Field('friend_id', 'integer', db.auth_user, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC(), IS_IN_DB(db, db.auth_user.id)]))
+
+db.friends.id.readable = False
