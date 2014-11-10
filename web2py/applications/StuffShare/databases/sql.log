@@ -79,3 +79,15 @@ CREATE TABLE friends(
     PRIMARY KEY (id)
 ) ENGINE=InnoDB CHARACTER SET utf8;
 success!
+timestamp: 2014-11-09T22:28:46.431140
+CREATE TABLE possessions(
+    id INT AUTO_INCREMENT NOT NULL,
+    user_id INT,
+    item_name LONGTEXT,
+    notes LONGTEXT,
+    quality LONGTEXT,
+    return_date DATE,
+    picture VARCHAR(512),
+    PRIMARY KEY (id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!

@@ -1,143 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" line="11" />
-    <bookmark url="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" line="31" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="0d213766-f322-4a13-97d0-5024c046e768" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/models/__init__.py" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\controllers\default.py.1" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\340546fb87d4602745316db74389a9e9_people.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\340546fb87d4602745316db74389a9e9_register.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\422cf73c80bfb2f59fc663caa1cfa3bf_auth_cas.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\422cf73c80bfb2f59fc663caa1cfa3bf_auth_event.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\422cf73c80bfb2f59fc663caa1cfa3bf_auth_group.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\422cf73c80bfb2f59fc663caa1cfa3bf_auth_membership.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\422cf73c80bfb2f59fc663caa1cfa3bf_auth_permission.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\422cf73c80bfb2f59fc663caa1cfa3bf_auth_user.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\422cf73c80bfb2f59fc663caa1cfa3bf_item.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\422cf73c80bfb2f59fc663caa1cfa3bf_items.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\422cf73c80bfb2f59fc663caa1cfa3bf_people.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\422cf73c80bfb2f59fc663caa1cfa3bf_posessions.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\50ff9190a3568f6e4ada57e6fc655a12_people.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\98e0a51867abad59b453013320d70b17_auth_cas.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\98e0a51867abad59b453013320d70b17_auth_event.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\98e0a51867abad59b453013320d70b17_auth_group.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\98e0a51867abad59b453013320d70b17_auth_membership.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\98e0a51867abad59b453013320d70b17_auth_permission.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\98e0a51867abad59b453013320d70b17_auth_user.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\98e0a51867abad59b453013320d70b17_friends.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\98e0a51867abad59b453013320d70b17_posessions.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\b13ad8466dec309b75ab894c53520fe2_asdf.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\b13ad8466dec309b75ab894c53520fe2_auth_cas.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\b13ad8466dec309b75ab894c53520fe2_auth_event.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\b13ad8466dec309b75ab894c53520fe2_auth_group.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\b13ad8466dec309b75ab894c53520fe2_auth_membership.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\b13ad8466dec309b75ab894c53520fe2_auth_permission.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\b13ad8466dec309b75ab894c53520fe2_auth_user.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\b13ad8466dec309b75ab894c53520fe2_friends.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\b13ad8466dec309b75ab894c53520fe2_posessions.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\bbec0ac55037a8ba0636fea1ad43539d_auth_cas.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\bbec0ac55037a8ba0636fea1ad43539d_auth_event.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\bbec0ac55037a8ba0636fea1ad43539d_auth_group.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\bbec0ac55037a8ba0636fea1ad43539d_auth_membership.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\bbec0ac55037a8ba0636fea1ad43539d_auth_permission.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\bbec0ac55037a8ba0636fea1ad43539d_auth_user.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\bbec0ac55037a8ba0636fea1ad43539d_posessions.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c82e24dc3e78d758eadd72ede9d541fc_auth_cas.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c82e24dc3e78d758eadd72ede9d541fc_auth_event.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c82e24dc3e78d758eadd72ede9d541fc_auth_group.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c82e24dc3e78d758eadd72ede9d541fc_auth_membership.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c82e24dc3e78d758eadd72ede9d541fc_auth_permission.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c82e24dc3e78d758eadd72ede9d541fc_auth_user.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c82e24dc3e78d758eadd72ede9d541fc_friends.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c82e24dc3e78d758eadd72ede9d541fc_posessions.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_cas.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_event.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_group.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_membership.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_permission.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c8b669d15150d7109e5f7ab36744a5b7_auth_user.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c8b669d15150d7109e5f7ab36744a5b7_friends.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\c8b669d15150d7109e5f7ab36744a5b7_posessions.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d245d71ebd3b5e883e9ae00a2f6ebc55_auth_cas.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d245d71ebd3b5e883e9ae00a2f6ebc55_auth_event.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d245d71ebd3b5e883e9ae00a2f6ebc55_auth_group.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d245d71ebd3b5e883e9ae00a2f6ebc55_auth_membership.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d245d71ebd3b5e883e9ae00a2f6ebc55_auth_permission.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d245d71ebd3b5e883e9ae00a2f6ebc55_auth_user.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d245d71ebd3b5e883e9ae00a2f6ebc55_friendlist.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d245d71ebd3b5e883e9ae00a2f6ebc55_friends.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d245d71ebd3b5e883e9ae00a2f6ebc55_posessions.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d4d96c40f720e79a3cef04689bf482cd_asdf.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d4d96c40f720e79a3cef04689bf482cd_auth_cas.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d4d96c40f720e79a3cef04689bf482cd_auth_event.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d4d96c40f720e79a3cef04689bf482cd_auth_group.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d4d96c40f720e79a3cef04689bf482cd_auth_membership.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d4d96c40f720e79a3cef04689bf482cd_auth_permission.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d4d96c40f720e79a3cef04689bf482cd_auth_user.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d4d96c40f720e79a3cef04689bf482cd_buddies.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d4d96c40f720e79a3cef04689bf482cd_friends.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\d4d96c40f720e79a3cef04689bf482cd_posessions.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\fa6bd00657dda4f18e6155cff38f8cfe_auth_cas.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\fa6bd00657dda4f18e6155cff38f8cfe_auth_event.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\fa6bd00657dda4f18e6155cff38f8cfe_auth_group.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\fa6bd00657dda4f18e6155cff38f8cfe_auth_membership.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\fa6bd00657dda4f18e6155cff38f8cfe_auth_permission.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\fa6bd00657dda4f18e6155cff38f8cfe_auth_user.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\fa6bd00657dda4f18e6155cff38f8cfe_buddies.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\fa6bd00657dda4f18e6155cff38f8cfe_companions.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\fa6bd00657dda4f18e6155cff38f8cfe_derps.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\fa6bd00657dda4f18e6155cff38f8cfe_friend_table.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\fa6bd00657dda4f18e6155cff38f8cfe_friends.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\fa6bd00657dda4f18e6155cff38f8cfe_item_table.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\fa6bd00657dda4f18e6155cff38f8cfe_items.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\fa6bd00657dda4f18e6155cff38f8cfe_posessions.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\fa6bd00657dda4f18e6155cff38f8cfe_wtf.table" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\sql.log" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\storage.sqlite" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\databases\webform.sqlite" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.20-16-13.1b9c595a-84a4-46d6-a380-61d3be10d366" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.20-18-23.3b40ca04-93dd-4787-8c70-42b5fe489402" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.20-19-38.b8e23d24-de35-440d-86ef-822b0e5f418b" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.20-19-53.8b8a3d60-0044-45f5-9444-fd054beb0b8c" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.20-24-52.1984baf6-83ff-480f-bfd5-10a91a137c02" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.20-25-12.4ffc7dd6-b955-4346-9e77-aa8bc97c8259" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.20-26-32.5c0d3e93-f4c4-4eaf-8be1-22125a589fc2" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.20-30-25.4098e046-5013-463e-b08f-54a39782e9cc" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.20-37-15.01e9cdb7-0c7c-4d30-9bd0-2a65dcc7ccfe" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.20-46-42.627903ef-1bf2-42d4-814d-b656d5ebbd9a" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.20-47-08.af84ef90-38a8-4d98-9ea8-47d72b3744cf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.21-12-37.ea29ef90-fbb4-4fad-b8ff-5c20323b6eca" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.21-12-41.1298618d-29ac-4b28-a4b8-d467d36dcef8" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.21-12-58.14dcb3e4-ae92-4a6f-a125-b27dbf3695e6" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.21-17-11.860403b2-12e3-4ea1-be0e-984d7f07b701" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.21-18-38.f1ffee7f-f9d1-4248-96d7-68cc5b2f04b6" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.21-19-15.71e5dce8-df35-4305-bb44-c4712a8fc3b4" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.21-20-47.7dd28f80-db9a-451c-a94a-8ddfaf2f8880" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.21-20-53.2db040a6-6ae1-423f-8119-d4007efec3f2" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.21-22-47.d120621b-197c-46e2-9a7d-f424a10a76c2" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.21-26-28.f8571454-f4f5-4b93-b473-bef84efa2b6d" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.21-27-30.f250986b-b2e7-4ab7-90c3-dd1bacc64bc1" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.21-27-43.5117f57b-753c-40b6-8ffa-59cace79140d" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.21-28-19.b2e91a00-e044-42f5-a555-ea6e55e58250" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.21-28-34.58c6600d-680e-4a8f-8b5b-724261d5cf1d" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\errors\127.0.0.1.2014-11-09.21-28-55.7324670f-0a43-4bf6-b9f1-a9b51287d65d" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\models\db.py.1" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\models\db.py.bak" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\models\menu.py.bak" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\sessions\0a8\08a\127.0.0.1-d7091d27-c604-4f1f-b810-5f5e49fa314f" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\sessions\1f7\14c\127.0.0.1-14be04bd-0d25-41fc-8a8e-ce54cb64b4af" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\uploads\posessions.picture.83eb29b9c4d21f6b.313431323837323730343734392e6a7067.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\uploads\posessions.picture.95df41f2e9058c32.494d475f32303134303432345f3135333133322e6a7067.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\uploads\posessions.picture.b80535b9dbf79f5c.494d475f32303134303432345f3135333133322e6a7067.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\uploads\posessions.picture.bed854c0fd92845f.494d475f32303134303432345f3135333133322e6a7067.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/StuffShare.iml" afterPath="$PROJECT_DIR$/.idea/StuffShare.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/httpserver.log" afterPath="$PROJECT_DIR$/web2py/httpserver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/parameters_8000.py" afterPath="$PROJECT_DIR$/web2py/parameters_8000.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-16-13.1b9c595a-84a4-46d6-a380-61d3be10d366" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-18-23.3b40ca04-93dd-4787-8c70-42b5fe489402" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-19-38.b8e23d24-de35-440d-86ef-822b0e5f418b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-19-53.8b8a3d60-0044-45f5-9444-fd054beb0b8c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-24-52.1984baf6-83ff-480f-bfd5-10a91a137c02" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-25-12.4ffc7dd6-b955-4346-9e77-aa8bc97c8259" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-26-32.5c0d3e93-f4c4-4eaf-8be1-22125a589fc2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-30-25.4098e046-5013-463e-b08f-54a39782e9cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-37-15.01e9cdb7-0c7c-4d30-9bd0-2a65dcc7ccfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-46-42.627903ef-1bf2-42d4-814d-b656d5ebbd9a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.20-47-08.af84ef90-38a8-4d98-9ea8-47d72b3744cf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-12-37.ea29ef90-fbb4-4fad-b8ff-5c20323b6eca" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-12-41.1298618d-29ac-4b28-a4b8-d467d36dcef8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-12-58.14dcb3e4-ae92-4a6f-a125-b27dbf3695e6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-17-11.860403b2-12e3-4ea1-be0e-984d7f07b701" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-18-38.f1ffee7f-f9d1-4248-96d7-68cc5b2f04b6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-19-15.71e5dce8-df35-4305-bb44-c4712a8fc3b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-20-47.7dd28f80-db9a-451c-a94a-8ddfaf2f8880" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-20-53.2db040a6-6ae1-423f-8119-d4007efec3f2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-22-47.d120621b-197c-46e2-9a7d-f424a10a76c2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-26-28.f8571454-f4f5-4b93-b473-bef84efa2b6d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-27-30.f250986b-b2e7-4ab7-90c3-dd1bacc64bc1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-27-43.5117f57b-753c-40b6-8ffa-59cace79140d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-28-19.b2e91a00-e044-42f5-a555-ea6e55e58250" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-28-34.58c6600d-680e-4a8f-8b5b-724261d5cf1d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/errors/127.0.0.1.2014-11-09.21-28-55.7324670f-0a43-4bf6-b9f1-a9b51287d65d" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StuffShare.iws" />
@@ -150,8 +40,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/StuffShare$db.coverage" NAME="db Coverage Results" MODIFIED="1415602741423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web2py/applications/StuffShare/models" />
-    <SUITE FILE_PATH="coverage/StuffShare$Web2py.coverage" NAME="Web2py Coverage Results" MODIFIED="1415607580332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web2py" />
+    <SUITE FILE_PATH="coverage/StuffShare$Web2py.coverage" NAME="Web2py Coverage Results" MODIFIED="1415601096818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web2py" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -165,21 +54,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="db.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="db.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.example.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/routes.example.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7491803" vertical-offset="138" max-vertical-offset="748">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.67466265" vertical-offset="0" max-vertical-offset="667">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -198,19 +77,17 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web2py/gluon/sqlhtml.py" />
-        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/db2.py" />
-        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/models/db2.py" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
-        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py" />
+        <option value="$PROJECT_DIR$/web2py/applications/welcome/routes.example.py" />
+        <option value="$PROJECT_DIR$/web2py/applications/welcome/routes.py" />
+        <option value="$PROJECT_DIR$/web2py/routes.py" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -267,6 +144,20 @@
               <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web2py" />
+              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyLibDirNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StuffShare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StuffShare" />
+              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="applications" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -311,28 +202,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StuffShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StuffShare" />
-              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="applications" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StuffShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="databases" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -340,46 +209,16 @@
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web2py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web2py/web2py.py" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings />
     </option>
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Github\StuffShare\web2py\applications\StuffShare\models" />
-    </key>
-  </component>
   <component name="RunManager" selected="Python.Web2py">
-    <configuration default="false" name="db" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web2py/applications/StuffShare/models" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="StuffShare" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonCover" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonCover" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -536,7 +375,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Python27\python.exe" />
+      <option name="SDK_HOME" value="/usr/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web2py" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -545,21 +384,13 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web2py/web2py.py" />
       <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Python.Web2py" />
-      <item index="1" class="java.lang.String" itemvalue="Python.db" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.db" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -571,30 +402,56 @@
       <created>1415592016549</created>
       <updated>1415592016549</updated>
     </task>
+    <task id="LOCAL-00001" summary="Changed database init statement back to pythonanywhere database">
+      <created>1415599793054</created>
+      <updated>1415599793054</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changed database init statement back to pythonanywhere database">
+      <created>1415599838881</created>
+      <updated>1415599838881</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added routes.py: made StuffShare default application and removed welcome application">
+      <created>1415600674619</created>
+      <updated>1415600674619</updated>
+    </task>
+    <task id="LOCAL-00004" summary="renamed possessions">
+      <created>1415601020738</created>
+      <updated>1415601020738</updated>
+    </task>
+    <task id="LOCAL-00005" summary="renamed possessions">
+      <created>1415601038658</created>
+      <updated>1415601038658</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added .gitignore">
+      <created>1415601483490</created>
+      <updated>1415601483490</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24791667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284055" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284055" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3146176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -612,32 +469,21 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Changed database init statement back to pythonanywhere database" />
+    <MESSAGE value="Added routes.py: made StuffShare default application and removed welcome application" />
+    <MESSAGE value="renamed possessions" />
+    <MESSAGE value="Added .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added .gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <caret line="0" column="33" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="178" />
           <folding />
         </state>
@@ -659,84 +505,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/gluon/sqlhtml.py">
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/routes.example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7118928" vertical-offset="663" max-vertical-offset="56916">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding>
-            <marker date="1415599436443" expanded="true" signature="-1:-1" placeholder="select count..missing_value..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/web2py_ajax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py">
+    <entry file="file://$PROJECT_DIR$/web2py/applications/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1243" max-vertical-offset="1853">
-          <caret line="74" column="18" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="635">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/databases/9362122b063d802a92cd088eb22555c2_friends.table">
+    <entry file="file://$PROJECT_DIR$/web2py/routes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="444" max-vertical-offset="1054">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.047244094" vertical-offset="0" max-vertical-offset="635">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/databases/9362122b063d802a92cd088eb22555c2_possessions.table">
+    <entry file="file://$PROJECT_DIR$/web2py/applications/admin/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2193">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="635">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/databases/9362122b063d802a92cd088eb22555c2_auth_permission.table">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/databases/9362122b063d802a92cd088eb22555c2_auth_membership.table">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/routes.example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7491803" vertical-offset="138" max-vertical-offset="748">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.67466265" vertical-offset="0" max-vertical-offset="667">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
