@@ -38,7 +38,7 @@ div.error { background-color: red; color: white; padding: 3px; }
      <a href="https://clan10.pythonanywhere.com/StuffShare/default/index">{{=response.title or request.application}}</a>
     </h1>
     <p>
-     <a href="https://clan10.pythonanywhere.com/StuffShare/default/index">Share your stuff =D</a>
+     <a href="https://clan10.pythonanywhere.com/StuffShare/default/index">Share your stuff (づ｡◕‿‿◕｡)づ</a>
      </a>
     </p>
    </div>
@@ -67,8 +67,36 @@ div.error { background-color: red; color: white; padding: 3px; }
       </h2>
       <ul>
        <li>
-        <a href="https://clan10.pythonanywhere.com/StuffShare/default/item_manager">
-            Item Manager
+        <a href="https://clan10.pythonanywhere.com/StuffShare/default/item_list">
+            Item List
+        </a>
+       </li>
+       <li>
+        <a href="https://clan10.pythonanywhere.com/StuffShare/default/friend_list">
+            Friend List
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+     <li>
+      <h2>
+       Actions
+      </h2>
+      <ul>
+       <li>
+        <a href="https://clan10.pythonanywhere.com/StuffShare/default/add_item">
+            Add Item
+        </a>
+       </li>
+       <li>
+        <a href="https://clan10.pythonanywhere.com/StuffShare/default/user_item_list">
+            Edit / Delete Item
+        </a>
+       </li>
+       <li>
+        <a href="https://clan10.pythonanywhere.com/StuffShare/default/friend_list">
+            Add Friend
         </a>
        </li>
       </ul>
@@ -81,6 +109,8 @@ div.error { background-color: red; color: white; padding: 3px; }
   <div id="footer">
    <p>
    Created by Michael Moo, Ishan Bhutani, Gary Williams and Jason Zhang.
+       <br>
+   web2py layout Unqualified from 'http://www.web2py.com/layouts'
    </p>
   </div>
  </body>
