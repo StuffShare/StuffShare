@@ -1,93 +1,73 @@
-timestamp: 2014-11-10T00:13:15.198000
+timestamp: 2014-11-10T00:51:51.417000
 CREATE TABLE auth_user(
-    id INT AUTO_INCREMENT NOT NULL,
-    first_name VARCHAR(128),
-    last_name VARCHAR(128),
-    email VARCHAR(512),
-    password VARCHAR(512),
-    registration_key VARCHAR(512),
-    reset_password_key VARCHAR(512),
-    registration_id VARCHAR(512),
-    PRIMARY KEY (id)
-) ENGINE=InnoDB CHARACTER SET utf8;
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512),
+    registration_id CHAR(512)
+);
 success!
-timestamp: 2014-11-10T00:13:15.225000
+timestamp: 2014-11-10T00:51:51.428000
 CREATE TABLE auth_group(
-    id INT AUTO_INCREMENT NOT NULL,
-    role VARCHAR(512),
-    description LONGTEXT,
-    PRIMARY KEY (id)
-) ENGINE=InnoDB CHARACTER SET utf8;
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    role CHAR(512),
+    description TEXT
+);
 success!
-timestamp: 2014-11-10T00:13:15.246000
+timestamp: 2014-11-10T00:51:51.436000
 CREATE TABLE auth_membership(
-    id INT AUTO_INCREMENT NOT NULL,
-    user_id INT, INDEX user_id__idx (user_id), FOREIGN KEY (user_id) REFERENCES auth_user (id) ON DELETE CASCADE,
-    group_id INT, INDEX group_id__idx (group_id), FOREIGN KEY (group_id) REFERENCES auth_group (id) ON DELETE CASCADE,
-    PRIMARY KEY (id)
-) ENGINE=InnoDB CHARACTER SET utf8;
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE
+);
 success!
-timestamp: 2014-11-10T00:13:15.268000
+timestamp: 2014-11-10T00:51:51.445000
 CREATE TABLE auth_permission(
-    id INT AUTO_INCREMENT NOT NULL,
-    group_id INT, INDEX group_id__idx (group_id), FOREIGN KEY (group_id) REFERENCES auth_group (id) ON DELETE CASCADE,
-    name VARCHAR(512),
-    table_name VARCHAR(512),
-    record_id INT,
-    PRIMARY KEY (id)
-) ENGINE=InnoDB CHARACTER SET utf8;
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id INTEGER REFERENCES auth_group (id) ON DELETE CASCADE,
+    name CHAR(512),
+    table_name CHAR(512),
+    record_id INTEGER
+);
 success!
-timestamp: 2014-11-10T00:13:15.298000
+timestamp: 2014-11-10T00:51:51.457000
 CREATE TABLE auth_event(
-    id INT AUTO_INCREMENT NOT NULL,
-    time_stamp DATETIME,
-    client_ip VARCHAR(512),
-    user_id INT, INDEX user_id__idx (user_id), FOREIGN KEY (user_id) REFERENCES auth_user (id) ON DELETE CASCADE,
-    origin VARCHAR(512),
-    description LONGTEXT,
-    PRIMARY KEY (id)
-) ENGINE=InnoDB CHARACTER SET utf8;
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    time_stamp TIMESTAMP,
+    client_ip CHAR(512),
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    origin CHAR(512),
+    description TEXT
+);
 success!
-timestamp: 2014-11-10T00:13:15.333000
+timestamp: 2014-11-10T00:51:51.465000
 CREATE TABLE auth_cas(
-    id INT AUTO_INCREMENT NOT NULL,
-    user_id INT, INDEX user_id__idx (user_id), FOREIGN KEY (user_id) REFERENCES auth_user (id) ON DELETE CASCADE,
-    created_on DATETIME,
-    service VARCHAR(512),
-    ticket VARCHAR(512),
-    renew CHAR(1),
-    PRIMARY KEY (id)
-) ENGINE=InnoDB CHARACTER SET utf8;
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    created_on TIMESTAMP,
+    service CHAR(512),
+    ticket CHAR(512),
+    renew CHAR(1)
+);
 success!
-timestamp: 2014-11-10T00:13:15.358000
+timestamp: 2014-11-10T00:51:51.478000
 CREATE TABLE possessions(
-    id INT AUTO_INCREMENT NOT NULL,
-    user_id INT,
-    item_name LONGTEXT,
-    notes LONGTEXT,
-    quality LONGTEXT,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER,
+    item_name TEXT,
+    notes TEXT,
+    quality TEXT,
     return_date DATE,
-    picture VARCHAR(512),
-    PRIMARY KEY (id)
-) ENGINE=InnoDB CHARACTER SET utf8;
+    picture CHAR(512)
+);
 success!
-timestamp: 2014-11-10T00:13:15.381000
+timestamp: 2014-11-10T00:51:51.488000
 CREATE TABLE friends(
-    id INT AUTO_INCREMENT NOT NULL,
-    user_id INT,
-    friend_id INT,
-    PRIMARY KEY (id)
-) ENGINE=InnoDB CHARACTER SET utf8;
-success!
-timestamp: 2014-11-09T22:28:46.431140
-CREATE TABLE possessions(
-    id INT AUTO_INCREMENT NOT NULL,
-    user_id INT,
-    item_name LONGTEXT,
-    notes LONGTEXT,
-    quality LONGTEXT,
-    return_date DATE,
-    picture VARCHAR(512),
-    PRIMARY KEY (id)
-) ENGINE=InnoDB CHARACTER SET utf8;
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER,
+    friend_id INTEGER
+);
 success!
