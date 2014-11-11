@@ -2,5 +2,5 @@
 errors/
 images/
 sessions/
-httpserver.log
-parameters_8000.py
+web2py/httpserver.log
+web2py/parameters_8000.py
