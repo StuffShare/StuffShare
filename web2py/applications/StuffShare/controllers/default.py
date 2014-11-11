@@ -88,7 +88,7 @@ def friend_list():
     #     )
     # )
 
-    query = (db.auth_user.id == db.friends.friend_id)&(auth.user.id == db.friends.user_id)
+    query = (db.auth_user.id == db.friends.friend_id)&(auth.user.id == db.friends.user_id)&(db.friends.friend_id != auth.user_id)
     friends = db(query).select(db.auth_user.ALL)
     return dict(friends=friends)
 
