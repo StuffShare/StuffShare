@@ -71,23 +71,26 @@ def user_item_list():
 def friend_list():
     #WTF HOW DO YOU DO A SELECT STATEMENT WITH DAL?
     #query = (db.auth_user.id == db.friends.user_id)&(db.auth_user.id != auth.user.id)
-    grid = SQLFORM.grid(
-        db.friends,
-        editable = False,
-        create = False,
-        user_signature = False,
-        formname='web2py_grid',
-        exportclasses = dict(
-            csv_with_hidden_cols = False,
-            xml = False,
-            html = False,
-            csv = False,
-            json = False,
-            tsv_with_hidden_cols = False,
-            tsv = False
-        )
-    )
-    return dict(grid=grid)
+    # grid = SQLFORM.grid(
+    #     db.friends,
+    #     editable = False,
+    #     create = False,
+    #     user_signature = False,
+    #     formname='web2py_grid',
+    #     exportclasses = dict(
+    #         csv_with_hidden_cols = False,
+    #         xml = False,
+    #         html = False,
+    #         csv = False,
+    #         json = False,
+    #         tsv_with_hidden_cols = False,
+    #         tsv = False
+    #     )
+    # )
+
+    query = (db.auth_user.id == db.friends.friend_id)&(auth.user.id == db.friends.user_id)
+    friends = db(query).select(db.auth_user.ALL)
+    return dict(friends=friends)
 
 
 @auth.requires_login()
