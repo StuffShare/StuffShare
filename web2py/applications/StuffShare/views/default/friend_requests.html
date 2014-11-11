@@ -1,0 +1,9 @@
+{{extend 'plugin_layouts/layouts/Unqualified.html'}}
+<h1>Friend List</h1>
+<table><tr><td>Name</td><td>Email</td></tr>
+    {{for friend in friends:}}
+        {{=TD(friend.first_name + " " + friend.last_name)}}
+        {{=TD(A(friend.email, _href='mailto:' + friend.email))}}
+        {{=TR()}}
+    {{pass}}
+</table>
