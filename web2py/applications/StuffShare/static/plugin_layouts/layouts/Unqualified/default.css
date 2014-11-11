@@ -1,7 +1,8 @@
 /*
-Design by Free CSS Templates
-http://www.freecsstemplates.org
-Released for free under a Creative Commons Attribution 2.5 License
+Implementation of this page based on the free Creative Commons Web2Py Theme "Unqualified"
+http://www.web2py.com/layouts/static/plugin_layouts/layouts/Unqualified/index.html
+Found at 'http://www.web2py.com/layouts'
+Original is released for free under a Creative Commons Attribution 2.5 License
 */
 
 body {
@@ -136,7 +137,7 @@ a:hover {
 /* Page */
 
 #page {
-	width: 890px;
+	width: 1000px;
 	margin: 0 auto;
 }
 
@@ -144,7 +145,7 @@ a:hover {
 
 #content {
 	float: left;
-	width: 590px;
+	width: 600px;
 }
 
 .post {
