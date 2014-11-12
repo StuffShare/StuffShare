@@ -4,6 +4,6 @@ def user():
 
 def index():
     if not session.flashed:
-        response.flash=T('Welcome to StuffShare')
-        session.flashed=True
+        response.flash = T('Welcome to StuffShare')
+        session.flashed = True
     return dict(message=T('Welcome to StuffShare'))

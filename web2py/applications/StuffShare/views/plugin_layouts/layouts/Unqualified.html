@@ -30,10 +30,10 @@ div.error { background-color: red; color: white; padding: 3px; }
   <div id="header">
    <div id="logo">
     <h1>
-     <a href="/default/index">{{=response.title or request.application}}</a>
+     <a href={{=URL(f='index', c='default')}}>{{=response.title or request.application}}</a>
     </h1>
     <p>
-     <a href="/default/index">Share your stuff (づ｡◕‿‿◕｡)づ</a>
+     <a href={{=URL(f='index', c='default')}}>Share your stuff (づ｡◕‿‿◕｡)づ</a>
      </a>
     </p>
    </div>
@@ -62,17 +62,17 @@ div.error { background-color: red; color: white; padding: 3px; }
       </h2>
       <ul>
        <li>
-        <a href="/items/item_list">
+        <a href={{=URL(f='item_list', c='items')}}>
             Item List
         </a>
        </li>
        <li>
-        <a href="/items/add_item">
+        <a href={{=URL(f='add_item', c='items')}}>
             Add Item
         </a>
        </li>
        <li>
-        <a href="/items/user_item_list">
+        <a href={{=URL(f='user_item_list', c='items')}}>
             Edit / Delete Item
         </a>
        </li>
@@ -86,17 +86,17 @@ div.error { background-color: red; color: white; padding: 3px; }
       <ul>
       </li>
        <li>
-        <a href="/friends/friend_list">
+        <a href={{=URL(f='friend_list', c='friends')}}>
             Friend List
         </a>
        </li>
        <li>
-        <a href="/friends/add_friend">
+        <a href={{=URL(f='add_friend', c='friends')}}>
             Add Friend
         </a>
        </li>
         <li>
-        <a href="/friends/friend_requests">
+        <a href={{=URL(f='friend_requests', c='friends')}}>
             Friend Requests
         </a>
       </ul>

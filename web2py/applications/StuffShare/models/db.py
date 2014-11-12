@@ -1,4 +1,4 @@
-#db = DAL('mysql://clan10:clan10@mysql.server/clan10$stuffshare') #this connects to the mysql server running on python anywhere; will not work unless the app is running on pythonanywhere
+# db = DAL('mysql://clan10:clan10@mysql.server/clan10$stuffshare') #this connects to the mysql server running on python anywhere; will not work unless the app is running on pythonanywhere
 #This uses a local data-based sql server, PLEASE UPLOAD TO PYTHONANYWHERE and TEST ON SERVER BEFORE COMMITTING!
 # ALSO PLEASE COMMENT THIS AND UNCOMMENT THE PROPER MYSQL STRING
 db = DAL('sqlite://storage.db')
