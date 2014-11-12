@@ -5,79 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d213766-f322-4a13-97d0-5024c046e768" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Blend\default.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Blend\images\img01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Blend\images\img02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Blend\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Blend\license.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Blend\preview.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Boorish\default.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Boorish\images\img01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Boorish\images\img03.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Boorish\images\img04.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Boorish\images\img06.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Boorish\images\img07.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Boorish\images\img08.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Boorish\images\spacer.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Boorish\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Boorish\license.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Boorish\preview.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Colorus\images\body_all_bckg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Colorus\images\body_top_bckg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Colorus\images\footer_bckg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Colorus\images\h1_bckg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Colorus\images\sidebar_bottom.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Colorus\images\sidebar_top.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Colorus\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Colorus\preview.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Colorus\style.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Compromise\images\img01.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Compromise\images\img02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Compromise\images\img03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Compromise\images\img04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Compromise\images\img05.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Compromise\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Compromise\license.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Compromise\preview.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Compromise\style.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\KeepitSimple\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\KeepitSimple\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\KeepitSimple\preview.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Replenish\default.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Replenish\images\img01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Replenish\images\img02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Replenish\images\img03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Replenish\images\spacer.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Replenish\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Replenish\license.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Replenish\preview.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Thingreenline\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Thingreenline\page.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Thingreenline\preview.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Thingreenline\readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Thingreenline\styles.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Unqualified\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Unqualified\license.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Unqualified\preview.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\global.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\img\bg.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\img\bg_bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\img\bg_top.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\img\comment.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\img\cross.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\img\excl_mark.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\img\fade.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\img\header.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\img\more.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\img\printer.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\img\quote.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\img\read.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\img\tick.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\img\zebra.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\preview.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Github\StuffShare\web2py\applications\StuffShare\static\plugin_layouts\layouts\Whitelight\readme.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/static/plugin_layouts/layouts/Unqualified/default.css" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/static/plugin_layouts/layouts/Unqualified/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/add_friend.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/items/add_item.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/friends.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/items/item_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/items/item_manager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/items.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/items/user_item_list.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/default/add_friend.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/default/add_item.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/default/item_list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/default/item_manager.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/default/user_item_list.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/default/add_friend.html.bak" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/add_friend.html.bak" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/default/add_item.html.bak" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/items/add_item.html.bak" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/default/friend_list.html" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friend_list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/default/friend_list.html.bak" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friend_list.html.bak" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/default/friend_requests.html" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friend_requests.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/default/friends.html.bak" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friends.html.bak" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/default/item_list.html.bak" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/items/item_list.html.bak" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/default/item_manager.html.bak" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/items/item_manager.html.bak" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/default/user_item_list.html.bak" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/items/user_item_list.html.bak" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/StuffShare.iml" afterPath="$PROJECT_DIR$/.idea/StuffShare.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/plugin_layouts/layouts/Unqualified.html" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/plugin_layouts/layouts/Unqualified.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/httpserver.log" afterPath="$PROJECT_DIR$/web2py/httpserver.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/parameters_8000.py" afterPath="$PROJECT_DIR$/web2py/parameters_8000.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -92,7 +43,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/StuffShare$Web2py.coverage" NAME="Web2py Coverage Results" MODIFIED="1415747532467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web2py" />
+    <SUITE FILE_PATH="coverage/StuffShare$Web2py.coverage" NAME="Web2py Coverage Results" MODIFIED="1415764510461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web2py" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -109,8 +60,48 @@
       <file leaf-file-name="default.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7552" vertical-offset="1075" max-vertical-offset="1700">
-              <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.17094018" vertical-offset="0" max-vertical-offset="702">
+              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="friends.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/friends.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Unqualified.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/plugin_layouts/layouts/Unqualified.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-55.0" vertical-offset="0" max-vertical-offset="1815">
+              <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_friend.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/add_friend.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -135,17 +126,24 @@
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/default/friend_requests.html" />
-        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py" />
-        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/plugin_layouts/layouts/Unqualified.html" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/static/plugin_layouts/layouts/Unqualified/default.css" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/friends.py" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/items.py" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/items/add_item.html" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/items/item_list.html" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/items/item_manager.html" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/items/user_item_list.html" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friend_list.html" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friend_requests.html" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/plugin_layouts/layouts/Unqualified.html" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/add_friend.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -173,6 +171,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -267,119 +266,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plugin_layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StuffShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StuffShare" />
-              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="applications" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StuffShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugin_layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StuffShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StuffShare" />
-              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="applications" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StuffShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugin_layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Unqualified" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StuffShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StuffShare" />
-              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="applications" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StuffShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StuffShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StuffShare" />
-              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="applications" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StuffShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -407,7 +294,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -429,6 +315,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Github\StuffShare\web2py\applications\StuffShare\views\default" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web2py/applications/StuffShare/views/friends" />
+      <recent name="$PROJECT_DIR$/web2py/applications/StuffShare/views/items" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Web2py">
@@ -516,9 +406,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -540,6 +427,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -582,13 +472,13 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Web2py" type="PythonConfigurationType" factoryName="Python">
+    <configuration default="false" name="Web2py" type="PythonConfigurationType" factoryName="Python" singleton="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Python27\python.exe" />
+      <option name="SDK_HOME" value="/usr/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web2py" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -650,29 +540,49 @@
     <option name="localTasksCounter" value="9" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905138" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26494345" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.312566" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.312566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3273495" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905138" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21980198" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32673267" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -706,6 +616,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
+          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="779" max-vertical-offset="1700">
           <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
           <folding />
@@ -724,7 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="4063">
           <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -827,20 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/default/friend_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028380634" vertical-offset="0" max-vertical-offset="599">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/default/friend_requests.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17028381" vertical-offset="0" max-vertical-offset="599">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/web2py_ajax.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="625">
@@ -904,26 +807,145 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/plugin_layouts/layouts/Unqualified.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26109216" vertical-offset="0" max-vertical-offset="2057">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/static/plugin_layouts/layouts/Unqualified/default.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2992" vertical-offset="0" max-vertical-offset="4080">
           <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="652">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/items/add_item.html.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="760">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/default/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="760">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/items/user_item_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06311361" vertical-offset="0" max-vertical-offset="713">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/items/item_manager.html.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/items/item_manager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="135">
+          <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/items/item_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="135">
+          <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/items/add_item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="135">
+          <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/default/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="300">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39834026" vertical-offset="207" max-vertical-offset="930">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friend_requests.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16304348" vertical-offset="0" max-vertical-offset="736">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friend_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="210">
+          <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/plugin_layouts/layouts/Unqualified.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-55.0" vertical-offset="0" max-vertical-offset="1815">
+          <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/add_friend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/friends.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7552" vertical-offset="1075" max-vertical-offset="1700">
-          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.17094018" vertical-offset="0" max-vertical-offset="702">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
           <folding />
         </state>
       </provider>
