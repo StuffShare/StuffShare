@@ -1,9 +1,11 @@
 {{extend 'plugin_layouts/layouts/Unqualified.html'}}
-<h1>Friend List</h1>
+<h1>Friend Request List</h1>
 <table><tr><td>Name</td><td>Email</td></tr>
-    {{for friend in friends:}}
-        {{=TD(friend.first_name + " " + friend.last_name)}}
-        {{=TD(A(friend.email, _href='mailto:' + friend.email))}}
+    {{for friend_request in friend_request_list:}}
+        {{=TD(friend_request.first_name + " " + friend_request.last_name)}}
+        {{=TD(A(friend_request.email, _href='mailto:' + friend_request.email))}}
+        {{=TD(A('Accept', _href=URL(f='accept_friend_request', vars={'friend_id':friend_request.id})))}}
+        {{=TD(A('Decline', _href=URL(f='decline_friend_request', vars={'friend_id':friend_request.id})))}}
         {{=TR()}}
     {{pass}}
 </table>

@@ -45,3 +45,17 @@ db.friends.friend_id.requires = IS_ALPHANUMERIC()
 db.friends.friend_id.requires = IS_IN_DB(db, db.auth_user.id)
 
 db.friends.id.readable = False
+
+db.define_table('friend_requests',
+    Field('id', 'integer', unique=True, requires=[IS_NOT_EMPTY(), IS_ALPHANUMERIC()]),
+    Field('user_id', 'integer'),
+    Field('friend_id', 'integer'))
+
+db.friend_requests.user_id.requires = IS_NOT_EMPTY()
+db.friend_requests.user_id.requires = IS_ALPHANUMERIC()
+db.friend_requests.user_id.requires = IS_IN_DB(db, db.auth_user.id)
+db.friend_requests.friend_id.requires = IS_NOT_EMPTY()
+db.friend_requests.friend_id.requires = IS_ALPHANUMERIC()
+db.friend_requests.friend_id.requires = IS_IN_DB(db, db.auth_user.id)
+
+db.friend_requests.id.readable = False
