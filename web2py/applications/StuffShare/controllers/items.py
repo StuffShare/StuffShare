@@ -1,8 +1,31 @@
 @auth.requires_login()
-def item_list():
+def public_item_list():
     grid = SQLFORM.grid(
         db.possessions,
-        fields = [db.possessions.item_name, db.possessions.notes, db.possessions.quality, db.possessions.return_date, db.possessions.picture],
+        fields = [db.possessions.item_name, db.possessions.notes, db.possessions.quality, db.possessions.visibility, db.possessions.return_date, db.possessions.picture],
+        user_signature = False,
+        deletable = False,
+        editable = False,
+        create = False,
+        formname = 'web2py_grid',
+        exportclasses = dict(
+            csv_with_hidden_cols = False,
+            xml = False,
+            html = False,
+            csv = False,
+            json = False,
+            tsv_with_hidden_cols = False,
+            tsv = False
+        )
+    )
+    return dict(grid=grid)
+
+
+@auth.requires_login()
+def private_item_list():
+    grid = SQLFORM.grid(
+        db.possessions,
+        fields = [db.possessions.item_name, db.possessions.notes, db.possessions.quality, db.possessions.visibility, db.possessions.return_date, db.possessions.picture],
         user_signature = False,
         deletable = False,
         editable = False,
@@ -24,7 +47,7 @@ def item_list():
 @auth.requires_login()
 def add_item():
     form = SQLFORM(db.possessions,
-        fields = ['item_name', 'notes', 'quality', 'return_date', 'picture'],
+        fields = ['item_name', 'notes', 'quality', 'visibility', 'return_date', 'picture'],
     )
     form.vars.user_id = auth.user.id
     if form.process().accepted:
