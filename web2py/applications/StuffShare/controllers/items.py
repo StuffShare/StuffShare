@@ -1,8 +1,9 @@
 @auth.requires_login()
 def public_item_list():
+    query = (db.possessions.visibility == 'Public')
     grid = SQLFORM.grid(
-        db.possessions,
-        fields = [db.possessions.item_name, db.possessions.notes, db.possessions.quality, db.possessions.visibility, db.possessions.return_date, db.possessions.picture],
+        query,
+        fields = [db.possessions.item_name, db.possessions.notes, db.possessions.quality, db.possessions.return_date, db.possessions.picture],
         user_signature = False,
         deletable = False,
         editable = False,
@@ -23,9 +24,10 @@ def public_item_list():
 
 @auth.requires_login()
 def private_item_list():
+    query = (db.possessions.visibility == 'Private')
     grid = SQLFORM.grid(
-        db.possessions,
-        fields = [db.possessions.item_name, db.possessions.notes, db.possessions.quality, db.possessions.visibility, db.possessions.return_date, db.possessions.picture],
+        query,
+        fields = [db.possessions.item_name, db.possessions.notes, db.possessions.quality, db.possessions.return_date, db.possessions.picture],
         user_signature = False,
         deletable = False,
         editable = False,
