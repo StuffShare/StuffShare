@@ -17,6 +17,7 @@ db.define_table('possessions',
     Field('item_name', 'text'),
     Field('notes', 'text'),
     Field('quality', 'text'),
+    Field('visibility', 'text'),
     Field('return_date', 'date'),
     Field('picture', 'upload'))
 
@@ -25,9 +26,12 @@ db.possessions.user_id.requires = IS_IN_DB(db, db.auth_user.id)
 db.possessions.item_name.requires = IS_NOT_EMPTY()
 db.possessions.notes.requires = IS_NOT_EMPTY()
 db.possessions.quality.requires = IS_NOT_EMPTY()
+db.possessions.visibility.requires = IS_NOT_EMPTY()
 db.possessions.return_date.requires = IS_NOT_EMPTY()
 
+db.possessions.visibility.requires=IS_IN_SET(('Public', 'Private'))
 db.possessions.quality.requires=IS_IN_SET(('Poor','Mediocre','Average', 'Good', 'Excellent', 'Like New'))
+
 db.possessions.id.readable = False
 db.possessions.user_id.readable = False
 
