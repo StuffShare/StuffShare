@@ -1,16 +1,9 @@
-/*
-Implementation of this page based on the free Creative Commons Web2Py Theme "Unqualified"
-http://www.web2py.com/layouts/static/plugin_layouts/layouts/Unqualified/index.html
-Found at 'http://www.web2py.com/layouts'
-Original is released for free under a Creative Commons Attribution 2.5 License
-*/
-
 body {
 	margin: 0;
 	padding: 0;
-	background:  #FFFFFF url(images/bg01.jpg) repeat-x top left;
+    background: #fff url(images/bg01.jpg) repeat-x top left;
 	font-size: 13px;
-	color: #7F7F7F;
+	color: #000;
 }
 
 body, th, td, input, textarea, select, option {
@@ -24,13 +17,13 @@ h1, h2, h3 {
 }
 
 h1 {
-	text-transform: lowercase;
+	text-transform: none;
 	letter-spacing: -1px;
 	font-size: 24px;
 }
 
 h2 {
-	text-transform: lowercase;
+	text-transform: none;
 	letter-spacing: -1px;
 	font-size: 24px;
 }
@@ -53,7 +46,7 @@ blockquote p, blockquote ul, blockquote ol {
 }
 
 a {
-	color: #7ACE11;
+	color:#7ACE11;
 }
 
 a:hover {
@@ -126,7 +119,7 @@ a:hover {
 	text-decoration: none;
 	text-transform: lowercase;
 	font-size: 1.36em;
-	color: #FFFFFF;
+	color:#7ACE11;
 }
 
 #menu a:hover, .active a {
@@ -146,6 +139,7 @@ a:hover {
 #content {
 	float: left;
 	width: 600px;
+    background-color: #f1f1f1;
 }
 
 .post {
@@ -201,13 +195,15 @@ a:hover {
 
 #sidebar li li {
 	padding-left: 20px;
-	border-bottom: 1px dotted #7B9418;
+	border-bottom: 1px solid #000;
 }
 
 #sidebar h2 {
 	margin: 0;
 	padding: 5px 0 0 20px;
-	background: url(images/img06.jpg) no-repeat left 80%;
+    color: #7ACE11;
+    background: #000;
+    /*url(images/img01.jpg) no-repeat left 80%; */
 }
 
 #sidebar a {
