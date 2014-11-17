@@ -1,0 +1,10 @@
+{{extend 'plugin_layouts/layouts/Unqualified.html'}}
+<h1>Your Friend Code is:</h1>
+<table><tr><td>Friend Code</td></tr>
+    {{for friend in friend_code:}}
+        {{=TD(friend.id)}}
+        {{=TR()}}
+    {{pass}}
+</table>
+
+<p>Share this with your friends and have them add you as a friend to let them see your private list items.</p>

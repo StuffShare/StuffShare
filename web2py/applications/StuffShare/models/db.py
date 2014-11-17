@@ -31,6 +31,7 @@ db.possessions.return_date.requires = IS_NOT_EMPTY()
 
 db.possessions.visibility.requires=IS_IN_SET(('Public', 'Private'))
 db.possessions.quality.requires=IS_IN_SET(('Poor','Mediocre','Average', 'Good', 'Excellent', 'Like New'))
+db.possessions.picture.requires=requires=IS_IMAGE(extensions=('bmp', 'gif', 'jpeg', 'png'), maxsize=(10000, 10000), minsize=(0, 0))
 
 db.possessions.id.readable = False
 db.possessions.user_id.readable = False
