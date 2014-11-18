@@ -1,5 +1,5 @@
 {{extend 'plugin_layouts/layouts/Unqualified.html'}}
-<h1>Friend Request List</h1>
+<h1>Friend Requests</h1>
 <table><tr><td>Name</td><td>Email</td></tr>
     {{for friend_request in friend_request_list:}}
         {{=TD(friend_request.first_name + " " + friend_request.last_name)}}
