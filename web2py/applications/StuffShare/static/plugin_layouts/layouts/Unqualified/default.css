@@ -3,7 +3,7 @@ body {
 	padding: 0;
     background: #fff url(images/bg01.jpg) repeat-x top left;
 	font-size: 13px;
-	color: #000;
+	color: #9E9A9A;
 }
 
 body, th, td, input, textarea, select, option {
@@ -46,7 +46,7 @@ blockquote p, blockquote ul, blockquote ol {
 }
 
 a {
-	color:#7ACE11;
+	color: #2CA306;
 }
 
 a:hover {
@@ -138,8 +138,8 @@ a:hover {
 
 #content {
 	float: left;
-	width: 600px;
-    background-color: #f1f1f1;
+	width: 700px;
+    background-color: #f7f7f9;
 }
 
 .post {
