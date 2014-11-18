@@ -342,6 +342,3 @@ success!
 timestamp: 2014-11-17T19:45:53.989000
 ALTER TABLE possessions ADD location TEXT;
 success!
-timestamp: 2014-11-17T21:31:42.956000
-ALTER TABLE possessions ADD location TEXT;
-success!
