@@ -339,3 +339,6 @@ success!
 timestamp: 2014-11-15T22:09:50.109000
 ALTER TABLE possessions ADD visibility TEXT;
 success!
+timestamp: 2014-11-17T19:45:53.989000
+ALTER TABLE possessions ADD location TEXT;
+success!

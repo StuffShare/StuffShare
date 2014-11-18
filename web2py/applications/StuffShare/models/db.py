@@ -16,6 +16,7 @@ db.define_table('possessions',
     Field('user_id', 'integer'),
     Field('item_name', 'text'),
     Field('notes', 'text'),
+    Field('location', 'text'),
     Field('quality', 'text'),
     Field('visibility', 'text'),
     Field('return_date', 'date'),
@@ -25,6 +26,7 @@ db.possessions.user_id.requires = IS_NOT_EMPTY()
 db.possessions.user_id.requires = IS_IN_DB(db, db.auth_user.id)
 db.possessions.item_name.requires = IS_NOT_EMPTY()
 db.possessions.notes.requires = IS_NOT_EMPTY()
+db.possessions.location.requires = IS_NOT_EMPTY()
 db.possessions.quality.requires = IS_NOT_EMPTY()
 db.possessions.visibility.requires = IS_NOT_EMPTY()
 db.possessions.return_date.requires = IS_NOT_EMPTY()

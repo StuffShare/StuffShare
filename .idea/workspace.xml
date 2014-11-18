@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" line="20" />
+    <bookmark url="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" line="21" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d213766-f322-4a13-97d0-5024c046e768" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/get_friend_code.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/plugin_layouts/layouts/Unqualified.html" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/plugin_layouts/layouts/Unqualified.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/friends.py" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/friends.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/StuffShare.iml" afterPath="$PROJECT_DIR$/.idea/StuffShare.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/gluon/__init__.py" afterPath="$PROJECT_DIR$/web2py/gluon/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/httpserver.log" afterPath="$PROJECT_DIR$/web2py/httpserver.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/items.py" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/items.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/parameters_8000.py" afterPath="$PROJECT_DIR$/web2py/parameters_8000.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/databases/sql.log" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/databases/sql.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StuffShare.iws" />
@@ -36,41 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="friends.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/friends.py">
+      <file leaf-file-name="db.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="422" max-vertical-offset="1343">
-              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="get_friend_code.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/get_friend_code.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17094973" vertical-offset="0" max-vertical-offset="895">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="friend_list.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friend_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="238">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="friend_requests.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friend_requests.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="272">
-              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.27687296" vertical-offset="0" max-vertical-offset="1241">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -100,19 +72,20 @@
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friend_list.html" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friend_requests.html" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/add_friend.html" />
-        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/information/how_to_use.html" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/information/features.html" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/information.py" />
-        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/items.py" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/items/user_item_list.html" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/items/private_item_list.html" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/items/public_item_list.html" />
-        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
-        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/plugin_layouts/layouts/Unqualified.html" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/friends.py" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/get_friend_code.html" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py" />
+        <option value="$PROJECT_DIR$/web2py/gluon/__init__.py" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/items.py" />
       </list>
     </option>
   </component>
@@ -624,7 +597,11 @@
       <created>1416118342448</created>
       <updated>1416118342448</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added get friend code page so users can add one another by exchanging their codes.">
+      <created>1416130856325</created>
+      <updated>1416130856325</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -696,7 +673,8 @@
     <MESSAGE value="Added help and feature stubs in both view and controllers to explain our site in detail." />
     <MESSAGE value="Fixed code that was lost by gitlab." />
     <MESSAGE value="Fixed security flaw where users could upload any file for their picture." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed security flaw where users could upload any file for their picture." />
+    <MESSAGE value="Added get friend code page so users can add one another by exchanging their codes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added get friend code page so users can add one another by exchanging their codes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -704,14 +682,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/plugin_layouts/layouts/Unqualified.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1320" max-vertical-offset="1815">
-          <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/add_friend.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="135">
@@ -737,7 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2057">
           <caret line="12" column="9" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -956,13 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.036916394" vertical-offset="0" max-vertical-offset="921">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/items/user_item_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="153">
@@ -984,74 +946,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/information.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.040173724" vertical-offset="286" max-vertical-offset="1207">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/add_friend.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="153">
           <caret line="0" column="52" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friend_requests.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.037988827" vertical-offset="0" max-vertical-offset="895">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friend_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.037988827" vertical-offset="0" max-vertical-offset="895">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/get_friend_code.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18994413" vertical-offset="0" max-vertical-offset="895">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/information.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="921">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/gluon/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61608154" vertical-offset="0" max-vertical-offset="883">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/plugin_layouts/layouts/Unqualified.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67800456" vertical-offset="1187" max-vertical-offset="2516">
-          <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friend_requests.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="272">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/friend_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="238">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
-          <folding />
+        <state vertical-scroll-proportion="1.8117914" vertical-offset="0" max-vertical-offset="2499">
+          <caret line="94" column="12" selection-start-line="94" selection-start-column="12" selection-end-line="94" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/friends.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="422" max-vertical-offset="1343">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.1476656" vertical-offset="65" max-vertical-offset="1343">
+          <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/friends/get_friend_code.html">
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17094973" vertical-offset="0" max-vertical-offset="895">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state vertical-scroll-proportion="1.3854625" vertical-offset="0" max-vertical-offset="1496">
+          <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27687296" vertical-offset="0" max-vertical-offset="1241">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>

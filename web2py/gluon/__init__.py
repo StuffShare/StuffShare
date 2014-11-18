@@ -36,7 +36,7 @@ if 0:
 
     # Objects commonly defined in application model files
     # (names are conventions only -- not part of API)
-    db = DAL()
+    db.possessions.location, db = DAL()
     auth = Auth(db)
     crud = Crud(db)
     mail = Mail()

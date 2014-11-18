@@ -3,7 +3,7 @@ def public_item_list():
     query = (db.possessions.visibility == 'Public')
     grid = SQLFORM.grid(
         query,
-        fields = [db.possessions.item_name, db.possessions.notes, db.possessions.quality, db.possessions.return_date, db.possessions.picture],
+        fields = [db.possessions.item_name, db.possessions.notes, db.possessions.location, db.possessions.quality, db.possessions.return_date, db.possessions.picture],
         user_signature = False,
         deletable = False,
         editable = False,
@@ -27,7 +27,7 @@ def private_item_list():
     query = (db.possessions.visibility == 'Private')
     grid = SQLFORM.grid(
         query,
-        fields = [db.possessions.item_name, db.possessions.notes, db.possessions.quality, db.possessions.return_date, db.possessions.picture],
+        fields = [db.possessions.item_name, db.possessions.notes, db.possessions.location, db.possessions.quality, db.possessions.return_date, db.possessions.picture],
         user_signature = False,
         deletable = False,
         editable = False,
@@ -47,24 +47,11 @@ def private_item_list():
 
 
 @auth.requires_login()
-def add_item():
-    form = SQLFORM(db.possessions,
-        fields = ['item_name', 'notes', 'quality', 'visibility', 'return_date', 'picture'],
-    )
-    form.vars.user_id = auth.user.id
-    if form.process().accepted:
-       response.flash = 'Item Added.'
-    elif form.errors:
-       response.flash = 'Item was not Added!'
-    return dict(form=form)
-
-
-@auth.requires_login()
 def user_item_list():
     query = (db.possessions.user_id == auth.user.id)
     grid = SQLFORM.grid(
         query,
-        fields = [db.possessions.user_id, db.possessions.item_name, db.possessions.notes, db.possessions.quality, db.possessions.return_date, db.possessions.picture],
+        fields = [db.possessions.user_id, db.possessions.item_name, db.possessions.notes, db.possessions.location, db.possessions.quality, db.possessions.location, db.possessions.return_date, db.possessions.picture],
         user_signature = False,
         create = False,
         formname = 'web2py_grid',
@@ -79,3 +66,17 @@ def user_item_list():
         )
     )
     return dict(grid=grid)
+
+
+
+@auth.requires_login() #CURRENT USER?
+def add_item():
+    form = SQLFORM(db.possessions,
+        fields = ['item_name', 'notes', 'quality', 'location', 'visibility', 'return_date', 'picture'],
+    )
+    form.vars.user_id = auth.user.id
+    if form.process().accepted:
+       response.flash = 'Item Added.'
+    elif form.errors:
+       response.flash = 'Item was not Added!'
+    return dict(form=form)
