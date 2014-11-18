@@ -68,7 +68,6 @@ def user_item_list():
     return dict(grid=grid)
 
 
-
 @auth.requires_login()
 def add_item():
     form = SQLFORM(db.possessions,
