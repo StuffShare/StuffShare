@@ -342,3 +342,10 @@ success!
 timestamp: 2014-11-17T19:45:53.989000
 ALTER TABLE possessions ADD location TEXT;
 success!
+timestamp: 2014-11-17T21:22:50.464000
+ALTER TABLE possessions ADD user_first_name TEXT;
+timestamp: 2014-11-17T21:22:50.472000
+ALTER TABLE possessions ADD user_last_name TEXT;
+timestamp: 2014-11-17T21:22:50.485000
+ALTER TABLE possessions ADD user_email TEXT;
+success!
