@@ -3,7 +3,18 @@ body {
 	padding: 0;
     background: #fff url(images/bg01.jpg) repeat-x top left;
 	font-size: 13px;
-	color: #717171;
+	color: #000;
+}
+
+.auth_navbar {
+    top: 0px;
+    float: right;
+    width: 100%;
+    background-color: black;
+    font-size: 15px;
+    text-align: right;
+    color: white;
+    line-height: 1.4em;
 }
 
 body, th, td, input, textarea, select, option {
@@ -97,6 +108,8 @@ a:hover {
 	text-decoration: none;
 	color: #FFFFFF;
 }
+
+
 
 /* Menu */
 
@@ -301,8 +314,9 @@ a.button,
 		padding-right: 0 !important;
 		text-align: center; }
 
-form {
+form, table {
 		margin-bottom: 10px;
+        padding: 5px 10px 5px 10px;
        } /** border: 1px solid #000; WEB2PY EDIT **/
 	fieldset {
 		margin-bottom: 5px; } /** WEB2PY EDIT **/
@@ -338,17 +352,23 @@ form {
 		box-shadow:  0 0 3px rgba(0,0,0,.2); }
 	textarea {
 		min-height: 60px; }
-	label,
-	legend {
-		display: block;
-		font-weight: bold;
-		font-size: 13px;  }
-	select {
-		width: 220px; }
-	input[type="checkbox"] {
-		display: inline; }
-	label span,
-	legend span {
-		font-weight: normal;
-		font-size: 13px;
-		color: #444; }
+
+ /* *Grid */
+.web2py_grid a { text-decoration:none;}
+.web2py_grid table { width: 100% }
+.web2py_grid td { white-space:nowrap; }
+.web2py_grid th { background-color:#EAEAEA; }
+.web2py_grid tbody th,
+.web2py_grid tbody td {
+    padding: 5px 10px 5px;
+    line-height: 13.5px;
+    vertical-align: top;
+}
+
+.web2py_grid thead th {
+    padding-top: 9px;
+    font-weight: bold;
+    border-bottom: 1px solid #DDD;
+}
+.web2py_grid tr.odd {background-color: #F9F9F9;}
+.web2py_grid tr:hover {background-color: #F5F5F5; }
