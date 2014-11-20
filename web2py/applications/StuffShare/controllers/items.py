@@ -31,13 +31,26 @@ def private_item_list():
 @auth.requires_login()
 def user_item_list():
     query = (db.possessions.user_id == auth.user.id)
+
+    db.possessions.user_id.readable = False
+    db.possessions.user_id.writable = False
+    db.possessions.user_first_name.writable = False
+    db.possessions.user_last_name.writable = False
+    db.possessions.user_email.writable = False
+
     grid = SQLFORM.grid(
         query,
-        fields = [db.possessions.item_name,db.possessions.user_first_name, db.possessions.user_last_name, db.possessions.user_email, db.possessions.quality, db.possessions.location, db.possessions.return_date, db.possessions.picture],
+        fields = [db.possessions.item_name, db.possessions.user_first_name, db.possessions.user_last_name, db.possessions.user_email, db.possessions.quality, db.possessions.location, db.possessions.return_date, db.possessions.picture],
         user_signature = False,
         create = False,
         formname = 'web2py_grid',
     )
+
+    db.possessions.user_id.readable = False
+    db.possessions.user_first_name.writable = True
+    db.possessions.user_last_name.writable = True
+    db.possessions.user_email.writable = True
+
     return dict(grid=grid)
 
 
