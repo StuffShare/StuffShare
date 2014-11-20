@@ -3,21 +3,12 @@ def public_item_list():
     query = (db.possessions.visibility == 'Public')
     grid = SQLFORM.grid(
         query,
-        fields = [db.possessions.user_first_name, db.possessions.user_last_name, db.possessions.user_email, db.possessions.item_name, db.possessions.notes,  db.possessions.quality, db.possessions.location, db.possessions.return_date, db.possessions.picture],
+        fields = [db.possessions.item_name,db.possessions.user_first_name, db.possessions.user_last_name, db.possessions.user_email, db.possessions.quality, db.possessions.location, db.possessions.return_date, db.possessions.picture],
         user_signature = False,
         deletable = False,
         editable = False,
         create = False,
         formname = 'web2py_grid',
-        exportclasses = dict(
-            csv_with_hidden_cols = False,
-            xml = False,
-            html = False,
-            csv = False,
-            json = False,
-            tsv_with_hidden_cols = False,
-            tsv = False
-        )
     )
     return dict(grid=grid)
 
@@ -27,21 +18,12 @@ def private_item_list():
     query = (db.possessions.visibility == 'Private')
     grid = SQLFORM.grid(
         query,
-        fields = [db.possessions.user_first_name, db.possessions.user_last_name, db.possessions.user_email, db.possessions.item_name, db.possessions.notes, db.possessions.quality, db.possessions.location, db.possessions.return_date, db.possessions.picture],
+        fields = [db.possessions.item_name,db.possessions.user_first_name, db.possessions.user_last_name, db.possessions.user_email, db.possessions.quality, db.possessions.location, db.possessions.return_date, db.possessions.picture],
         user_signature = False,
         deletable = False,
         editable = False,
         create = False,
         formname = 'web2py_grid',
-        exportclasses = dict(
-            csv_with_hidden_cols = False,
-            xml = False,
-            html = False,
-            csv = False,
-            json = False,
-            tsv_with_hidden_cols = False,
-            tsv = False
-        )
     )
     return dict(grid=grid)
 
@@ -51,19 +33,10 @@ def user_item_list():
     query = (db.possessions.user_id == auth.user.id)
     grid = SQLFORM.grid(
         query,
-        fields = [db.possessions.user_first_name, db.possessions.user_last_name, db.possessions.user_email, db.possessions.item_name, db.possessions.notes, db.possessions.quality, db.possessions.location, db.possessions.return_date, db.possessions.picture],
+        fields = [db.possessions.item_name,db.possessions.user_first_name, db.possessions.user_last_name, db.possessions.user_email, db.possessions.quality, db.possessions.location, db.possessions.return_date, db.possessions.picture],
         user_signature = False,
         create = False,
         formname = 'web2py_grid',
-        exportclasses = dict(
-            csv_with_hidden_cols = False,
-            xml = False,
-            html = False,
-            csv = False,
-            json = False,
-            tsv_with_hidden_cols = False,
-            tsv = False
-        )
     )
     return dict(grid=grid)
 
