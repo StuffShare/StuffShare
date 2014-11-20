@@ -20,7 +20,7 @@ body {
 body, th, td, input, textarea, select, option {
 	font-weight: normal;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
 }
 
@@ -139,7 +139,7 @@ li {
 	text-decoration: none;
 	text-transform: lowercase;
 	font-size: 1.36em;
-	color:#7ACE11;
+	color:#2CA306;
 }
 
 #menu a:hover, .active a {
@@ -221,9 +221,8 @@ li {
 #sidebar h2 {
 	margin: 0;
 	padding: 5px 0 0 20px;
-    color: #7ACE11;
+    color: #2CA306;
     background: #000;
-    /*url(images/img01.jpg) no-repeat left 80%; */
 }
 
 #sidebar a {
