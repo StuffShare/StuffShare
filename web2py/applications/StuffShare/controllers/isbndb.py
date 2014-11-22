@@ -16,3 +16,8 @@ def get_book_title(isbn):
 	# the following statement assumes the isbn was found.
 	# we should probably test for error conditions.
 	return book_info['data'][0]['title_latin']
+
+# isbndb returns a json object like the following in the event of an error:
+#{
+#   "error" : "Unable to locate 0735619679"
+#}
