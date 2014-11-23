@@ -1,11 +1,15 @@
 {{extend 'plugin_layouts/layouts/Theme.html'}}
 <h1>Friend Requests</h1>
-<table><tr><td>Name</td><td>Email</td></tr>
+
+<div id = "table">
+<table>
     {{for friend_request in friend_request_list:}}
-        {{=TD(friend_request.first_name + " " + friend_request.last_name)}}
-        {{=TD(A(friend_request.email, _href='mailto:' + friend_request.email))}}
-        {{=TD(A('Accept', _href=URL(f='accept_friend_request', vars={'friend_id':friend_request.id})))}}
-        {{=TD(A('Decline', _href=URL(f='decline_friend_request', vars={'friend_id':friend_request.id})))}}
-        {{=TR()}}
+            <tr>
+                <td>Name</td><td>Email</td></tr>
+            {{=TD(friend_request.first_name + " " + friend_request.last_name)}}
+            {{=TD(A(friend_request.email, _href='mailto:' + friend_request.email))}}
+            {{=TD(A('Accept', _href=URL(f='accept_friend_request', vars={'friend_id':friend_request.id})))}}
+            {{=TD(A('Decline', _href=URL(f='decline_friend_request', vars={'friend_id':friend_request.id})))}}
     {{pass}}
 </table>
+            </div>
