@@ -7,7 +7,7 @@ UNDER CONSTRUCTION BY JASON.
   <title>
    {{=response.title or request.application}}
   </title>
-  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/Unqualified/default.css'))}}
+  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/customlayout/default.css'))}}
   {{response.files.append(URL('static','plugin_layouts/superfish.js'))}}
   {{include 'web2py_ajax.html'}}
   <style>

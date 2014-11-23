@@ -159,6 +159,7 @@ li {
 #content {
 	float: left;
 	width: 1000px;
+    margin-left: 10px;
     background-color: #f7f7f9;
 }
 
