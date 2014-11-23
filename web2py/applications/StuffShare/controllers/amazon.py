@@ -10,7 +10,7 @@ from hashlib import sha256 as sha256
 
 AWS_ACCESS_KEY_ID = 'AKIAJSUR6X4TI3SSLYZA'
 AWS_SECRET_ACCESS_KEY = '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'
-AWS_ASSOCIATE_ID = 'sc4p-20'
+AWS_ASSOCIATE_ID = 'sc4p-20' # Amazon generated this from the string "SFU CMPT 470 Project"
 
 hmac = hmac.new(AWS_SECRET_ACCESS_KEY, digestmod=sha256)
 
@@ -43,11 +43,11 @@ def get_signed_url(params):
 
 def get_book_info(isbn):
 	params = {'ResponseGroup':'Small,Images,AlternateVersions',
-					 'AssociateTag':AWS_ASSOCIATE_ID,
-					 'Operation':'ItemLookup',
-					 'SearchIndex':'Books',
-					 'IdType':'ISBN',
-					 'ItemId':isbn}
+	          'AssociateTag':AWS_ASSOCIATE_ID,
+	          'Operation':'ItemLookup',
+	          'SearchIndex':'Books',
+	          'IdType':'ISBN',
+	          'ItemId':isbn}
 	url = get_signed_url(params)
 	response = urllib2.urlopen(url)
 	return response.read()
