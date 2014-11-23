@@ -42,7 +42,7 @@ def get_signed_url(params):
 	return urlstring
 
 def get_book_info(isbn):
-	params = {'ResponseGroup':'Small,Images,AlternateVersions',
+	params = {'ResponseGroup':'Small,Images,ItemAttributes',
 	          'AssociateTag':AWS_ASSOCIATE_ID,
 	          'Operation':'ItemLookup',
 	          'SearchIndex':'Books',
