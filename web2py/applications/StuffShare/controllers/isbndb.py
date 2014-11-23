@@ -12,11 +12,11 @@ def get_book_info(isbn):
     return book_info
 
 def get_book_title(isbn):
-	book_info = get_book_info(isbn)
+    book_info = get_book_info(isbn)
 
-	# the following statement assumes the isbn was found.
-	# we should probably test for error conditions.
-	return book_info['data'][0]['title_latin']
+    # the following statement assumes the isbn was found.
+    # we should probably test for error conditions.
+    return book_info['data'][0]['title_latin']
 
 # isbndb returns a json object like the following in the event of an error:
 #{
