@@ -5,12 +5,14 @@ import hmac
 import urlparse
 import time
 import urllib2
+import re
 
 from hashlib import sha256 as sha256
+from xml.etree import ElementTree as ET
 
 AWS_ACCESS_KEY_ID = 'AKIAJSUR6X4TI3SSLYZA'
 AWS_SECRET_ACCESS_KEY = '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'
-AWS_ASSOCIATE_ID = 'sc4p-20' # Amazon generated this from the string "SFU CMPT 470 Project"
+AWS_ASSOCIATE_ID = 'sc4p-20'
 
 hmac = hmac.new(AWS_SECRET_ACCESS_KEY, digestmod=sha256)
 
@@ -31,18 +33,18 @@ def get_signed_url(params):
 
 	# Combine key value pairs into a string.
 	paramstring = '&'.join(['%s=%s' % (k, v) for k, v in key_values])
-	urlstring = "http://" + server + path + "?" + ('&'.join(['%s=%s' % (k, v) for k, v in key_values]))
+	url = "http://" + server + path + "?" + ('&'.join(['%s=%s' % (k, v) for k, v in key_values]))
 
 	# Add the method and path (always the same, how RESTy!) and get it ready to sign
 	hmac.update(action + "\n" + server + "\n" + path + "\n" + paramstring)
 
 	# Sign it up and make the url string
-	urlstring = urlstring + "&Signature=" + urllib2.quote(base64.encodestring(hmac.digest()).strip())
+	url = url + "&Signature=" + urllib2.quote(base64.encodestring(hmac.digest()).strip())
 
-	return urlstring
+	return url
 
 def get_book_info(isbn):
-	params = {'ResponseGroup':'Small,Images,ItemAttributes',
+	params = {'ResponseGroup':'Small,ItemAttributes', #,Images
 	          'AssociateTag':AWS_ASSOCIATE_ID,
 	          'Operation':'ItemLookup',
 	          'SearchIndex':'Books',
@@ -50,4 +52,21 @@ def get_book_info(isbn):
 	          'ItemId':isbn}
 	url = get_signed_url(params)
 	response = urllib2.urlopen(url)
-	return response.read()
+	xml_string = response.read()
+
+	# remove the obnoxious namespace
+	xml_string = re.sub(' xmlns="[^"]+"', '', xml_string, count = 1)
+
+	# construct the xml object
+	xml_object = ET.fromstring(xml_string)
+
+	# remove the useless 'OperationRequest' node
+	operationRequest = xml_object.find('OperationRequest')
+	xml_object.remove(operationRequest)
+
+	return xml_object
+
+def get_book_title(isbn):
+	root = get_book_info(isbn)
+	title = root.find('Items/Item/ItemAttributes/Title')
+	return title.text
