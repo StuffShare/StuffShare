@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d213766-f322-4a13-97d0-5024c046e768" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/static/images/friends_overview.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/static/images/items_overview.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/static/images/security_overview.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/static/images/site_overview.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/features/friends.html" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/features/friends.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/features/items.html" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/features/items.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/features/overview.html" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/features/overview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/views/features/security.html" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/views/features/security.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StuffShare.iws" />
@@ -41,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="friends.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="friends.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/features/friends.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
-              <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.037988827" vertical-offset="0" max-vertical-offset="895">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="items.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/features/items.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.05698324" vertical-offset="0" max-vertical-offset="895">
+            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="153">
               <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
@@ -74,8 +67,8 @@
       <file leaf-file-name="overview.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/features/overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="595">
-              <caret line="1" column="69" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
+            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="136">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -136,8 +129,8 @@
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/plugin_layouts/layouts/Theme.html" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/features/friends.html" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/features/security.html" />
-        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/features/overview.html" />
         <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/features/items.html" />
+        <option value="$PROJECT_DIR$/web2py/applications/StuffShare/views/features/overview.html" />
       </list>
     </option>
   </component>
@@ -584,7 +577,11 @@
       <created>1416795794664</created>
       <updated>1416795794664</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added site overview / help images from poster. Renamed &quot;information&quot; to &quot;features&quot;.">
+      <created>1416797326858</created>
+      <updated>1416797326858</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -658,7 +655,8 @@
     <MESSAGE value="Fixed security flaw where users could upload any file for their picture." />
     <MESSAGE value="Added get friend code page so users can add one another by exchanging their codes." />
     <MESSAGE value="Added stubs for site overview." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added stubs for site overview." />
+    <MESSAGE value="Added site overview / help images from poster. Renamed &quot;information&quot; to &quot;features&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added site overview / help images from poster. Renamed &quot;information&quot; to &quot;features&quot;." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1008,10 +1006,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/features/friends.html">
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/features/overview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
-          <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="72" />
+        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="136">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1024,18 +1022,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/features/overview.html">
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/features/items.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="595">
-          <caret line="1" column="69" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="153">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/features/items.html">
+    <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/views/features/friends.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05698324" vertical-offset="0" max-vertical-offset="895">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.037988827" vertical-offset="0" max-vertical-offset="895">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
