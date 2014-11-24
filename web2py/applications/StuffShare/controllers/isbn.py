@@ -13,16 +13,11 @@ def calc_isbn_10_check_digit(digits):
 	else:
 		return chr(checkdigit_value + ord('0'))
 
-def calc_isbn_13_check_digit(digits):
-	checksum = 0
-	i = 0
-	for digit in digits:
-		if (i % 2 == 0):
-			checksum += int(digit)
-		else:
-			checksum += 3 * int(digit)
-		i = i + 1
+def even(i):
+	return i % 2 == 0
 
+def calc_isbn_13_check_digit(digits):
+	checksum = sum(int(digit) * (1 if (even(i)) else 3) for i, digit in enumerate(digits))
 	checkdigit_value = 10 - checksum % 10
 	return chr(checkdigit_value + ord('0'))
 	
@@ -30,7 +25,7 @@ def is_valid_isbn_10(isbn):
 	isbn = format_isbn(isbn)
 
 	if len(isbn) != 10:
-		return False;
+		return False
 
 	match = re.search(r'^([0-9]{9})([0-9]|X)$', isbn)
 	if not match:
@@ -42,7 +37,7 @@ def is_valid_isbn_13(isbn):
 	isbn = format_isbn(isbn)
 
 	if len(isbn) != 13:
-		return False;
+		return False
 		
 	match = re.search(r'^([0-9]{12})([0-9])$', isbn)
 	if not match:
