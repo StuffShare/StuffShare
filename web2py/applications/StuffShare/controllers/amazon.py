@@ -6,6 +6,7 @@ import urlparse
 import time
 import urllib2
 import re
+import isbn
 
 from hashlib import sha256 as sha256
 from xml.etree import ElementTree as ET
@@ -42,13 +43,24 @@ def get_signed_url(params):
 
 	return url
 
-def get_book_info(isbn):
+def get_book_info(some_isbn):
+	some_isbn = format_isbn(some_isbn)
+
+	isbn_10 = None
+	if (isbn.is_valid_isbn_10(some_isbn)):
+		isbn_10 = some_isbn
+	else:
+		if (isbn.is_valid_isbn_13(some_isbn)):
+			isbn_10 = isbn.convert_isbn_13_to_isbn_10(some_isbn)
+		else:
+			return None
+
 	params = {'ResponseGroup':'Small,ItemAttributes', #,Images
 	          'AssociateTag':AWS_ASSOCIATE_ID,
 	          'Operation':'ItemLookup',
 	          'SearchIndex':'Books',
 	          'IdType':'ISBN',
-	          'ItemId':isbn}
+	          'ItemId':isbn_10}
 	url = get_signed_url(params)
 	response = urllib2.urlopen(url)
 	xml_string = response.read()
@@ -56,12 +68,27 @@ def get_book_info(isbn):
 	# remove the obnoxious namespace
 	xml_string = re.sub(' xmlns="[^"]+"', '', xml_string, count = 1)
 
-	# construct the xml object
-	xml_object = ET.fromstring(xml_string)
-
 	# remove the useless 'OperationRequest' node
 	operationRequest = xml_object.find('OperationRequest')
 	xml_object.remove(operationRequest)
+
+	items = xml_object.find('Items')
+
+	# remove the useless 'Request' node
+	request = items.find('Request')
+	items.remove(request)
+
+	copy_of_item_list = items.findall('Item')
+
+	# remove nodes whose ASINs don't match our ISBN10
+	for item in copy_of_item_list:
+		asin = item.find('ASIN')
+		if asin.text == isbn_10:
+			# remove the 'ItemLinks' node
+			itemLinks = item.find('ItemLinks')
+			item.remove(itemLinks)
+		else:
+			items.remove(item)
 
 	return xml_object
 
