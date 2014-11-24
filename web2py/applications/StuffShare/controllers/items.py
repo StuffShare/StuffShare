@@ -1,4 +1,4 @@
-__author__ = 'MichaelM'
+__author__ = 'Michael Moo'
 
 @auth.requires_login()
 def public_item_list():
