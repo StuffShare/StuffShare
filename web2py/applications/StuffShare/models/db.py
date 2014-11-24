@@ -1,3 +1,5 @@
+__author__ = 'MichaelM'
+
 # db = DAL('mysql://StuffShare:cmpt470@mysql.server/StuffShare$stuffshare') # Use when uploaded to PythonAnywhere
 db = DAL('sqlite://storage.db')  # Use for offline testing
 

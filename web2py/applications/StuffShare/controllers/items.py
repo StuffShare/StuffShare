@@ -1,3 +1,5 @@
+__author__ = 'MichaelM'
+
 @auth.requires_login()
 def public_item_list():
     query = (db.possessions.visibility == 'Public')

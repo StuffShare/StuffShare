@@ -1,3 +1,5 @@
+__author__ = 'Michael Moo, Ishan Bhutani'
+
 @auth.requires_login()
 def friend_list():
     query = (db.auth_user.id == db.friends.friend_id) & (auth.user.id == db.friends.user_id)
