@@ -14,7 +14,9 @@ AWS_ACCESS_KEY_ID = 'AKIAJSUR6X4TI3SSLYZA'
 AWS_SECRET_ACCESS_KEY = '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'
 AWS_ASSOCIATE_ID = 'sc4p-20'
 
-hmac = hmac.new(AWS_SECRET_ACCESS_KEY, digestmod=sha256)
+AWS_ACCESS_KEY_ID = 'AKIAJSUR6X4TI3SSLYZA'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_ASSOCIATE_ID = 'sc4p-20'
 
 # getSignedUrl from http://www.princesspolymath.com/princess_polymath/?p=182
 def get_signed_url(params):
@@ -36,10 +38,12 @@ def get_signed_url(params):
 	url = "http://" + server + path + "?" + ('&'.join(['%s=%s' % (k, v) for k, v in key_values]))
 
 	# Add the method and path (always the same, how RESTy!) and get it ready to sign
-	hmac.update(action + "\n" + server + "\n" + path + "\n" + paramstring)
+
+	str = action + "\n" + server + "\n" + path + "\n" + paramstring
+	my_hmac = hmac.new(AWS_SECRET_ACCESS_KEY, str, digestmod=sha256)
 
 	# Sign it up and make the url string
-	url = url + "&Signature=" + urllib2.quote(base64.encodestring(hmac.digest()).strip())
+	url = url + "&Signature=" + urllib2.quote(base64.encodestring(my_hmac.digest()).strip())
 
 	return url
 
