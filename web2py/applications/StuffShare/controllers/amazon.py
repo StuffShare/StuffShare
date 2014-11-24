@@ -14,10 +14,6 @@ AWS_ACCESS_KEY_ID = 'AKIAJSUR6X4TI3SSLYZA'
 AWS_SECRET_ACCESS_KEY = '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'
 AWS_ASSOCIATE_ID = 'sc4p-20'
 
-AWS_ACCESS_KEY_ID = 'AKIAJSUR6X4TI3SSLYZA'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_ASSOCIATE_ID = 'sc4p-20'
-
 # getSignedUrl from http://www.princesspolymath.com/princess_polymath/?p=182
 def get_signed_url(params):
 	action = 'GET'
