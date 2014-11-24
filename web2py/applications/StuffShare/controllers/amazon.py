@@ -33,8 +33,7 @@ def get_signed_url(params):
 	paramstring = '&'.join(['%s=%s' % (k, v) for k, v in key_values])
 	url = "http://" + server + path + "?" + ('&'.join(['%s=%s' % (k, v) for k, v in key_values]))
 
-	# Add the method and path (always the same, how RESTy!) and get it ready to sign
-
+	# Calculate the signature for the request
 	str = action + "\n" + server + "\n" + path + "\n" + paramstring
 	my_hmac = hmac.new(AWS_SECRET_ACCESS_KEY, str, digestmod=sha256)
 
