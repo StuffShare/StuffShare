@@ -3,136 +3,210 @@
 UNDER CONSTRUCTION BY JASON.
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
- <head>
-  <title>
-   {{=response.title or request.application}}
-  </title>
-  {{response.files.append(URL(request.application,'static','plugin_layouts/layouts/customlayout/default.css'))}}
-  {{response.files.append(URL('static','plugin_layouts/superfish.js'))}}
-  {{include 'web2py_ajax.html'}}
-  <style>
-    ul.web2py-menu-vertical { width: 150px; position: relative; top:1em; left:1em;  z-index:30; border:0; margin:0; padding: 0; list-style: none; text-decoration: none;}
-    ul.web2py-menu-vertical li { margin:0; padding:0; border:0; width: 150px; background: black; text-align:left;}
-    ul.web2py-menu-vertical li a { margin:0; padding: 1px 3px 1px 3px; border:0; width: 144px; color: white; font-size:12px;}
-    div.flash { position: fixed; float: right; padding: 10px; top: 10px; right: 30px; opacity: 0.75; margin: 10px 10px 10px 10px; text-align: center; clear: both; color: #fff; font-size: 11pt; text-align: center; vertical-align: middle; cursor: pointer; background: black; border: 2px solid #fff; -moz-border-radius: 5px; -webkit-border-radius: 5px; z-index: 2; }
-    div.error { background-color: red; color: white; padding: 3px; }
-    .auth_navbar { position: absolute; text-align:right; z-index:20; top: 130px; right:100px; border:0; padding:0 }
-  </style>
- </head>
- <body>
-  <!-- start header -->
-  {{try:}}{{=auth.navbar(action=URL('default','user'))}}{{except:pass}}
-  <!-- start header -->
-  <div id="header">
-   <div id="logo">
-    <h1>
-     <a href={{=URL(f='index', c='default')}}>{{=response.title or request.application}}</a>
-    </h1>
-    <p>
-     <a href={{=URL(f='index', c='default')}}>Share your stuff (づ｡◕‿‿◕｡)づ</a>
-     </a>
-    </p>
-   </div>
-   <div id="menu">
+<head>
+    <title>
+    {{=response.title or request.application}}
+    </title>
+{{response.files.append(URL(request.application,'static','plugin_layouts/layouts/customlayout/default.css'))}}
+{{response.files.append(URL('static','plugin_layouts/superfish.js'))}}
+{{include 'web2py_ajax.html'}}
+    <style>
+        ul.web2py-menu-vertical {
+            width: 150px;
+            position: relative;
+            top: 1em;
+            left: 1em;
+            z-index: 30;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        ul.web2py-menu-vertical li {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 150px;
+            background: black;
+            text-align: left;
+        }
+
+        ul.web2py-menu-vertical li a {
+            margin: 0;
+            padding: 1px 3px 1px 3px;
+            border: 0;
+            width: 144px;
+            color: white;
+            font-size: 12px;
+        }
+
+        div.flash {
+            position: fixed;
+            float: right;
+            padding: 10px;
+            top: 10px;
+            right: 30px;
+            opacity: 0.75;
+            margin: 10px 10px 10px 10px;
+            text-align: center;
+            clear: both;
+            color: #fff;
+            font-size: 11pt;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            background: black;
+            border: 2px solid #fff;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            z-index: 2;
+        }
+
+        div.error {
+            background-color: red;
+            color: white;
+            padding: 3px;
+        }
+
+        .auth_navbar {
+            position: absolute;
+            text-align: right;
+            z-index: 20;
+            top: 130px;
+            right: 100px;
+            border: 0;
+            padding: 0
+        }
+    </style>
+</head>
+<body>
+<!-- start header -->
+{{try:}}{{=auth.navbar(action=URL('default','user'))}}{{except:pass}}
+<!-- start header -->
+<div id="header">
+    <div id="logo">
+        <h1>
+            <a href={{=URL(f='index', c='default')}}>{{=response.title or request.application}}</a>
+        </h1>
+
+        <p>
+            <a href={{=URL(f='index', c='default')}}>Share your stuff (づ｡◕‿‿◕｡)づ</a>
+        </p>
+    </div>
+    <div id="menu">
     {{=MENU(response.menu,_class='web2py-menu')}}
-    <script>
-      jQuery(document).ready(function(){jQuery('ul.web2py-menu').superfish({delay:400});});
-    </script>
-   </div>
-  </div>
-  <!-- end header -->
-  <!-- start page -->
-  <div id="page">
-   <!-- start content -->
-   <div id="content">
-    <div class="flash">{{=response.flash or ''}}</div>
+        <script>
+            jQuery(document).ready(function () {
+                jQuery('ul.web2py-menu').superfish({delay: 400});
+            });
+        </script>
+    </div>
+</div>
+<!-- end header -->
+<!-- start page -->
+<div id="page">
+    <!-- start content -->
+    <div id="content">
+        <div class="flash">{{=response.flash or ''}}</div>
     {{include}}
-   </div>
-   <!-- end content -->
-   <!-- start sidebar -->
-   <div id="sidebar">
-    <ul>
-     <li>
-      <h2>
-       Items
-      </h2>
-      <ul>
-       <li>
-        <a href={{=URL(f='public_item_list', c='items')}}>
-            Public Item List
-        </a>
-       </li>
-        <li>
-        <a href={{=URL(f='private_item_list', c='items')}}>
-            Private Item List
-        </a>
-       </li>
-       <li>
-        <a href={{=URL(f='add_item', c='items')}}>
-            Add Item
-        </a>
-       </li>
-       <li>
-        <a href={{=URL(f='user_item_list', c='items')}}>
-            Edit / Delete Item
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li>
-     <li>
-      <h2>
-       Friends
-      </h2>
-      <ul>
-       <li>
-        <a href={{=URL(f='friend_list', c='friends')}}>
-            Friend List
-        </a>
-       </li>
-       <li>
-        <a href={{=URL(f='add_friend', c='friends')}}>
-            Add Friend
-        </a>
-       </li>
-        <li>
-        <a href={{=URL(f='friend_requests', c='friends')}}>
-            Friend Requests
-        </a>
-       </li>
-       <li>
-        <a href={{=URL(f='get_friend_code', c='friends')}}>
-            Get Friend Code
-        </a>
-       </li>
-      </ul>
-     </li>
-     <li>
-      <h2>
-       Information
-      </h2>
-      <ul>
-       <li>
-        <a href={{=URL(f='how_to_use', c='information')}}>
-            How to Use
-        </a>
-       </li>
-       <li>
-        <a href={{=URL(f='features', c='information')}}>
-            Features
-        </a>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </div>
-   <!-- end sidebar -->
-  </div>
-  <!-- end page -->
-  <div id="footer">
-   <p>
-   Created by Michael Moo, Ishan Bhutani, Gary Williams and Jason Zhang.
-   </p>
-  </div>
- </body>
+    </div>
+    <!-- end content -->
+    <!-- start sidebar -->
+    <div id="sidebar">
+        <ul>
+            <li>
+                <h2>
+                    Items
+                </h2>
+                <ul>
+                    <li>
+                        <a href={{=URL(f='public_item_list', c='items')}}>
+                            Public Item List
+                        </a>
+                    </li>
+                    <li>
+                        <a href={{=URL(f='private_item_list', c='items')}}>
+                            Private Item List
+                        </a>
+                    </li>
+                    <li>
+                        <a href={{=URL(f='add_item', c='items')}}>
+                            Add Item
+                        </a>
+                    </li>
+                    <li>
+                        <a href={{=URL(f='user_item_list', c='items')}}>
+                            Edit / Delete Item
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+            <li>
+                <h2>
+                    Friends
+                </h2>
+                <ul>
+                    <li>
+                        <a href={{=URL(f='friend_list', c='friends')}}>
+                            Friend List
+                        </a>
+                    </li>
+                    <li>
+                        <a href={{=URL(f='add_friend', c='friends')}}>
+                            Add Friend
+                        </a>
+                    </li>
+                    <li>
+                        <a href={{=URL(f='friend_requests', c='friends')}}>
+                            Friend Requests
+                        </a>
+                    </li>
+                    <li>
+                        <a href={{=URL(f='get_friend_code', c='friends')}}>
+                            Get Friend Code
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h2>
+                    Features
+                </h2>
+                <ul>
+                    <li>
+                        <a href={{=URL(f='overview', c='features')}}>
+                            Site Overview
+                        </a>
+                    </li>
+                    <li>
+                        <a href={{=URL(f='security', c='features')}}>
+                            Security
+                        </a>
+                    </li>
+                    <li>
+                        <a href={{=URL(f='items', c='features')}}>
+                            Items
+                        </a>
+                    </li>
+                    <li>
+                        <a href={{=URL(f='friends', c='features')}}>
+                            Friends
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- end sidebar -->
+</div>
+<!-- end page -->
+<div id="footer">
+    <p>
+        Created by Michael Moo, Ishan Bhutani, Gary Williams and Jason Zhang.
+    </p>
+</div>
+</body>
 </html>

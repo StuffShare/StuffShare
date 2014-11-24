@@ -1,9 +1,19 @@
 {{extend 'plugin_layouts/layouts/Theme.html'}}
 <h1>Friend List</h1>
-<table><tr><td>Name</td><td>Email</td></tr>
+
+<div id="table">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Delete</td>
+        </tr>
     {{for friend in friends:}}
+        <tr>
         {{=TD(friend.first_name + " " + friend.last_name)}}
         {{=TD(A(friend.email, _href='mailto:' + friend.email))}}
-        {{=TR()}}
+        {{=TD(A('X', _href=URL(f='delete_friend', vars={'friend_id':friend.id})))}}
+        </tr>
     {{pass}}
-</table>
+    </table>
+</div>

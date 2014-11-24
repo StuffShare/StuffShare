@@ -19,9 +19,22 @@ def add_friend():
     return dict(form=form)
 
 
+@auth.requires_login()
+def delete_friend():
+    friend_id = request.vars.friend_id
+
+    query = ((db.friends.user_id == auth.user.id) & (db.friends.friend_id == friend_id)) |\
+            ((db.friends.friend_id == auth.user.id) & (db.friends.user_id == friend_id))
+
+    db(query).delete()
+
+    redirect(URL('friend_list'))
+    return
+
+
 #Adds (user_id, friend_id) and (friend_id, user_id)
 @auth.requires_login()
-def new_friend(user_id, friend_id):
+def __new_friend(user_id, friend_id):
     db.friends.insert(user_id=user_id, friend_id=friend_id)
     db.friends.insert(friend_id=user_id, user_id=friend_id)
     return
@@ -35,7 +48,7 @@ def accept_friend_request():
     query = db.friend_requests.friend_id == auth.user.id
     query &= db.friend_requests.user_id == friend_id
 
-    new_friend(auth.user.id, friend_id)
+    __new_friend(auth.user.id, friend_id)
 
     db(query).delete()
 
