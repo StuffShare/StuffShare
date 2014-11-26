@@ -1,2 +1,2 @@
 __author__ = 'Ishan Bhutani'
-__google_maps_api_key__ = 'AIzaSyCWrj_UWQZxy3HK83emQUIgPvxhSvDpdTs'
+__GOOGLE_MAPS_API_KEY__ = 'AIzaSyCWrj_UWQZxy3HK83emQUIgPvxhSvDpdTs'
