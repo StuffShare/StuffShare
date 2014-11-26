@@ -56,7 +56,7 @@ db.possessions.quality.requires = IS_NOT_EMPTY()
 db.possessions.quality.requires = IS_IN_SET(('Poor', 'Mediocre', 'Average', 'Good', 'Excellent', 'Like New'))
 
 db.possessions.visibility.requires = IS_NOT_EMPTY()
-db.possessions.visibility.requires = IS_IN_SET(('Public', 'Private'))
+db.possessions.visibility.requires = IS_IN_SET(('Public', 'Friend', 'Private'))
 
 db.possessions.return_date.requires = IS_NOT_EMPTY()
 

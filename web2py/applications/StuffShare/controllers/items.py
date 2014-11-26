@@ -24,17 +24,17 @@ def friend_item_list():
     friend_query = (db.friends.user_id == auth.user_id)
     friend_list = db(friend_query).select(db.friends.friend_id)
 
-    private_items_query = (db.possessions.visibility == 'Private')
+    friend_item_query = (db.possessions.visibility == 'Friend')
 
     #Only show rows which have a friend id that corresponds to current user's friends
     friend_exists_query = False
     for friend in friend_list:
         friend_exists_query |= db.possessions.user_id == friend.friend_id
 
-    private_items_query &= friend_exists_query
+    friend_item_query &= friend_exists_query
 
     grid = SQLFORM.grid(
-        private_items_query,
+        friend_item_query,
         fields=[db.possessions.item_name, db.possessions.user_first_name, db.possessions.user_last_name,
                 db.possessions.user_email, db.possessions.quality, db.possessions.location, db.possessions.return_date,
                 db.possessions.picture],
@@ -50,20 +50,10 @@ def friend_item_list():
 
 @auth.requires_login()
 def private_item_list():
-    friend_query = (db.friends.user_id == auth.user_id)
-    friend_list = db(friend_query).select(db.friends.friend_id)
-
-    private_items_query = (db.possessions.visibility == 'Private')
-
-    #Only show rows which have a friend id that corresponds to current user's friends
-    friend_exists_query = False
-    for friend in friend_list:
-        friend_exists_query |= db.possessions.user_id == friend.friend_id
-
-    private_items_query &= friend_exists_query
+    private_query = (db.possessions.user_id == auth.user.id)&(db.possessions.visibility == 'Private')
 
     grid = SQLFORM.grid(
-        private_items_query,
+        private_query,
         fields=[db.possessions.item_name, db.possessions.user_first_name, db.possessions.user_last_name,
                 db.possessions.user_email, db.possessions.quality, db.possessions.location, db.possessions.return_date,
                 db.possessions.picture],
