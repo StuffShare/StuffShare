@@ -1,0 +1,10 @@
+{{extend 'plugin_layouts/layouts/Theme.html'}}
+<h1>View Item</h1>
+{{=grid[0]}}
+{{=grid[1]}}
+{{
+=IFRAME(_src="https://www.google.com/maps/embed/v1/search"
+"?key=AIzaSyCWrj_UWQZxy3HK83emQUIgPvxhSvDpdTs"
+"&q="+ str(grid[1][0][5][1][0]))
+}}
+{{#Essentially retrieves the location string by hard-coding indices of grid; need to refactor this to make it more readable}}

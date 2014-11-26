@@ -81,13 +81,14 @@ def private_item_list():
 
 @auth.requires_login()
 def user_item_list():
+
     query = (db.possessions.user_id == auth.user.id)
 
     db.possessions.user_id.readable = False
     db.possessions.user_id.writable = False
-    db.possessions.user_first_name.writable = False
-    db.possessions.user_last_name.writable = False
-    db.possessions.user_email.writable = False
+    # db.possessions.user_first_name.writable = False
+    # db.possessions.user_last_name.writable = False
+    # db.possessions.user_email.writable = False
 
     grid = SQLFORM.grid(
         query,
@@ -96,13 +97,21 @@ def user_item_list():
                 db.possessions.picture],
         user_signature=False,
         create=False,
-        formname='web2py_grid',
+        formname='web2py_grid'
     )
 
     db.possessions.user_id.readable = False
     db.possessions.user_first_name.writable = True
     db.possessions.user_last_name.writable = True
     db.possessions.user_email.writable = True
+
+    if request.args(0) == "view":
+        response.view = 'items/view_item.html'
+        return dict(grid=grid)
+
+    if request.args(0) == "edit":
+        response.view = 'items/edit_item.html'
+        return dict(grid=grid)
 
     return dict(grid=grid)
 
