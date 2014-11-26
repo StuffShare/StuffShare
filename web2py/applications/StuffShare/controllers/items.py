@@ -1,4 +1,4 @@
-__author__ = 'Michael Moo'
+__author__ = 'Michael Moo, Ishan Bhutani'
 
 @auth.requires_login()
 def public_item_list():
@@ -19,6 +19,10 @@ def public_item_list():
     )
 
     db.possessions.visibility.readable = True
+
+    if request.args(0) == "view":
+        response.view = 'items/view_item.html'
+        return dict(grid=grid)
 
     return dict(grid=grid)
 
@@ -53,6 +57,10 @@ def friend_item_list():
 
     db.possessions.visibility.readable = True
 
+    if request.args(0) == "view":
+        response.view = 'items/view_item.html'
+        return dict(grid=grid)
+
     return dict(grid=grid)
 
 
@@ -75,6 +83,10 @@ def private_item_list():
     )
 
     db.possessions.visibility.readable = True
+
+    if request.args(0) == "view":
+        response.view = 'items/view_item.html'
+        return dict(grid=grid)
 
     return dict(grid=grid)
 
