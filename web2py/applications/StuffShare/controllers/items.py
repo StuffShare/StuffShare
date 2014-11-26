@@ -4,6 +4,8 @@ __author__ = 'Michael Moo'
 def public_item_list():
     query = (db.possessions.visibility == 'Public')
 
+    db.possessions.visibility.readable = False
+
     grid = SQLFORM.grid(
         query,
         fields=[db.possessions.item_name, db.possessions.user_first_name, db.possessions.user_last_name,
@@ -15,6 +17,8 @@ def public_item_list():
         create=False,
         formname='web2py_grid',
     )
+
+    db.possessions.visibility.readable = True
 
     return dict(grid=grid)
 
@@ -33,6 +37,8 @@ def friend_item_list():
 
     friend_item_query &= friend_exists_query
 
+    db.possessions.visibility.readable = False
+
     grid = SQLFORM.grid(
         friend_item_query,
         fields=[db.possessions.item_name, db.possessions.user_first_name, db.possessions.user_last_name,
@@ -45,12 +51,16 @@ def friend_item_list():
         formname='web2py_grid',
     )
 
+    db.possessions.visibility.readable = True
+
     return dict(grid=grid)
 
 
 @auth.requires_login()
 def private_item_list():
     private_query = (db.possessions.user_id == auth.user.id)&(db.possessions.visibility == 'Private')
+
+    db.possessions.visibility.readable = False
 
     grid = SQLFORM.grid(
         private_query,
@@ -64,6 +74,8 @@ def private_item_list():
         formname='web2py_grid',
     )
 
+    db.possessions.visibility.readable = True
+
     return dict(grid=grid)
 
 
@@ -73,7 +85,6 @@ def user_item_list():
 
     db.possessions.user_id.readable = False
     db.possessions.user_id.writable = False
-    db.possessions.visibility.writable = False
     db.possessions.user_first_name.writable = False
     db.possessions.user_last_name.writable = False
     db.possessions.user_email.writable = False
@@ -89,7 +100,6 @@ def user_item_list():
     )
 
     db.possessions.user_id.readable = False
-    db.possessions.visibility.writable = True
     db.possessions.user_first_name.writable = True
     db.possessions.user_last_name.writable = True
     db.possessions.user_email.writable = True
