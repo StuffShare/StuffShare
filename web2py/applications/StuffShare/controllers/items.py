@@ -73,13 +73,14 @@ def user_item_list():
 
     db.possessions.user_id.readable = False
     db.possessions.user_id.writable = False
+    db.possessions.visibility.writable = False
     db.possessions.user_first_name.writable = False
     db.possessions.user_last_name.writable = False
     db.possessions.user_email.writable = False
 
     grid = SQLFORM.grid(
         query,
-        fields=[db.possessions.item_name, db.possessions.user_first_name, db.possessions.user_last_name,
+        fields=[db.possessions.item_name, db.possessions.visibility, db.possessions.user_first_name, db.possessions.user_last_name,
                 db.possessions.user_email, db.possessions.quality, db.possessions.location, db.possessions.return_date,
                 db.possessions.picture],
         user_signature=False,
@@ -88,6 +89,7 @@ def user_item_list():
     )
 
     db.possessions.user_id.readable = False
+    db.possessions.visibility.writable = True
     db.possessions.user_first_name.writable = True
     db.possessions.user_last_name.writable = True
     db.possessions.user_email.writable = True

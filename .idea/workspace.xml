@@ -7,8 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0d213766-f322-4a13-97d0-5024c046e768" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/databases/storage.db" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/databases/storage.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/StuffShare.iml" afterPath="$PROJECT_DIR$/.idea/StuffShare.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/items.py" afterPath="$PROJECT_DIR$/web2py/applications/StuffShare/controllers/items.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -41,8 +39,8 @@
       <file leaf-file-name="items.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6460369" vertical-offset="0" max-vertical-offset="2023">
-              <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.110749185" vertical-offset="850" max-vertical-offset="2057">
+              <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -52,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1768">
-              <caret line="58" column="65" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="65" />
+              <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -606,7 +604,11 @@
       <created>1416983068887</created>
       <updated>1416983068887</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Implemented private item list / friend item list.">
+      <created>1416983660654</created>
+      <updated>1416983660654</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -631,7 +633,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -639,7 +641,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905138" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25208333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25208333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905138" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -685,7 +687,8 @@
     <MESSAGE value="Updated code ownership tags." />
     <MESSAGE value="Added more ownership tags." />
     <MESSAGE value="Added friend item list stubs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added friend item list stubs." />
+    <MESSAGE value="Implemented private item list / friend item list." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented private item list / friend item list." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1027,15 +1030,15 @@
     <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/models/db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1768">
-          <caret line="58" column="65" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="65" />
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web2py/applications/StuffShare/controllers/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6460369" vertical-offset="0" max-vertical-offset="2023">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.110749185" vertical-offset="850" max-vertical-offset="2057">
+          <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
           <folding />
         </state>
       </provider>
