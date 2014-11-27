@@ -3,7 +3,8 @@
 <h1>View Item</h1>
 {{=grid}}
 {{
-    =CENTER(IFRAME(_src="https://www.google.com/maps/embed/v1/search"
+    =CENTER(IFRAME(_width=990, _height=300, _frameborder=0,
+_src="https://www.google.com/maps/embed/v1/search"
     "?key="+__GOOGLE_MAPS_API_KEY__+
     "&q="+ str(grid[1][0][5][1][0])))
 }}
