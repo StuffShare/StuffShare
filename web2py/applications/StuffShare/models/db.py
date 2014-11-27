@@ -28,7 +28,8 @@ db.define_table('possessions',
                 Field('visibility', 'text'),
                 Field('return_date', 'date'),
                 Field('status', 'text'),
-                Field('picture', 'upload'))
+                Field('picture', 'upload'),
+                Field('ratings', 'integer', default=0))
 
 db.possessions.id.readable = False
 

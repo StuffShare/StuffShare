@@ -10,7 +10,7 @@ def public_item_list():
         query,
         fields=[db.possessions.item_name, db.possessions.user_first_name, db.possessions.user_last_name,
                 db.possessions.user_email, db.possessions.quality, db.possessions.location, db.possessions.return_date,
-                db.possessions.status, db.possessions.picture],
+                db.possessions.status, db.possessions.picture, db.possessions.ratings],
         user_signature=False,
         deletable=False,
         editable=False,
@@ -25,6 +25,20 @@ def public_item_list():
         return dict(grid=grid)
 
     return dict(grid=grid)
+
+@auth.requires_login()
+def add_rating():
+    items = db.possessions[request.vars.id]
+    new_ratings = items.ratings + 1
+    items.update_record(ratings=new_ratings)
+    return str(new_ratings)
+
+@auth.requires_login()
+def minus_rating():
+    items = db.possessions[request.vars.id]
+    new_ratings = items.ratings + 1
+    items.update_record(ratings=new_ratings)
+    return str(new_ratings)
 
 
 @auth.requires_login()
