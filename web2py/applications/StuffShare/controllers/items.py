@@ -10,7 +10,7 @@ def public_item_list():
         query,
         fields=[db.possessions.item_name, db.possessions.user_first_name, db.possessions.user_last_name,
                 db.possessions.user_email, db.possessions.quality, db.possessions.location, db.possessions.return_date,
-                db.possessions.status, db.possessions.picture, db.possessions.ratings],
+                db.possessions.status, db.possessions.picture, db.possessions.rating],
         user_signature=False,
         deletable=False,
         editable=False,
@@ -61,7 +61,7 @@ def friend_item_list():
         friend_item_query,
         fields=[db.possessions.item_name, db.possessions.user_first_name, db.possessions.user_last_name,
                 db.possessions.user_email, db.possessions.quality, db.possessions.location, db.possessions.return_date,
-                db.possessions.status, db.possessions.picture],
+                db.possessions.status, db.possessions.picture, db.possessions.rating],
         user_signature=False,
         deletable=False,
         editable=False,
@@ -88,7 +88,7 @@ def private_item_list():
         private_query,
         fields=[db.possessions.item_name, db.possessions.user_first_name, db.possessions.user_last_name,
                 db.possessions.user_email, db.possessions.quality, db.possessions.location, db.possessions.return_date,
-                db.possessions.status, db.possessions.picture],
+                db.possessions.status, db.possessions.picture, db.possessions.rating],
         user_signature=False,
         deletable=False,
         editable=False,
@@ -120,7 +120,7 @@ def user_item_list():
         query,
         fields=[db.possessions.item_name, db.possessions.visibility, db.possessions.user_first_name, db.possessions.user_last_name,
                 db.possessions.user_email, db.possessions.quality, db.possessions.location, db.possessions.return_date,
-                db.possessions.status, db.possessions.picture],
+                db.possessions.status, db.possessions.picture, db.possessions.rating],
         user_signature=False,
         create=False,
         formname='web2py_grid'
@@ -145,7 +145,7 @@ def user_item_list():
 @auth.requires_login()
 def add_item():
     form = SQLFORM(db.possessions,
-                   fields=['item_name', 'notes', 'quality', 'location', 'visibility', 'return_date', 'status', 'picture']
+                   fields=['item_name', 'notes', 'quality', 'location', 'visibility', 'return_date', 'status', 'picture', 'rating']
     )
 
     form.vars.user_id = auth.user.id

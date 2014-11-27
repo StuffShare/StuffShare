@@ -29,7 +29,7 @@ db.define_table('possessions',
                 Field('return_date', 'date'),
                 Field('status', 'text'),
                 Field('picture', 'upload'),
-                Field('ratings', 'integer', default=0))
+                Field('rating', 'text'))
 
 db.possessions.id.readable = False
 
@@ -68,6 +68,8 @@ db.possessions.return_date.requires = IS_NOT_EMPTY()
 db.possessions.picture.requires = IS_NOT_EMPTY()
 db.possessions.picture.requires = requires = IS_IMAGE(extensions=('bmp', 'gif', 'jpeg', 'png'), maxsize=(4096, 4096),
                                                       minsize=(128, 128))
+
+db.possessions.rating.requires = IS_IN_SET(('1 / 5', '2 / 5', '3 / 5', '4 / 5', '5 / 5'))
 
 
 # FRIENDS #

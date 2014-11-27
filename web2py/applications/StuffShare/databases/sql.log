@@ -581,3 +581,33 @@ success!
 timestamp: 2014-11-26T20:53:01.625000
 ALTER TABLE possessions ADD status TEXT;
 success!
+timestamp: 2014-11-27T10:45:46.352000
+ALTER TABLE possessions ADD ratings INTEGER;
+success!
+timestamp: 2014-11-27T10:48:34.202000
+ALTER TABLE possessions ADD rating TEXT;
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
+success!
