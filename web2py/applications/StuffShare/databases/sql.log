@@ -578,3 +578,6 @@ CREATE TABLE friend_requests(
     friend_id INTEGER
 );
 success!
+timestamp: 2014-11-26T20:53:01.625000
+ALTER TABLE possessions ADD status TEXT;
+success!
