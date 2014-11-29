@@ -1,0 +1,18 @@
+{{extend 'plugin_layouts/layouts/Theme.html'}}
+
+
+<!--.// Can't get the ajax button to work // I left it in. Can anyone of you guys get it to work?..-->
+
+<h2>Search for Friends</h2>
+{{=form}}
+{{if people:}}
+<h3>Results</h3>
+<table>
+   {{for user in people:}}
+   <td>{{=TD(user.first_name + " " + user.last_name)}}</td>
+   <td><button onclick="ajax('{{=URL('request_friend',args=('friend_id',user.id))}}',[],null);$(this).parent().html('Pending')">Add Friend</button></td>
+   <td>{{=TD(A('Add friend', _href=URL(f='request_friend', vars={'friend_id':user.id})))}}</td>
+   {{pass}}
+</table>
+{{pass}}
+

@@ -1,0 +1,14 @@
+<!-- Author: Ishan Bhutani -->
+{{extend 'plugin_layouts/layouts/Theme.html'}}
+<h1>View Item</h1>
+{{=grid}}
+{{
+    =CENTER(IFRAME(_width=990, _height=300, _frameborder=0,
+_src="https://www.google.com/maps/embed/v1/search"
+    "?key="+__GOOGLE_MAPS_API_KEY__+
+    "&q="+ str(grid[1][0][5][1][0])))
+}}
+<!--Magic, don't touch
+    Essentially retrieves the location string by hard-coding indices of grid
+    Need to refactor this to make it more readable -->
+

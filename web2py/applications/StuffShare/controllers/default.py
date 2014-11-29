@@ -1,3 +1,5 @@
+__author__ = 'Michael Moo'
+
 def user():
     return dict(form=auth())
 

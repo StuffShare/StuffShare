@@ -1,4 +1,4 @@
-__author__ = 'gwilliams'
+__author__ = 'Gary Williams'
 
 import base64
 import hmac

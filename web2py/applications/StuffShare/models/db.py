@@ -1,3 +1,5 @@
+__author__ = 'MichaelM'
+
 # db = DAL('mysql://StuffShare:cmpt470@mysql.server/StuffShare$stuffshare') # Use when uploaded to PythonAnywhere
 db = DAL('sqlite://storage.db')  # Use for offline testing
 
@@ -25,7 +27,9 @@ db.define_table('possessions',
                 Field('quality', 'text'),
                 Field('visibility', 'text'),
                 Field('return_date', 'date'),
-                Field('picture', 'upload'))
+                Field('status', 'text'),
+                Field('picture', 'upload'),
+                Field('rating', 'text'))
 
 db.possessions.id.readable = False
 
@@ -54,13 +58,18 @@ db.possessions.quality.requires = IS_NOT_EMPTY()
 db.possessions.quality.requires = IS_IN_SET(('Poor', 'Mediocre', 'Average', 'Good', 'Excellent', 'Like New'))
 
 db.possessions.visibility.requires = IS_NOT_EMPTY()
-db.possessions.visibility.requires = IS_IN_SET(('Public', 'Private'))
+db.possessions.visibility.requires = IS_IN_SET(('Public', 'Friend', 'Private'))
+
+db.possessions.status.requires = IS_NOT_EMPTY()
+db.possessions.status.requires = IS_IN_SET(('Available', 'On Loan'))
 
 db.possessions.return_date.requires = IS_NOT_EMPTY()
 
 db.possessions.picture.requires = IS_NOT_EMPTY()
 db.possessions.picture.requires = requires = IS_IMAGE(extensions=('bmp', 'gif', 'jpeg', 'png'), maxsize=(4096, 4096),
                                                       minsize=(128, 128))
+
+db.possessions.rating.requires = IS_IN_SET(('1 / 5', '2 / 5', '3 / 5', '4 / 5', '5 / 5'))
 
 
 # FRIENDS #

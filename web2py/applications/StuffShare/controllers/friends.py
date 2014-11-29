@@ -1,3 +1,5 @@
+__author__ = 'Michael Moo, Ishan Bhutani'
+
 @auth.requires_login()
 def friend_list():
     query = (db.auth_user.id == db.friends.friend_id) & (auth.user.id == db.friends.user_id)
@@ -11,6 +13,19 @@ def user_list():
     query = db.auth_user.id != auth.user.id
     users = db(query).select(db.auth_user.first_name, db.auth_user.last_name, db.auth_user.id)
     return dict(users=users)
+
+@auth.requires_login()
+def search_friends():
+    form = SQLFORM.factory(Field('name',requires=IS_NOT_EMPTY()))
+    if form.accepts(request):
+        tokens = form.vars.name.split()
+        query = reduce(lambda a,b:a&b,
+                       [db.auth_user.first_name.contains(k)|db.auth_user.last_name.contains(k) \
+                            for k in tokens])
+        people = db(query).select(orderby =db.auth_user.first_name)
+    else:
+        people = []
+    return locals()
 
 
 @auth.requires_login()

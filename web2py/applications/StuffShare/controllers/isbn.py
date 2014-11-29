@@ -1,4 +1,4 @@
-__author__ = 'gwilliams'
+__author__ = 'Gary Williams'
 
 import re
 
