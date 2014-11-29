@@ -115,3 +115,5 @@ def get_book_large_image(isbn):
 	root = get_book_info(isbn)
 	element = root.find('Items/Item/LargeImage/URL')
 	return element.text
+
+# test
