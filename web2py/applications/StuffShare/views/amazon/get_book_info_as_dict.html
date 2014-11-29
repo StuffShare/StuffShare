@@ -1,0 +1,11 @@
+{{extend 'plugin_layouts/layouts/Theme.html'}}
+<div id="table">
+    <table>
+        {{for key,value in list(book_info_dict.items()):}}
+        <tr>
+            {{=TD(key)}}
+            {{=TD(value)}}
+        </tr>
+        {{pass}}
+    </table>
+</div>

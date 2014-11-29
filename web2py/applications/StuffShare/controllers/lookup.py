@@ -1,9 +1,15 @@
-__author__ = 'Michael Moo'
+__author__ = 'Gary Williams, Michael Moo'
 
 
 @auth.requires_login()
 def lookup_isbn():
-    return locals()
+    form = FORM('ISBN:', INPUT(_name='isbn'), INPUT(_type='submit',
+                                                    _value='Submit'))
+    if form.process().accepted:
+        redirect(URL(f='get_book_info_as_dict', c='amazon', vars={'some_isbn':form.vars.isbn}))
+        return
+
+    return dict(form=form)
 
 
 @auth.requires_login()
