@@ -15,3 +15,6 @@ def items():
 def friends():
     return locals()
 
+
+def site_queries():
+    return locals()
