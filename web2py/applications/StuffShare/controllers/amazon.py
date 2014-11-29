@@ -15,7 +15,7 @@ AWS_ACCESS_KEY_ID = 'AKIAJSUR6X4TI3SSLYZA'
 AWS_SECRET_ACCESS_KEY = '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'
 AWS_ASSOCIATE_ID = 'sc4p-20'
 
-# getSignedUrl from http://www.princesspolymath.com/princess_polymath/?p=182
+# adapted from http://www.princesspolymath.com/princess_polymath/?p=182
 def get_signed_url(params):
 	action = 'GET'
 	server = "webservices.amazon.com"
@@ -26,47 +26,53 @@ def get_signed_url(params):
 	params['Service'] = 'AWSECommerceService'
 	params['Timestamp'] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
 
-	# Now sort by keys and make the param string
+	# quote and sort the parameter-value pairs
 	key_values = [(urllib2.quote(k), urllib2.quote(v)) for k,v in params.items()]
 	key_values.sort()
 
-	# Combine key value pairs into a string.
+	# combine parameter-value pairs into a query string
 	paramstring = '&'.join(['%s=%s' % (k, v) for k, v in key_values])
+
+	# attach parameter-value pairs to the URL
 	url = "http://" + server + path + "?" + ('&'.join(['%s=%s' % (k, v) for k, v in key_values]))
 
-	# Calculate the signature for the request
+	# sign the request and attach the signature to the URL
 	str = action + "\n" + server + "\n" + path + "\n" + paramstring
 	my_hmac = hmac.new(AWS_SECRET_ACCESS_KEY, str, digestmod=sha256)
-
-	# Sign it up and make the url string
 	url = url + "&Signature=" + urllib2.quote(base64.encodestring(my_hmac.digest()).strip())
 
 	return url
 
-def get_book_info(some_isbn):
-	some_isbn = format_isbn(some_isbn)
+# borrowed from http://stackoverflow.com/questions/9986179/
+def http_get(url):
+	while True:
+		try:
+			response = urllib2.urlopen(url)
+			return response
+		except urllib2.HTTPError, detail:
+			if detail.errno == 500:
+				time.sleep(1)
+				continue
+			else:
+				raise
 
-	isbn_10 = None
-	if (isbn.is_valid_isbn_10(some_isbn)):
-		isbn_10 = some_isbn
-	else:
-		if (isbn.is_valid_isbn_13(some_isbn)):
-			isbn_10 = isbn.convert_isbn_13_to_isbn_10(some_isbn)
-		else:
-			return None
-
-	params = {'ResponseGroup':'Small,ItemAttributes', #,Images
+def get_book_info(isbn):
+	params = {'ResponseGroup':'ItemAttributes,Images',
 	          'AssociateTag':AWS_ASSOCIATE_ID,
 	          'Operation':'ItemLookup',
 	          'SearchIndex':'Books',
 	          'IdType':'ISBN',
-	          'ItemId':isbn_10}
+	          'ItemId':isbn}
 	url = get_signed_url(params)
-	response = urllib2.urlopen(url)
+
+	response = http_get(url)
 	xml_string = response.read()
 
 	# remove the obnoxious namespace
 	xml_string = re.sub(' xmlns="[^"]+"', '', xml_string, count = 1)
+
+	# construct the xml object
+	xml_object = ET.fromstring(xml_string)
 
 	# remove the useless 'OperationRequest' node
 	operationRequest = xml_object.find('OperationRequest')
@@ -74,16 +80,14 @@ def get_book_info(some_isbn):
 
 	items = xml_object.find('Items')
 
-	# remove the useless 'Request' node
 	request = items.find('Request')
 	items.remove(request)
 
 	copy_of_item_list = items.findall('Item')
 
-	# remove nodes whose ASINs don't match our ISBN10
 	for item in copy_of_item_list:
 		asin = item.find('ASIN')
-		if asin.text == isbn_10:
+		if asin.text == isbn:
 			# remove the 'ItemLinks' node
 			itemLinks = item.find('ItemLinks')
 			item.remove(itemLinks)
@@ -94,5 +98,20 @@ def get_book_info(some_isbn):
 
 def get_book_title(isbn):
 	root = get_book_info(isbn)
-	title = root.find('Items/Item/ItemAttributes/Title')
-	return title.text
+	element = root.find('Items/Item/ItemAttributes/Title')
+	return element.text
+
+def get_book_small_image(isbn):
+	root = get_book_info(isbn)
+	element = root.find('Items/Item/SmallImage/URL')
+	return element.text
+
+def get_book_medium_image(isbn):
+	root = get_book_info(isbn)
+	element = root.find('Items/Item/MediumImage/URL')
+	return element.text
+
+def get_book_large_image(isbn):
+	root = get_book_info(isbn)
+	element = root.find('Items/Item/LargeImage/URL')
+	return element.text
