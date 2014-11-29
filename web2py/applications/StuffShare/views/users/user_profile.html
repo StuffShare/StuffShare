@@ -1,0 +1,17 @@
+<!-- Author: Ishan Bhutani -->
+{{extend 'plugin_layouts/layouts/Theme.html'}}
+<h1>User Profile</h1>
+<h1>Add Friend</h1>
+<div id="table">
+    <table style="width:100%">
+        <tr>
+            <td><h2>First Name</h2></td>
+            <td><h2>Last Name</h2></td>
+        </tr>
+        <tr>
+            {{=TD(user.first_name)}}
+            {{=TD(user.last_name)}}
+            {{=TD(A('Add friend', _href=URL(f='request_friend', c='friends', vars={'friend_id':user.id})))}}
+        </tr>
+    </table>
+</div>

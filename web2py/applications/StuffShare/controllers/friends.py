@@ -4,15 +4,27 @@ __author__ = 'Michael Moo, Ishan Bhutani'
 def friend_list():
     query = (db.auth_user.id == db.friends.friend_id) & (auth.user.id == db.friends.user_id)
     query &= (db.friends.friend_id != auth.user_id)
-    friends = db(query).select(db.auth_user.ALL)
-    return dict(friends=friends)
 
+    db.auth_user.id.readable = False
 
-@auth.requires_login()
-def user_list():
-    query = db.auth_user.id != auth.user.id
-    users = db(query).select(db.auth_user.first_name, db.auth_user.last_name, db.auth_user.id)
-    return dict(users=users)
+    grid = SQLFORM.grid(
+        query,
+        fields=[db.auth_user.first_name, db.auth_user.last_name],
+        user_signature=False,
+        create=False,
+        editable=False,
+        deletable=False,
+        formname='web2py_grid'
+    )
+
+    if request.args(0) == "view":
+        friend_query = (db.auth_user.id == request.args(2))
+        friends = db(friend_query).select(db.auth_user.ALL)
+        response.view = "friends/friend_profile.html"
+        return dict(friend=friends[0])
+
+    return dict(grid=grid)
+
 
 @auth.requires_login()
 def search_friends():
@@ -31,14 +43,13 @@ def search_friends():
 @auth.requires_login()
 def request_friend():
     db.friend_requests.insert(user_id=auth.user.id, friend_id=request.vars.friend_id)
-    redirect(URL('user_list'))
+    redirect(URL(f='user_list', c='users'))
     return
 
 
 @auth.requires_login()
 def delete_friend():
     friend_id = request.vars.friend_id
-
     query = ((db.friends.user_id == auth.user.id) & (db.friends.friend_id == friend_id)) | \
             ((db.friends.friend_id == auth.user.id) & (db.friends.user_id == friend_id))
 

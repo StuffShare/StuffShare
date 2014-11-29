@@ -112,9 +112,9 @@ def user_item_list():
 
     db.possessions.user_id.readable = False
     db.possessions.user_id.writable = False
-    # db.possessions.user_first_name.writable = False
-    # db.possessions.user_last_name.writable = False
-    # db.possessions.user_email.writable = False
+    db.possessions.user_first_name.writable = False
+    db.possessions.user_last_name.writable = False
+    db.possessions.user_email.writable = False
 
     grid = SQLFORM.grid(
         query,
