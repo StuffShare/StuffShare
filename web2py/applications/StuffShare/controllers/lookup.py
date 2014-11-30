@@ -1,7 +1,6 @@
 __author__ = 'Gary Williams, Michael Moo, Ishan Bhutani'
 
 
-@auth.requires_login()
 def lookup_isbn():
     form = FORM('ISBN:', INPUT(_name='isbn'), INPUT(_type='submit',
                                                     _value='Submit'))
@@ -12,7 +11,6 @@ def lookup_isbn():
     return dict(form=form)
 
 
-@auth.requires_login()
 def lookup_movie():
     form = FORM('Title:', INPUT(_name='title'), INPUT(_type='submit',
                                                     _value='Submit'))
