@@ -14,4 +14,10 @@ def lookup_isbn():
 
 @auth.requires_login()
 def lookup_movie():
-    return locals()
+    form = FORM('Title:', INPUT(_name='title'), INPUT(_type='submit',
+                                                    _value='Submit'))
+    if form.process().accepted:
+        redirect(URL(f='get_movie_info_as_dict', c='imdb', vars={'some_title':form.vars.title}))
+        return
+
+    return dict(form=form)
