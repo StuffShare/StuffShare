@@ -12,10 +12,10 @@ def lookup_isbn():
 
 
 def lookup_movie():
-    form = FORM('Title:', INPUT(_name='title'), INPUT(_type='submit',
+    form = FORM('Title:', INPUT(_name='title'), 'Year:', INPUT(_name='year'), INPUT(_type='submit',
                                                     _value='Submit'))
     if form.process().accepted:
-        redirect(URL(f='get_movie_info_as_dict', c='imdb', vars={'some_title':form.vars.title}))
+        redirect(URL(f='find_first_movie_match_by_title_and_year', c='imdb', vars={'some_title':form.vars.title, 'some_year':form.vars.year}))
         return
 
     return dict(form=form)

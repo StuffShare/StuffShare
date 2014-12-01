@@ -4,6 +4,7 @@ import urllib
 import urllib2
 import json
 
+
 def find_first_movie_match_by_title(title):
     url = 'http://www.omdbapi.com/?t=' + urllib.quote_plus(title) + '&y=&plot=short&r=json'
     response = urllib2.urlopen(url)
@@ -11,11 +12,26 @@ def find_first_movie_match_by_title(title):
     return json_object
 
 
-def find_first_movie_match_by_title_and_year(title, year):
+def find_first_movie_match_by_title_and_year():
+    title = request.vars.some_title
+    year = request.vars.some_year
+    result = find_first_movie_match_by_title_and_year_2(title, year)
+    if result:
+        return dict(movie_info_dict=result)
+    else:
+        return dict(movie_info_dict=dict()) # how should we bubble up the error?
+
+
+def find_first_movie_match_by_title_and_year_2(title, year):
     url = 'http://www.omdbapi.com/?t=' + urllib.quote_plus(title) + '&y=' + year + '&plot=short&r=json'
     response = urllib2.urlopen(url)
     json_object = json.loads(response.read())
-    return json_object
+    dict_object = dict()
+
+    dict_object['Title'] = json_object['Title']
+    dict_object['Year'] = json_object['Year']
+
+    return dict_object
 
 
 def find_all_movie_matches_by_title(title):
