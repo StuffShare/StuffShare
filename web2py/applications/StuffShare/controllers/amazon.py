@@ -107,7 +107,11 @@ def get_book_info_as_xml(some_isbn):
 
 def get_book_info_as_dict():
     some_isbn = request.vars.some_isbn
-    return dict(book_info_dict=get_book_info_as_dict_2(some_isbn))
+    result = get_book_info_as_dict_2(some_isbn)
+    if result:
+        return dict(book_info_dict=result)
+    else:
+        return dict(book_info_dict=dict()) # how should we bubble up the error?
 
 
 def get_book_info_as_dict_2(some_isbn):
@@ -115,7 +119,15 @@ def get_book_info_as_dict_2(some_isbn):
 
     root = get_book_info_as_xml(isbn10)
     item = root.find('Items/Item')
+
+    if not item:
+        return dict() # how should we bubble up the error?
+
     attributes = item.find('ItemAttributes')
+
+    if not attributes:
+        return dict() # how should we bubble up the error?
+
     book_info_dict = dict()
 
     book_info_dict['Title'] = attributes.find('Title').text
@@ -132,22 +144,34 @@ def get_book_info_as_dict_2(some_isbn):
 
 def get_book_title(some_isbn):
     dict = get_book_info_as_dict(some_isbn)
-    return dict['Title']
+    if dict == None:
+        return 'Book not found'
+    else:
+        return dict['Title'] # how should we bubble up the error?
 
 
 def get_book_small_image(some_isbn):
     dict = get_book_info_as_dict(some_isbn)
-    return dict['SmallImage']
+    if dict == None:
+        return 'Book not found'
+    else:
+        return dict['SmallImage']
 
 
 def get_book_medium_image(some_isbn):
     dict = get_book_info_as_dict(some_isbn)
-    return dict['MediumImage']
+    if dict == None:
+        return 'Book not found'
+    else:
+        return dict['MediumImage']
 
 
 def get_book_large_image(some_isbn):
     dict = get_book_info_as_dict(some_isbn)
-    return dict['LargeImage']
+    if dict == None:
+        return 'Book not found'
+    else:
+        return dict['LargeImage']
 
 ########################################################################################################################
 
@@ -227,6 +251,8 @@ def convert_isbn_13_to_isbn_10(isbn13):
 
 
 def fix_isbn(some_isbn):
+    print 'fixing isbn: ' + some_isbn
+
     some_isbn = format_isbn(some_isbn)
 
     if is_valid_isbn_10(some_isbn):
@@ -237,7 +263,9 @@ def fix_isbn(some_isbn):
             isbn13 = some_isbn
             isbn10 = convert_isbn_13_to_isbn_10(isbn13)
         else:
-            return some_isbn + ' is not a valid ISBN'
+            return 'ERROR', some_isbn + ' is not a valid ISBN'
+
+    print 'returning: ' + isbn10 + ', ' + isbn13
 
     return isbn10, isbn13
 
