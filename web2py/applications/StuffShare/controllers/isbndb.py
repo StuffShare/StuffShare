@@ -11,12 +11,19 @@ def get_book_info(isbn):
     book_info = json.loads(response.read())
     return book_info
 
+
 def get_book_title(isbn):
     book_info = get_book_info(isbn)
 
     # the following statement assumes the isbn was found.
     # we should probably test for error conditions.
     return book_info['data'][0]['title_latin']
+
+
+if __name__ == "__main__":
+    CC2_ISBN_13 = '9780735619678'
+
+    print get_book_title(CC2_ISBN_13)
 
 # isbndb returns a json object like the following in the event of an error:
 #{
