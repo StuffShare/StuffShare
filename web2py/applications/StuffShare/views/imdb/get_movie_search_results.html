@@ -5,7 +5,7 @@
         <tr>
             {{=TD(key)}}
             {{=TD(value)}}
-            {{=TD('http://www.imdb.com/title/' + key)}}
+            <td>{{=A('View on IMDB', _href='http://www.imdb.com/title/' + key)}}</td>
         </tr>
         {{pass}}
     </table>
