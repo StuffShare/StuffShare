@@ -6,7 +6,6 @@ import urlparse
 import time
 import urllib2
 import re
-import isbn
 
 from hashlib import sha256 as sha256
 from xml.etree import ElementTree as ET
@@ -59,7 +58,7 @@ def http_get(url):
 
 
 def get_book_info_as_xml(some_isbn):
-    isbn10, isbn13 = isbn.fix_isbn(some_isbn)
+    isbn10, isbn13 = fix_isbn(some_isbn)
 
     print 'requesting ' + isbn10 + '...'
 
@@ -108,11 +107,11 @@ def get_book_info_as_xml(some_isbn):
 
 def get_book_info_as_dict():
     some_isbn = request.vars.some_isbn
-    return dict(book_info_dict=get_book_info_as_dict(some_isbn))
+    return dict(book_info_dict=get_book_info_as_dict_2(some_isbn))
 
 
-def get_book_info_as_dict(some_isbn):
-    isbn10, isbn13 = isbn.fix_isbn(some_isbn)
+def get_book_info_as_dict_2(some_isbn):
+    isbn10, isbn13 = fix_isbn(some_isbn)
 
     root = get_book_info_as_xml(isbn10)
     item = root.find('Items/Item')
@@ -150,6 +149,99 @@ def get_book_large_image(some_isbn):
     dict = get_book_info_as_dict(some_isbn)
     return dict['LargeImage']
 
+########################################################################################################################
+
+def even(i):
+    return i % 2 == 0
+
+
+def format_isbn(some_isbn):
+    return some_isbn.replace("-", "").replace(" ", "").upper()
+
+
+def calc_isbn_10_check_digit(digits):
+    checksum = sum(int(digit) * (i + 1) for i, digit in enumerate(digits))
+    check_digit_value = checksum % 11
+    if check_digit_value == 10:
+        return 'X'
+    else:
+        return chr(check_digit_value + ord('0'))
+
+
+def calc_isbn_13_check_digit(digits):
+    checksum = sum(int(digit) * (1 if (even(i)) else 3) for i, digit in enumerate(digits))
+    check_digit_value = 10 - checksum % 10
+    return chr(check_digit_value + ord('0'))
+
+
+def is_valid_isbn_10(some_isbn):
+    some_isbn = format_isbn(some_isbn)
+
+    if len(some_isbn) != 10:
+        return False
+
+    match = re.search(r'^([0-9]{9})([0-9X])$', some_isbn)
+    if not match:
+        return False
+
+    return match.group(2) == calc_isbn_10_check_digit(match.group(1))
+
+
+def is_valid_isbn_13(some_isbn):
+    some_isbn = format_isbn(some_isbn)
+
+    if len(some_isbn) != 13:
+        return False
+
+    match = re.search(r'^([0-9]{12})([0-9])$', some_isbn)
+    if not match:
+        return False
+
+    return match.group(2) == calc_isbn_13_check_digit(match.group(1))
+
+
+def is_valid_isbn(some_isbn):
+    return is_valid_isbn_10(some_isbn) or is_valid_isbn_13(some_isbn)
+
+
+def convert_isbn_10_to_isbn_13(isbn10):
+    isbn10 = format_isbn(isbn10)
+
+    if not(is_valid_isbn_10(isbn10)):
+        return isbn10 + ' is not a valid ISBN-10'
+
+    first_12_digits = '978' + isbn10[0:9]
+
+    return first_12_digits + calc_isbn_13_check_digit(first_12_digits)
+
+
+def convert_isbn_13_to_isbn_10(isbn13):
+    isbn13 = format_isbn(isbn13)
+
+    if not (is_valid_isbn_13(isbn13)):
+        return isbn10 + ' is not a valid ISBN-13'
+
+    first_9_digits = isbn13[3:12]
+
+    return first_9_digits + calc_isbn_10_check_digit(first_9_digits)
+
+
+def fix_isbn(some_isbn):
+    some_isbn = format_isbn(some_isbn)
+
+    if is_valid_isbn_10(some_isbn):
+        isbn10 = some_isbn
+        isbn13 = convert_isbn_10_to_isbn_13(isbn10)
+    else:
+        if is_valid_isbn_13(some_isbn):
+            isbn13 = some_isbn
+            isbn10 = convert_isbn_13_to_isbn_10(isbn13)
+        else:
+            return some_isbn + ' is not a valid ISBN'
+
+    return isbn10, isbn13
+
+########################################################################################################################
 
 if __name__ == "__main__":
 
@@ -158,3 +250,5 @@ if __name__ == "__main__":
 
     print get_book_title(CC2_ISBN_10)
     print get_book_title(CC2_ISBN_13)
+
+

@@ -2,9 +2,10 @@ __author__ = 'Gary Williams'
 
 import urllib2
 import json
+import amazon
 
 def get_book_info(some_isbn):
-    if not isbn.is_valid_isbn(some_isbn):
+    if not amazon.is_valid_isbn(some_isbn):
         return some_isbn + " is not a valid ISBN"
 
     isbn10, isbn13 = isbn.fix_isbn(some_isbn)
@@ -15,7 +16,7 @@ def get_book_info(some_isbn):
     return json_object
 
 def get_book_title(isbn):
-    if not isbn.is_valid_isbn(some_isbn):
+    if not amazon.is_valid_isbn(some_isbn):
         return some_isbn + " is not a valid ISBN"
 
     isbn10, isbn13 = isbn.fix_isbn(some_isbn)
