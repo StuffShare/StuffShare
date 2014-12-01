@@ -58,13 +58,17 @@ def http_get(url):
                 raise
 
 
-def get_book_info_as_xml(isbn):
+def get_book_info_as_xml(some_isbn):
+    isbn10, isbn13 = isbn.fix_isbn(some_isbn)
+
+    print 'requesting ' + isbn10 + '...'
+
     params = {'ResponseGroup': 'ItemAttributes,Images',
               'AssociateTag': AWS_ASSOCIATE_ID,
               'Operation': 'ItemLookup',
               'SearchIndex': 'Books',
               'IdType': 'ISBN',
-              'ItemId': isbn}
+              'ItemId': isbn10}
     url = get_signed_url(params)
 
     response = http_get(url)
@@ -89,11 +93,14 @@ def get_book_info_as_xml(isbn):
 
     for item in copy_of_item_list:
         asin = item.find('ASIN')
-        if asin.text == isbn:
+        print 'found item ' + asin.text
+
+        if asin.text == isbn10:
             # remove the 'ItemLinks' node
             itemLinks = item.find('ItemLinks')
             item.remove(itemLinks)
         else:
+            print "removing item " + asin.text
             items.remove(item)
 
     return xml_object
@@ -103,18 +110,9 @@ def get_book_info_as_dict():
     some_isbn = request.vars.some_isbn
     return get_book_info_as_dict(some_isbn)
 
-def get_book_info_as_dict(some_isbn):
-    some_isbn = isbn.format_isbn(some_isbn)
 
-    if isbn.is_valid_isbn_10(some_isbn):
-        isbn10 = some_isbn
-        isbn13 = isbn.convert_isbn_10_to_isbn_13(isbn10)
-    else:
-        if isbn.is_valid_isbn_13(some_isbn):
-            isbn13 = some_isbn
-            isbn10 = isbn.convert_isbn_13_to_isbn_10(isbn13)
-        else:
-            return 'INVALID'
+def get_book_info_as_dict(some_isbn):
+    isbn10, isbn13 = isbn.fix_isbn(some_isbn)
 
     print 'isbn-13: ' + isbn13
     print 'isbn-10: ' + isbn10
