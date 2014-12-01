@@ -77,8 +77,11 @@ def convert_isbn_13_to_isbn_10(isbn13):
 
 
 if __name__ == "__main__":
-	print is_valid_isbn_10('0306406152')
-	print is_valid_isbn_13('9780306406157')
-	print convert_isbn_10_to_isbn_13('0306406152') #works
-	print convert_isbn_13_to_isbn_10('9780306406157') #calculates bad check digit
-	print is_valid_isbn_10(convert_isbn_13_to_isbn_10('9780306406157')) #calculates bad check digit
+#	print is_valid_isbn_10('0306406152')
+#	print is_valid_isbn_13('9780306406157')
+#	print convert_isbn_10_to_isbn_13('0306406152') #works
+#	print convert_isbn_13_to_isbn_10('9780306406157') #calculates bad check digit
+#	print is_valid_isbn_10(convert_isbn_13_to_isbn_10('9780306406157')) #calculates bad check digit
+
+    print is_valid_isbn_13('978-0735619678')
+    print convert_isbn_13_to_isbn_10('978-0735619678')
