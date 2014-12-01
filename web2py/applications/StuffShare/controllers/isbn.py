@@ -55,6 +55,7 @@ def is_valid_isbn_13(some_isbn):
 def is_valid_isbn(some_isbn):
     return is_valid_isbn_10(some_isbn) or is_valid_isbn_13(some_isbn)
 
+
 def convert_isbn_10_to_isbn_13(isbn10):
     isbn10 = format_isbn(isbn10)
 
@@ -65,6 +66,7 @@ def convert_isbn_10_to_isbn_13(isbn10):
 
     return isbn13_digits + calc_isbn_13_check_digit(isbn13_digits)
 
+
 def convert_isbn_13_to_isbn_10(isbn13):
     isbn13 = format_isbn(isbn13)
 
@@ -74,6 +76,7 @@ def convert_isbn_13_to_isbn_10(isbn13):
     isbn10_digits = isbn13[3:12]
 
     return isbn10_digits + calc_isbn_10_check_digit(isbn10_digits)
+
 
 def fix_isbn(some_isbn):
     some_isbn = format_isbn(some_isbn)
@@ -89,6 +92,7 @@ def fix_isbn(some_isbn):
             return some_isbn + ' is not a valid ISBN'
 
     return isbn10, isbn13
+
 
 if __name__ == "__main__":
     CC2_ISBN_10 = '0735619670'
