@@ -2,18 +2,29 @@ __author__ = 'Gary Williams'
 
 import urllib2
 import json
+import isbn
 
 ISBNDB_ACCOUNT_NUMBER = 'I7G9FT9U' # this account number is good for 500 queries per day
 
-def get_book_info(isbn):
-    url = 'http://isbndb.com/api/v2/json/' + ISBNDB_ACCOUNT_NUMBER + '/book/' + isbn
+def get_book_info(some_isbn):
+    if not isbn.is_valid_isbn(some_isbn):
+        return some_isbn + " is not a valid ISBN"
+
+    isbn10, isbn13 = isbn.fix_isbn(some_isbn)
+
+    url = 'http://isbndb.com/api/v2/json/' + ISBNDB_ACCOUNT_NUMBER + '/book/' + isbn13
     response = urllib2.urlopen(url)
     book_info = json.loads(response.read())
     return book_info
 
 
-def get_book_title(isbn):
-    book_info = get_book_info(isbn)
+def get_book_title(some_isbn):
+    if not isbn.is_valid_isbn(some_isbn):
+        return some_isbn + " is not a valid ISBN"
+
+    isbn10, isbn13 = isbn.fix_isbn(some_isbn)
+
+    book_info = get_book_info(isbn13)
 
     # the following statement assumes the isbn was found.
     # we should probably test for error conditions.
