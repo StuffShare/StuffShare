@@ -74,9 +74,9 @@ def friend_item_list():
     if request.args(0) == "view":
         response.view = 'items/view_item.html'
         item_query = db.possessions.id == request.args(2)
-        item_user_id = db(item_query).select(db.possessions.user_id)[0]
+        item_user_id = db(item_query).select(db.possessions.user_id)[0].user_id
 
-        if not is_friend(auth.user.id, item_user_id.user_id):
+        if not is_friend(auth.user.id, item_user_id):
             return
 
         return dict(grid=grid)
@@ -110,12 +110,12 @@ def private_item_list():
     if request.args(0) == "view":
         response.view = 'items/view_item.html'
         item_query = db.possessions.id == request.args(2)
-        item_user_id = db(item_query).select(db.possessions.user_id)[0]
+        item_user_id = db(item_query).select(db.possessions.user_id)[0].user_id
+        print item_user_id
+        print auth.user.id
 
-        if not item_user_id == auth.user.id:
+        if item_user_id != auth.user.id:
             return
-
-        return dict(grid=grid)
 
     return dict(grid=grid)
 
@@ -150,9 +150,9 @@ def user_item_list():
         response.view = 'items/view_item.html'
         response.view = 'items/view_item.html'
         item_query = db.possessions.id == request.args(2)
-        item_user_id = db(item_query).select(db.possessions.user_id)[0]
+        item_user_id = db(item_query).select(db.possessions.user_id)[0].user_id
 
-        if not item_user_id == auth.user.id:
+        if item_user_id != auth.user.id:
             return
         return dict(grid=grid)
 
