@@ -114,10 +114,7 @@ def get_book_info_as_dict():
 def get_book_info_as_dict(some_isbn):
     isbn10, isbn13 = isbn.fix_isbn(some_isbn)
 
-    print 'isbn-13: ' + isbn13
-    print 'isbn-10: ' + isbn10
-
-    root = get_book_info_as_xml(some_isbn)
+    root = get_book_info_as_xml(isbn10)
     item = root.find('Items/Item')
     attributes = item.find('ItemAttributes')
     book_info_dict = dict()
@@ -133,29 +130,33 @@ def get_book_info_as_dict(some_isbn):
     return dict(book_info_dict=book_info_dict)
 
 
-def get_book_title(isbn):
-    dict = get_book_info_as_dict(isbn)
+def get_book_title(some_isbn):
+    dict = get_book_info_as_dict(some_isbn)
     return dict['Title']
 
 
-def get_book_small_image(isbn):
-    dict = get_book_info_as_dict(isbn)
+def get_book_small_image(some_isbn):
+    dict = get_book_info_as_dict(some_isbn)
     return dict['SmallImage']
 
 
-def get_book_medium_image(isbn):
-    dict = get_book_info_as_dict(isbn)
+def get_book_medium_image(some_isbn):
+    dict = get_book_info_as_dict(some_isbn)
     return dict['MediumImage']
 
 
-def get_book_large_image(isbn):
-    dict = get_book_info_as_dict(isbn)
+def get_book_large_image(some_isbn):
+    dict = get_book_info_as_dict(some_isbn)
     return dict['LargeImage']
 
 
 if __name__ == "__main__":
-#    print is_valid_isbn_10('020170353X')
-#    print is_valid_isbn_13('978-0-306-406157')
-#    print convert_isbn_13_to_isbn_10('978-0-306-406157')
 
-    print ET.tostring(get_book_info_as_xml('978-0735619678'), encoding='utf8', method='xml')
+    CC2_ISBN_10 = '0735619670'
+    CC2_ISBN_13 = '9780735619678'
+
+    print isbn.is_valid_isbn_10(CC2_ISBN_10)
+    print isbn.is_valid_isbn_13(CC2_ISBN_13)
+
+    print CC2_ISBN_10 == isbn.convert_isbn_13_to_isbn_10(CC2_ISBN_13)
+    print CC2_ISBN_13 == isbn.convert_isbn_10_to_isbn_13(CC2_ISBN_10)
