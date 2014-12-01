@@ -74,11 +74,10 @@ Using PyCharm:
 Using the Site:
 - We have test data loaded onto the site as well as several accounts:
 
-ted@sfu.ca
-cmpt470
+USERNAME: ted@sfu.ca
+PASSWORD: cmpt470
 
-jbhaskar@sfu.ca
-cmpt470
+USERNAME: jbhaskar@sfu.ca
+PASSWORD: cmpt470
 
-
-- The two of you are friends and can see one anothers friend items
+- The two of you are friends and can see one each other' friend items
