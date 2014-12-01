@@ -4,7 +4,7 @@ import urllib
 import urllib2
 import json
 
-
+"""
 def find_first_movie_match_by_title(title):
     url = 'http://www.omdbapi.com/?t=' + urllib.quote_plus(title) + '&y=&plot=short&r=json'
     response = urllib2.urlopen(url)
@@ -32,15 +32,33 @@ def find_first_movie_match_by_title_and_year_2(title, year):
     dict_object['Year'] = json_object['Year']
 
     return dict_object
+"""
+
+def search_movies_by_title():
+    some_title = request.vars.some_title
+    my_dict = search_movies_by_title_2(some_title)
+    if my_dict:
+        return dict(movie_info_dict=dict())
+    else:
+        return dict(movie_info_dict=my_dict) # how should we bubble up the error?
 
 
-def find_all_movie_matches_by_title(title):
+def search_movies_by_title_2(title):
     url = 'http://www.imdb.com/xml/find?json=1&nr=1&tt=on&q=' + urllib.quote_plus(title)
     response = urllib2.urlopen(url)
     json_object = json.loads(response.read())
-    return json_object
+
+    result_dict = {}
+
+    for result_group in json_object: # top level is title_substring, title_popular, title_approx, or None
+#        print result_group
+        for result in json_object[result_group]:
+            result_dict[result['id']] = result['title']
+
+    return result_dict
 
 
+"""
 def get_movie_details_by_id(id):
     if not (id.startswith('tt')):
         id = 'tt' + id
@@ -49,11 +67,7 @@ def get_movie_details_by_id(id):
     response = urllib2.urlopen(url)
     json_object = json.loads(response.read())
     return json_object
-
+"""
 
 if __name__ == "__main__":
-    print find_first_movie_match_by_title('The Shawshank Redemption')
-    print ''
-    print find_first_movie_match_by_title_and_year('Star Trek', '1994')
-    print ''
-    print get_movie_details_by_id('tt0060666')
+    print search_movies_by_title_2('Shawshank')
