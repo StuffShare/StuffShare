@@ -37,7 +37,8 @@ Features:
 		- Searching is done using keywords, results for both users and friends on the friend list can be sorted by their fields by clicking on the labels (ascending or descending)
 
 	- Querying Amazon and IMDB
-		- 
+		- On the lookup page, users can enter an ISBN-10 or ISBN-13, and the program will query Amazon to return the title, edition, author, publisher, publication date, and image links corresponding to that ISBN (if it is a valid ISBN that Amazon knows about).
+		- On the lookup page, users can enter a movie title, and the program will query IMDB or omdbapi.com to find the corresponding movie -- the IMDB ID can then be used as a key to generate an IMDB link.
 
 
 	Site Appearance and Layout
