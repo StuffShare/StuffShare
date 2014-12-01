@@ -5,16 +5,16 @@ import urllib2
 import json
 
 
-def search_movies_by_title():
+def get_movie_search_results():
     some_title = request.vars.some_title
-    my_dict = search_movies_by_title_2(some_title)
+    my_dict = get_movie_search_results_2(some_title)
     if my_dict:
-        return dict(movie_info_dict=dict())
+        return dict(movie_search_results_dict=my_dict)
     else:
-        return dict(movie_info_dict=my_dict) # how should we bubble up the error?
+        return dict(movie_search_results_dict=dict()) # how should we bubble up the error?
 
 
-def search_movies_by_title_2(title):
+def get_movie_search_results_2(title):
     url = 'http://www.imdb.com/xml/find?json=1&nr=1&tt=on&q=' + urllib.quote_plus(title)
     response = urllib2.urlopen(url)
     json_object = json.loads(response.read())
@@ -29,4 +29,4 @@ def search_movies_by_title_2(title):
 
 
 if __name__ == "__main__":
-    print search_movies_by_title_2('Shawshank')
+    print get_movie_search_results_2('Shawshank')

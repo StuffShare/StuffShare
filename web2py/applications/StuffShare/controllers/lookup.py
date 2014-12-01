@@ -14,7 +14,7 @@ def lookup_isbn():
 def lookup_movie():
     form = FORM('Title:', INPUT(_name='title'), INPUT(_type='submit', _value='Submit'))
     if form.process().accepted:
-        redirect(URL(f='search_movies_by_title', c='imdb', vars={'some_title':form.vars.title}))
+        redirect(URL(f='get_movie_search_results', c='imdb', vars={'some_title':form.vars.title}))
         return
 
     return dict(form=form)
