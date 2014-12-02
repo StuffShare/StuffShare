@@ -1,6 +1,8 @@
 Using the Site:
 - We have test data loaded onto the site as well as several accounts:
-
+    - Our test data images should all be public domain
+    - Our text was made by ourselves
+    
 USERNAME: ted@sfu.ca
 PASSWORD: cmpt470
 
