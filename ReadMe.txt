@@ -10,6 +10,8 @@ PASSWORD: cmpt470
 - The two of you are friends and can see one each other' friend items
 - Our application code is located at web2py/applications/StuffShare/, the other files are required by Web2Py, PythonAnywhere and PyCharm
 
+Note* Our site features are also partially explained visually on the site under the Features section of the sidebar
+
 Features:
 	- Authentication and Security
 		- Users register by providing their name, e-mail, and password
