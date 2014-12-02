@@ -1,3 +1,14 @@
+Using the Site:
+- We have test data loaded onto the site as well as several accounts:
+
+USERNAME: ted@sfu.ca
+PASSWORD: cmpt470
+
+USERNAME: jbhaskar@sfu.ca
+PASSWORD: cmpt470
+
+- The two of you are friends and can see one each other' friend items
+
 Features:
 	- Authentication and Security
 		- Users register by providing their name, e-mail, and password
@@ -69,15 +80,3 @@ Using PyCharm:
 	- Within the Web2Py project created, user application can be developed. The system works with version control systems including git
 	- Developers can make changes directly to the application created within Web2Py using PyCharm.
 	- Note: The source-controlled project includes the entire Web2Py framework and its web IDE, This is required to run applications within PyCharm and deploy changes to a local server to test. PyCharm is necessary to track changes made by each developer.
-
-
-Using the Site:
-- We have test data loaded onto the site as well as several accounts:
-
-USERNAME: ted@sfu.ca
-PASSWORD: cmpt470
-
-USERNAME: jbhaskar@sfu.ca
-PASSWORD: cmpt470
-
-- The two of you are friends and can see one each other' friend items
