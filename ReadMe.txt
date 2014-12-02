@@ -1,0 +1,83 @@
+Using the Site:
+- We have test data loaded onto the site as well as several accounts:
+
+USERNAME: ted@sfu.ca
+PASSWORD: cmpt470
+
+USERNAME: jbhaskar@sfu.ca
+PASSWORD: cmpt470
+
+- The two of you are friends and can see one each other' friend items
+- Our application code is located at web2py/applications/StuffShare/, the other files are required by Web2Py, PythonAnywhere and PyCharm
+
+Features:
+	- Authentication and Security
+		- Users register by providing their name, e-mail, and password
+		- The e-mail and password are used to sign in
+		- Passwords are held in the database, and encrypted in case of a security flaw
+		- XSRF and XSS issues are prevented by calling Web2Py database functions
+		- SQL Injection is prevented by creating enunmated fields and calling Web2Py database functions
+		
+	- Item List
+		- There are three types of item lists, each with a different level of visibility is specified when you create an item
+			- Public, can be seen by all users of Web2Py
+			- Friend, can be seen by all users on your friend list
+			- Private, can only be seen by you
+
+		- Viewing items:
+			- Each of the item lists displays the items corresponding to its level of visibility
+			- The items can be searched using the search bar above the items
+			- Items can be filtered according to the different fields (ascending or descending) by clicking on each of the field labels
+			- Lists of items can be exported to a number of different downloadable files including CSV, HTML, JSON, TSV, XML
+			- Google maps API:
+				- Users can view the location of each item in a map embedded into the view item screen
+				- A search for the string defined in the location field is used to request a generated map from Google, and is embed into an iframe
+					- Uses an API key requested from google for use with a team-shared Google account
+
+		- Edit / Delete Items:
+			- You can edit each of the item's fields if a mistake was made or to update the item's status
+			- You can also delete an item completely if needed
+			- StuffShare items also features integration with Google Maps API
+				- The items in the location field are parsed and searched on an included Google maps API 
+
+	- Friends
+		- Users can add other users on StuffShare as friends
+			- Users click “Add Friend” and search for the friend they wish to add
+			- Users can then view the profiles of the user, and decide whether to add them or not
+			- Adding the user will send a friend request, once the user accepts from the “Friend requests” screen, both users will be able to see each others’ items that have visibility marked as “friend.”
+		- The friends can be viewed from the friends list page
+		- Searching is done using keywords, results for both users and friends on the friend list can be sorted by their fields by clicking on the labels (ascending or descending)
+
+	- Querying Amazon and IMDB
+		- On the lookup page, users can enter an ISBN-10 or ISBN-13, and the program will query Amazon to return the title, edition, author, publisher, publication date, and image links corresponding to that ISBN (if it is a valid ISBN that Amazon knows about).
+		- On the lookup page, users can enter a movie title, and the program will query IMDB or omdbapi.com to find the corresponding movie -- the IMDB ID can then be used as a key to generate an IMDB link.
+
+
+	Site Appearance and Layout
+		- The views and forms are integrated through calling the web2py framework, creating a skeleton of grids and tables from existing databases
+		- The appearance of pages are then further customized and manipulated through CSS, Javascript and calling from the Bootstrap framework
+		- The views also include inlined Python code within the HTML to further implement our features
+
+Web2Py:
+	- Web2Py is a full stack framework based that was created in Python
+	- Web2Py structures projects according to a model (database files), view (html, css, jquery, boostrap files), controller (python files)
+	- Web2Py also required us to use HTML, CSS, JQuery, and Bootstrap to implement the different views so we were forced to use them
+
+- Model:
+	- Our model files (in the Model folder) contain the database setup Web2Py queries that connect our application to our MySQL server
+
+- View:
+	- Our view files can be found in the Views folder as well as in the Static folder
+	- Python code from the controller can be embedded into the different views for display
+
+- Controller:
+	- Controller files are in the controller folder and are written in Python files
+	- They contain the logic underlying our application
+
+
+Using PyCharm:
+	- Creates a base Web2Py project with everything needed to host web applications and includes all libraries needed to develop with Web2Py
+	- We imported an existing project built using the Web2Py online IDE into pycharm
+	- Within the Web2Py project created, user application can be developed. The system works with version control systems including git
+	- Developers can make changes directly to the application created within Web2Py using PyCharm.
+	- Note: The source-controlled project includes the entire Web2Py framework and its web IDE, This is required to run applications within PyCharm and deploy changes to a local server to test. PyCharm is necessary to track changes made by each developer.
