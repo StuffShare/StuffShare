@@ -1,3 +1,5 @@
+Production Server: http://stuffshare.pythonanywhere.com/
+
 Using the Site:
 - We have test data loaded onto the site as well as several accounts:
     - Our test data images should all be public domain
