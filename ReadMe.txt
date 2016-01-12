@@ -1,5 +1,7 @@
 Production Server: http://stuffshare.pythonanywhere.com/
 
+Note: The source-controlled project includes the entire Web2Py framework and its web IDE, This is required to run applications within PyCharm and deploy changes to a local server to test. PyCharm is necessary to track changes made by each developer.
+
 Using the Site:
 - We have test data loaded onto the site as well as several accounts:
     - Our test data images should all be public domain
