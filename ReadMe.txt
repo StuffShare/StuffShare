@@ -27,10 +27,3 @@ Note* Our site features are also partially explained visually on the site under 
 	- Controller files are in the controller folder and are written in Python files
 	- They contain the logic underlying our application
 
-
-Using PyCharm:
-	- Creates a base Web2Py project with everything needed to host web applications and includes all libraries needed to develop with Web2Py
-	- We imported an existing project built using the Web2Py online IDE into pycharm
-	- Within the Web2Py project created, user application can be developed. The system works with version control systems including git
-	- Developers can make changes directly to the application created within Web2Py using PyCharm.
-	- Note: The source-controlled project includes the entire Web2Py framework and its web IDE, This is required to run applications within PyCharm and deploy changes to a local server to test. PyCharm is necessary to track changes made by each developer.
