@@ -33,3 +33,4 @@ Note* Our site features are also partially explained visually on the site under 
 	- Controller files are in the controller folder and are written in Python files
 	- They contain the logic underlying our application
 
+Made by Michael Moo, Ishan Bhutani, Gary Williams, Jason Zhang
