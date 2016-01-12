@@ -1,13 +1,15 @@
 Using the Site:
 - We have test data loaded onto the site as well as several accounts:
 
+Test accounts:
+
 USERNAME: ted@sfu.ca
 PASSWORD: cmpt470
 
 USERNAME: jbhaskar@sfu.ca
 PASSWORD: cmpt470
 
-- The two of you are friends and can see one each other' friend items
+- The two users are friends and can see one each other' friend items
 
 Features:
 	- Authentication and Security
