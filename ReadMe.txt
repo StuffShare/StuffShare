@@ -1,3 +1,5 @@
+StuffShare allows users to create a catalogue of all their belongings, with specific details about each item. Users also select the visibility of each item, which defines which other users on StuffShare can access its details. The central idea of StuffShare is allowing users to lend out and borrow personal belongings to and from one another, and maintain a personal catalogue of their belongings they cannot track in person. Visibility allows users to define what items their friends can see and what items are available to the general public. By marking items as private, users can also simply use the website to maintain a record of their belongings.
+
 Production Server: http://stuffshare.pythonanywhere.com/
 
 Server running on pythonanywhere. 
